@@ -1,0 +1,83 @@
+/* -------- A D M I N ----------*/
+
+.divAlerta{position: fixed; bottom: 0; right: 0; width: 260px; padding: 1em 1em 1em 3.2em;; z-index: 1000; color: white; font-size: 1.1em; background-size: 90%}
+.divAlerta i.fa-times{position: absolute; top:0.5em; right: 0.5em; }
+.divAlerta i.fa-times:before{color: white !important}
+.ok{background: #599F00 url(../images/ok.png) no-repeat 15px 15px; border:1px solid #007F46;}
+.error{background: #E5352D url(../images/error.png) no-repeat 15px 15px; ; border:1px solid #E2001A;}
+
+/* P R O D U C T O S */
+
+.divLogin{margin: 100px auto 250px auto; width: 300px;  }
+.divLogin input[type="text"], .divLogin input[type="password"] {width: 100%; margin-bottom: 20px}
+.divLogin input[type="submit"]{float:right;}
+
+section.admin h2{font-size: 1.5em; }
+section.admin h3{font-size: 1.250em}
+section.admin h2, section.admin h3 {display: inline-block; padding-right: 0.625em}
+
+/* estilos  A D M I N*/
+.headerAdmin{background: #333; height:2.5em; color: #fff; position: relative; }
+.headerAdmin .divSalir{position: absolute;right: 0}
+.headerAdmin .divAdministrar{position: absolute; left: 0}
+.headerAdmin .salir{color:#fff; padding: 0 1em; margin-left: 1em}
+
+.col70Admin{width: 51.250em; float: left; margin-right: 20px;}
+
+/* estilos  M O D A L */
+/*.modal{width: 54.4em; padding: 3.2em; border-radius: 1em; -webkit-border-radius: 1em; -moz-border-radius: 1em; -o-border-radius: 1em;-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.9); -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.9); box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.9); margin-top: 8.5em; margin-left: -30.4em; position: absolute; z-index: 999; left:50% }*/
+
+.divNuevaSeccion{padding-bottom: 1.5em; border-bottom: 1px dashed #C6C6C6}
+
+.modal h2{margin: 0 0 1.5em 0; color: #3D88CB; font-size: 1.5em;}
+
+.datosProducto>h3, .cargaImg>h3, .fondoDestacado>h3{margin-top: 0}
+.datosProducto label{margin-right: 1em}
+.datosProducto select{font-size: 1em; color:#B2B2B2; margin-right: 0.5em; width: }
+
+.divVerMarcaPrincipal p{margin-top: 0.5em; }
+.marca_imagen_preview{width: 44px; height: 44px; display: inline-block;vertical-align: middle; padding-bottom: 3px}
+
+.divCargaImgProducto{margin: 0 0 4em 0; position: relative;}
+.divCargaImgProducto:last-child{margin: 0 !important;}
+.divCargaImgProducto .cargar{font-size: 16px !important}
+.divCargaImgProducto .campoNomArchivo{width: 165px}
+.divCargaImgProducto p{margin: 0.3em 0 2em 0}
+.divCargaImgProducto i.fa-times{position: absolute; top: 0.5em; right: 0.5em}
+
+.divCargaImg{height: 19.375em; width: 19.375em; border: 1px solid #ccc; position: relative; box-sizing: border-box;}
+.divCargaImg img{border:0; height: 19.375em; width: 19.375em; display: block}
+
+.divEditorTxt{margin-bottom: 20px;}
+a.btnDestacar{font-size: 1.5em; font-weight: 300; cursor: pointer}
+
+.form-group span{display: inline-block; margin-right: 0.3em; font-size: 2em}
+
+/* Ocultamos el input file */
+.oculto{z-index: 999;line-height: 0;font-size: 30px; position: absolute;opacity: 0;filter: alpha(opacity = 0);-ms-filter: "alpha(opacity=0)";
+margin: 0;padding:0;left:0;top: 0;width: 130px;}
+
+/* Al label lo convertimos en "boton" (en apariencia) */
+.cargar{text-align: center;color: #fff;display: block;border-radius: 3px;font-size: 18px;float: left; position: relative;}
+
+/* Administrador de Menu*/
+.grupoMenuAdmin{}
+.listaMenu li > ul{margin-left: 1.5em}
+.listaMenu li{margin-bottom: 0.4em}
+.listaMenu li .btnSec{padding: 0.2em !important}
+.listaMenu li i{width: 120% !important}
+.listaMenu li span{display: inline-block; background: #DFDFDF; width: 11.8em; padding: 0.6em; }
+.listaMenu span a{display: block; font-size: 0.9em; color:#666}
+.listaMenu span a:hover{color:#999;}
+.menuOrdenar{display: block !important; margin: 0.5em 1.3em 0.3em }
+.menuOrdenar1{display: block !important; margin: 0.5em 1.3em 0.3em 0; padding: 0 !important;}
+
+/* Administrador de Marcas */
+.listaMarcas{margin: 0 -0.65em}
+.listaMarcas li{float: left; margin: 0 0.65em; width: 150px; box-sizing: content-box; position: relative;}
+.listaMarcas li img{width: 100%; height: auto;border: 1px solid #ccc; box-sizing: content-box;}
+.listaMarcas li .marca{display: table; width: 100%; height: 55px; padding: 0.5em 0; margin-top: 0;}
+.listaMarcas p span{display: table-cell; vertical-align: middle; background: #EFEFEF; text-align: center; line-height: 1.1em;}
+
+.divCargaMarca{height: 150px; width: 150px; border: 1px solid #ccc; box-sizing: border-box; position: relative;}
+.divCargaMarca i{position: absolute; top:0.5em; right: 0.5em; cursor: pointer}
