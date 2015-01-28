@@ -15,7 +15,7 @@ class NoticiaController extends BaseController {
         $categorias = Categoria::where('estado', 'A')->get();
         $secciones = Seccion::where('estado', 'A')->get();
 
-        $this->array_view['noticia'] = $noticia;
+        $this->array_view['noticias'] = $noticias;
         $this->array_view['categorias'] = $categorias;
         $this->array_view['secciones'] = $secciones;
 

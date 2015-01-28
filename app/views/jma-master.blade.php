@@ -15,6 +15,7 @@
         -->
         
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles-admin.css')}}"> 
+        <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-styles.css')}}"> 
         
         <!-- abre SCRIPT -->
         <script src="{{URL::to('js/jquery-1.11.0.min.js')}}"></script>
