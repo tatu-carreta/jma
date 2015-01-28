@@ -46,6 +46,9 @@ Route::get('jma-error', 'HomeController@error');
 //Ruteo de Producto
 Route::get('producto/{url}', 'ProductoController@mostrarInfoProducto');
 
+//Ruteo de Noticia
+Route::get('noticia/{url}', 'NoticiaController@mostrarInfo');
+
 Route::post('admin/producto/producto-consulta', 'ProductoController@consultarProductoLista');
 Route::post('admin/producto/consulta-general', 'ProductoController@consultaGeneral');
 
@@ -206,6 +209,23 @@ Route::group(array('before' => 'auth'), function() {
             Route::get('admin/producto/destacar/{id}/{next}', 'ProductoController@vistaDestacar');
             
             Route::post('admin/producto/destacar', 'ProductoController@destacar');
+            
+            /*
+             * Ruteo de Noticia
+             */
+            Route::get('admin/noticia', 'NoticiaController@vistaListado');
+
+            Route::get('admin/noticia/agregar/{seccion_id}', 'NoticiaController@vistaAgregar');
+
+            Route::post('admin/noticia/agregar', 'NoticiaController@agregar');
+
+            Route::get('admin/noticia/editar/{id}/{next}', 'NoticiaController@vistaEditar');
+
+            Route::post('admin/noticia/editar', 'NoticiaController@editar');
+//            
+//            Route::get('admin/producto/destacar/{id}/{next}', 'ProductoController@vistaDestacar');
+//            
+//            Route::post('admin/producto/destacar', 'ProductoController@destacar');
             
             
             
