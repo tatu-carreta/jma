@@ -13,13 +13,7 @@ class Texto extends Item {
     public static function agregar($input) {
         //Lo crea definitivamente
 
-        if (isset($input['descripcion'])) {
-
-            $input['descripcion'] = $input['descripcion'];
-        } else {
-            $input['descripcion'] = NULL;
-        }
-
+        $input['descripcion'] = NULL;
 
         $item = Item::agregarItem($input);
 
@@ -63,12 +57,7 @@ class Texto extends Item {
 
             $texto->save();
 
-            if (isset($input['descripcion'])) {
-
-                $input['descripcion'] = $input['descripcion'];
-            } else {
-                $input['descripcion'] = NULL;
-            }
+            $input['descripcion'] = NULL;
 
             $item = Item::editarItem($input);
 
