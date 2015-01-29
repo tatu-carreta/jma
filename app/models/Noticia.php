@@ -66,6 +66,8 @@ class Noticia extends Texto {
 
             $noticia->save();
 
+            $input['texto_id'] = $noticia->texto_id;
+            
             $texto = Texto::editar($input);
 
             $respuesta['mensaje'] = 'Noticia modificada.';

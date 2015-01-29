@@ -78,7 +78,7 @@ class NoticiaController extends BaseController {
 
         if ($noticia) {
             $this->array_view['item'] = $noticia->texto()->item();
-            $this->array_view['producto'] = $noticia;
+            $this->array_view['noticia'] = $noticia;
             $this->array_view['continue'] = $next;
             return View::make('noticia.editar', $this->array_view);
         } else {

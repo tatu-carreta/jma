@@ -84,6 +84,10 @@ class Texto extends Item {
         return Item::find($this->item_id);
     }
 
+    public function noticia() {
+        return Noticia::where('texto_id', $this->id)->first();
+    }
+
     public static function buscar($item_id) {
         return Texto::where('item_id', $item_id)->first();
     }

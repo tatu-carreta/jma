@@ -9,7 +9,7 @@
             <a onclick="borrarData('../admin/seccion/borrar', '{{$seccion->id}}');" class="btnSec"><i class="fa fa-times fa-lg"></i>Eliminar sección</a>
         @endif
         @if(Auth::user()->can("agregar_item"))
-            <a href="{{URL::to('admin/producto/agregar/'.$seccion->id)}}" data='{{ $seccion->id }}' class="btn floatRight"><i class="fa fa-plus fa-lg"></i>Nuevo Producto</a>
+            <a href="{{URL::to('admin/noticia/agregar/'.$seccion->id)}}" data='{{ $seccion->id }}' class="btn floatRight"><i class="fa fa-plus fa-lg"></i>Nuevo Producto</a>
         @endif
     @endif
     <div class="clear"></div>
@@ -19,75 +19,13 @@
     {{ Form::open(array('url' => 'admin/item/ordenar-por-seccion')) }}
     @endif
     <ul class="ulProductos @if(Auth::check()) sortable @endif">
-        @if(isset($marca_id) && ($marca_id != ""))
-            @foreach($seccion -> items_por_marca($marca_id) as $i)
-            <li>
-                @if(Auth::check())
-                <div class="iconos">
-                    @if(!$i->destacado())
-                        @if(Auth::user()->can("destacar_item"))
-                            <a href="{{URL::to('admin/producto/destacar/'.$i->producto()->id)}}" class="destacarProducto"><i  class="fa fa-thumb-tack fa-lg"></i></a>
-                        @endif
-                    @else
-                        @if(Auth::user()->can("quitar_destacado_item"))
-                            <i onclick="destacarItemSeccion('../admin/item/quitar-destacado', '{{$seccion->id}}', '{{$i->id}}');" class="fa fa-thumb-tack prodDestacado fa-lg"></i>
-                        @endif
-                    @endif
-
-                    <span class="floatRight">
-                        @if(Auth::user()->can("editar_item"))
-                            <a href="{{URL::to('admin/producto/editar/'.$i->producto()->id.'/seccion')}}" data='{{$seccion->id}}'><i class="fa fa-pencil fa-lg"></i></a>
-                        @endif
-                        @if(Auth::user()->can("borrar_item"))
-                            <i onclick="borrarData('../admin/item/borrar', '{{$i->id}}');" class="fa fa-times fa-lg"></i>
-                        @endif
-                    </span>
-                </div>
-                @endif
-
-                @if(!Auth::check())
-                    <a href="{{URL::to('producto/'.$i->url)}}">
-                @endif
-                <img class="lazy" data-original="@if(!is_null($i->imagen_destacada())){{ URL::to($i->imagen_destacada()->carpeta.$i->imagen_destacada()->nombre) }}@else{{URL::to('images/sinImg.gif')}}@endif" alt="{{$i->titulo}}">
-                @if(!Auth::check())
-                    </a>
-                @endif
-
-                <p class="tituloProducto"><span>{{ $i->titulo }}</span></p>
-                <p class="marca">Marca: @if(!is_null($i->producto()->marca_principal())){{$i->producto()->marca_principal()->nombre}}@endif</p>
-                @if($i->destacado())
-                    <span class="precio">Precio: ${{$i->producto()->precio(2)}}</span>
-                @else
-                    <a class="consulte" data="{{ $i->id }}">Consulte precio</a>
-                    @if(!Auth::check())
-                    <div class="modalConsulte popupConsulte{{$i->id}}">
-                        <i class="fa fa-times fa-lg cierraConsulta" data="{{$i->id}}"></i>
-                        <p>Consulta de precio por</p>
-                        <p><span>{{ $i->titulo }}</span></p>
-                        <p class="marca">Marca: @if(!is_null($i->producto()->marca_principal())){{$i->producto()->marca_principal()->nombre}}@endif</p>
-                        {{ Form::open(array('url' => 'admin/producto/producto-consulta')) }}
-                            <input type="text" name="nombre" placeholder="Nombre y Apellido" required="true">
-                            <input type="email" name="email" placeholder="E-mail" required="true">
-                            <input type="submit" value="consultar" class="btnNaranjaMin floatRight enviaConsulta">
-                            {{Form::hidden('producto_consulta_id', $i->producto()->id)}}
-                        {{Form::close()}}
-                    </div>
-                    @endif
-                @endif
-                <a class="detalle" href="{{URL::to('producto/'.$i->url)}}">Detalle</a>	
-                @if(Auth::check())
-                <input type="hidden" name="orden[]" value="{{$i->id}}">
-                @endif            		
-            </li>
-            @endforeach
-        @else
             @foreach($seccion -> items as $i)
             <li>
                 @if(Auth::check())
                 <div class="iconos">
                     @if(!$i->destacado())
                         @if(Auth::user()->can("destacar_item"))
-                            <a href="{{URL::to('admin/producto/destacar/'.$i->producto()->id.'/seccion')}}" class="destacarProducto"><i  class="fa fa-thumb-tack fa-lg"></i></a><!-- onclick="destacarItemSeccion('../admin/item/destacar', '{{$seccion->id}}', '{{$i->id}}');" -->
+                            <a href="{{URL::to('admin/item/destacar/'.$i->id.'/seccion')}}" class="destacarProducto"><i  class="fa fa-thumb-tack fa-lg"></i></a>
                         @endif
                     @else
                         @if(Auth::user()->can("quitar_destacado_item"))
@@ -97,7 +35,7 @@
 
                     <span class="floatRight">
                         @if(Auth::user()->can("editar_item"))
-                            <a href="{{URL::to('admin/producto/editar/'.$i->producto()->id.'/seccion')}}" data='{{$seccion->id}}'><i class="fa fa-pencil fa-lg"></i></a>
+                        <a href="{{URL::to('admin/noticia/editar/'.$i->texto()->noticia()->id.'/seccion')}}" data='{{$seccion->id}}'><i class="fa fa-pencil fa-lg"></i></a>
                         @endif
                         @if(Auth::user()->can("borrar_item"))
                             <i onclick="borrarData('../admin/item/borrar', '{{$i->id}}');" class="fa fa-times fa-lg"></i>
@@ -107,7 +45,7 @@
                 @endif
 
                 @if(!Auth::check())
-                    <a href="{{URL::to('producto/'.$i->url)}}">
+                    <a href="{{URL::to('noticia/'.$i->url)}}">
                 @endif
                 <img class="lazy" data-original="@if(!is_null($i->imagen_destacada())){{ URL::to($i->imagen_destacada()->carpeta.$i->imagen_destacada()->nombre) }}@else{{URL::to('images/sinImg.gif')}}@endif" alt="{{$i->titulo}}">
                 @if(!Auth::check())
@@ -115,34 +53,12 @@
                 @endif
 
                 <p class="tituloProducto"><span>{{ $i->titulo }}</span></p>
-                <p class="marca">Marca: @if(!is_null($i->producto()->marca_principal())){{$i->producto()->marca_principal()->nombre}}@endif</p>
-                @if($i->destacado())
-                    <span class="precio">Precio: ${{$i->producto()->precio(2)}}</span>
-                @else
-                    <a class="consulte" data="{{ $i->id }}">Consulte precio</a>
-                    @if(!Auth::check())
-                    <div class="modalConsulte popupConsulte{{$i->id}}">
-                        <i class="fa fa-times fa-lg cierraConsulta" data="{{$i->id}}"></i>
-                        <p>Consulta de precio por</p>
-                        <p><span>{{ $i->titulo }}</span></p>
-                        <p class="marca">Marca: @if(!is_null($i->producto()->marca_principal())){{$i->producto()->marca_principal()->nombre}}@endif</p>
-                        {{ Form::open(array('url' => 'admin/producto/producto-consulta')) }}
-                            <input type="text" name="nombre" placeholder="Nombre y Apellido" required="true">
-                            <input type="email" name="email" placeholder="E-mail" required="true">
-                            <input type="submit" value="consultar" class="btnNaranjaMin floatRight enviaConsulta">
-                            {{Form::hidden('producto_consulta_id', $i->producto()->id)}}
-                            {{Form::hidden('continue', 'seccion')}}
-                        {{Form::close()}}
-                    </div>
-                    @endif
-                @endif
-                <a class="detalle" href="{{URL::to('producto/'.$i->url)}}">Detalle</a>	
+                <a class="detalle" href="{{URL::to('noticia/'.$i->url)}}">Detalle</a>	
                 @if(Auth::check())
                 <input type="hidden" name="orden[]" value="{{$i->id}}">
                 @endif            		
             </li>
             @endforeach
-        @endif
         
     </ul>
 
@@ -153,7 +69,7 @@
 
     @else
     @if(!Auth::check())
-    No hay productos cargados aún.
+    No hay noticias cargadas aún.
     @endif
     @endif
     <div class="clear"></div>
