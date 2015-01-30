@@ -59,6 +59,10 @@ class Categoria extends Eloquent {
                 $menu_padre['menu_id'] = $menu_id;
             }
 
+            if (isset($input['modulo_id']) && ($input['modulo_id'] != "")) {
+                $menu_padre['modulo_id'] = $input['modulo_id'];
+            }
+
             //Llamo a agregarMenu con los datos antes cargados
             Menu::agregarMenu($menu_padre);
 
@@ -192,6 +196,7 @@ class Categoria extends Eloquent {
 
     public function parent(){
     return $this->belongsToMany('Categoria', 'categoria_asociada', 'categoria_id_asociada');
+
 
 
 

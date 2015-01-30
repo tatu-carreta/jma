@@ -51,7 +51,14 @@
             @foreach($menu -> secciones as $seccion)
                 @if((count($seccion->items) > 0) || Auth::check())
 
-                    @include('seccion.'.$project_name.'-ver-seccion')
+                    @if($menu->modulo()->nombre == 'producto')
+                        @include('seccion.'.$project_name.'-ver-seccion-producto')
+                    @elseif($menu->modulo()->nombre == 'noticia')
+                        @include('seccion.'.$project_name.'-ver-seccion-noticia')
+                    @else
+                        @include('seccion.'.$project_name.'-ver-seccion')
+                    @endif
+                    
                 @endif
             @endforeach
             </div>
