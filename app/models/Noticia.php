@@ -5,7 +5,7 @@ class Noticia extends Texto {
     //Tabla de la BD
     protected $table = 'noticia';
     //Atributos que van a ser modificables
-    protected $fillable = array('texto_id', 'fecha');
+    protected $fillable = array('texto_id', 'fecha', 'fuente');
     //Hace que no se utilicen los default: create_at y update_at
     public $timestamps = false;
 
@@ -23,9 +23,16 @@ class Noticia extends Texto {
             $fecha = NULL;
         }
 
+        if (isset($input['fuente'])) {
+
+            $fuente = $input['fuente'];
+        } else {
+            $fuente = NULL;
+        }
+
         if (!$texto['error']) {
 
-            $noticia = static::create(['texto_id' => $texto['data']->id, 'fecha' => $fecha]);
+            $noticia = static::create(['texto_id' => $texto['data']->id, 'fecha' => $fecha, 'fuente' => $fuente]);
 
             $respuesta['data'] = $noticia;
             $respuesta['error'] = false;
@@ -62,12 +69,20 @@ class Noticia extends Texto {
                 $fecha = NULL;
             }
 
+            if (isset($input['fuente'])) {
+
+                $fuente = $input['fuente'];
+            } else {
+                $fuente = NULL;
+            }
+
             $noticia->fecha = $fecha;
+            $noticia->fuente = $fuente;
 
             $noticia->save();
 
             $input['texto_id'] = $noticia->texto_id;
-            
+
             $texto = Texto::editar($input);
 
             $respuesta['mensaje'] = 'Noticia modificada.';

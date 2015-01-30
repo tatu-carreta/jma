@@ -54,6 +54,15 @@ class Menu extends Eloquent {
                 $menu->parent()->attach($input['menu_id'], array('estado' => 'A'));
             }
 
+            if (isset($input['modulo_id']) && $input['modulo_id'] != "") {
+                $datosGuardar = array(
+                    'estado' => 'A',
+                    'fecha_carga' => date("Y-m-d H:i:s"),
+                    'usuario_id_carga' => Auth::user()->id
+                );
+                $menu->modulos()->attach($input['modulo_id'], $datosGuardar);
+            }
+
             $idmenu = array('menu_id' => $menu->id,
                 'titulo' => "");
 
@@ -247,39 +256,22 @@ class Menu extends Eloquent {
     return $this->belongsToMany('Menu', 'menu_asociado', 'menu_id_asociado');
 
 
+    }
+
+//Me quedo con los precios del Producto
+public function modulos() {
+    return $this->belongsToMany('Modulo', 'menu_modulo', 'menu_id', 'modulo_id')->where('menu_modulo.estado', 'A')->select('modulo.nombre', 'modulo.id');
+}
+
+public function modulo() {
+    $modulo = NULL;
 
 
+    foreach ($this->modulos as $mod) {
+        $modulo = Modulo::find($mod->id);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return $modulo;
 }
 
 }

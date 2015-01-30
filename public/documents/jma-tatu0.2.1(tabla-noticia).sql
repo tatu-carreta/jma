@@ -33,7 +33,8 @@ DROP TABLE IF EXISTS `noticia`;
 CREATE TABLE IF NOT EXISTS `noticia` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `texto_id` int(11) NOT NULL,
-  `fecha` datetime DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `fuente` VARCHAR(300) DEFAULT NULL COLLATE 'utf8_spanish_ci',
   PRIMARY KEY (`id`),
   KEY `FK__texto` (`texto_id`),
   CONSTRAINT `FK__texto` FOREIGN KEY (`texto_id`) REFERENCES `texto` (`id`)

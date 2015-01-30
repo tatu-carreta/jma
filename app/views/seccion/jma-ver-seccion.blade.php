@@ -25,7 +25,7 @@
                 <div class="iconos">
                     @if(!$i->destacado())
                         @if(Auth::user()->can("destacar_item"))
-                            <a href="{{URL::to('admin/item/destacar/'.$i->id.'/seccion')}}" class="destacarProducto"><i  class="fa fa-thumb-tack fa-lg"></i></a>
+                            <i onclick="destacarItemSeccion('../admin/item/destacar', '{{$seccion->id}}', '{{$i->id}}');" class="fa fa-thumb-tack fa-lg"></i>
                         @endif
                     @else
                         @if(Auth::user()->can("quitar_destacado_item"))

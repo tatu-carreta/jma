@@ -14,9 +14,13 @@ class CategoriaController extends BaseController {
 
     public function vistaAgregar() {
 
-        $categorias = parent::desplegarCategoria();
+        $this->array_view['categorias'] = parent::desplegarCategoria();
+        
+        $modulos = Modulo::all();
+        
+        $this->array_view['modulos'] = $modulos;
 
-        return View::make('categoria.crear', array('categorias' => $categorias));
+        return View::make('categoria.crear', $this->array_view);
     }
 
     public function agregar() {

@@ -16,12 +16,17 @@
             <div class="col70Admin datosProducto">
                 <h3>Título de la noticia</h3>
                 <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" value="{{ $item->titulo }}" maxlength="50">
-                <div class="divVerMarcaPrincipal marginBottom2">
-                    <h3>Fecha</h3>
-                    <input class="block anchoTotal marginBottom" type="date" name="fecha" placeholder="Fecha" required="true" value="{{ $noticia->fecha }}" maxlength="50">
-                </div>
+                
+                <h3>Fecha</h3>
+                <input class="block anchoTotal marginBottom" type="date" name="fecha" placeholder="Fecha" required="true" value="{{ $noticia->fecha }}" maxlength="50">
+                
+                <h3>Fuente</h3>
+                <input class="block anchoTotal marginBottom" type="text" name="fuente" placeholder="Fuente" required="true" value="{{ $noticia->fuente }}" maxlength="50">
 
-                <h3>Detalles técnicos</h3>
+                <h3>Descripción</h3>
+                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" value="{{ $item->descripcion }}" maxlength="50">
+                
+                <h3>Cuerpo</h3>
                 <div class="divEditorTxt marginBottom2">
                     <textarea id="texto" contenteditable="true" class="" name="cuerpo">{{ $item->texto()->cuerpo }}</textarea>
                 </div>
@@ -39,11 +44,11 @@
                             <img alt="{{$item->titulo}}"  src="{{ URL::to($item->imagen_destacada()->carpeta.$item->imagen_destacada()->nombre) }}">
                             <i onclick="borrarImagenReload('{{ URL::to('admin/imagen/borrar') }}', '{{$item->imagen_destacada()->id}}');" class="fa fa-times fa-lg"></i>
                         </div>
-                        <input type="hidden" name="imagen_producto_editar" value="{{$item->imagen_destacada()->id}}">
-                        <input class="block anchoTotal marginBottom" type="text" name="epigrafe_imagen_producto_editar" placeholder="Ingrese una descripción de la foto" value="{{ $item->imagen_destacada()->epigrafe }}">
+                        <input type="hidden" name="imagen_portada_editar" value="{{$item->imagen_destacada()->id}}">
+                        <input class="block anchoTotal marginBottom" type="text" name="epigrafe_imagen_portada_editar" placeholder="Ingrese una descripción de la foto" value="{{ $item->imagen_destacada()->epigrafe }}">
                     </div>
                 @else
-                    @include('imagen.modulo-imagen-producto-maxi')
+                    @include('imagen.modulo-imagen-noticia-maxi')
                 @endif
                 <div class="clear"></div>
             </div>
@@ -59,7 +64,6 @@
             {{Form::hidden('continue', $continue)}}
             {{Form::hidden('id', $item->id)}}
             {{Form::hidden('noticia_id', $noticia->id)}}
-            {{Form::hidden('descripcion', '')}}
         {{Form::close()}}
     </section>
 @stop

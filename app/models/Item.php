@@ -112,8 +112,8 @@ class Item extends Eloquent {
                 }
             }
 
-            if (isset($input['imagen_producto']) && ($input['imagen_producto'] != "")) {
-                $imagen_creada = Imagen::agregarImagen($input['imagen_producto'], $input['epigrafe_imagen_producto']);
+            if (isset($input['imagen_portada']) && ($input['imagen_portada'] != "")) {
+                $imagen_creada = Imagen::agregarImagen($input['imagen_portada'], $input['epigrafe_imagen_portada']);
 
                 $item->imagenes()->attach($imagen_creada['data']->miniatura()->id, array("destacado" => "A"));
             }
@@ -280,17 +280,17 @@ class Item extends Eloquent {
                 $imagen_editada = Imagen::editar($data_imagen);
             }
 
-            if (isset($input['imagen_producto_editar']) && ($input['imagen_producto_editar'] != "")) {
+            if (isset($input['imagen_portada_editar']) && ($input['imagen_portada_editar'] != "")) {
                 $data_imagen = array(
-                    'id' => $input['imagen_producto_editar'],
-                    'epigrafe' => $input['epigrafe_imagen_producto_editar']
+                    'id' => $input['imagen_portada_editar'],
+                    'epigrafe' => $input['epigrafe_imagen_portada_editar']
                 );
 
                 $imagen_editada = Imagen::editar($data_imagen);
             }
-            
-            if (isset($input['imagen_producto']) && ($input['imagen_producto'] != "")) {
-                $imagen_creada = Imagen::agregarImagen($input['imagen_producto']);
+
+            if (isset($input['imagen_portada']) && ($input['imagen_portada'] != "")) {
+                $imagen_creada = Imagen::agregarImagen($input['imagen_portada']);
 
                 $item->imagenes()->attach($imagen_creada['data']->miniatura()->id, array("destacado" => "A"));
             }

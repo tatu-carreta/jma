@@ -35,6 +35,10 @@
                     {{ $item->texto()->noticia()->fecha }}
                 </div>
                 <div class="editor">
+                    <h4>Fuente</h4>
+                    {{ $item->texto()->noticia()->fuente }}
+                </div>
+                <div class="editor">
                     <h4>Descripcion</h4>
                     {{ $item->descripcion }}
                 </div>

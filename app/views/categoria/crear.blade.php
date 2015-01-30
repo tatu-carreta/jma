@@ -17,8 +17,22 @@
         </div>
     @endif
 
+    @if(Auth::user()->can("elegir_modulo"))
+        <div class="grupoForm marginBottom2">
+            <p class="consigna"><label for="">2. Defina el tipo de contenido que tendrá la página nueva</label></p>
+            <select class="form-control" name="modulo_id" required="true">
+                <option value="">Seleccione un Módulo</option>
+                @foreach($modulos as $modulo)
+                <option value="{{$modulo->id}}">{{$modulo->nombre}}</option>
+                @endforeach
+            </select>
+        </div>
+    @else
+        {{Form::hidden('modulo_id', '1')}}
+    @endif
+    
     <div class="grupoForm marginBottom2">
-        <p class="consigna">2. Seleccione a qué nivel pertenece</p>
+        <p class="consigna">3. Seleccione a qué nivel pertenece</p>
         <p><input type="radio" name="categoria_id" value="" checked="true" id="principal"><label for="principal">Es categoría principal</label></p>
         @if(Auth::user()->can("seleccionar_nivel_categoria"))
             @foreach($categorias as $categoria1)

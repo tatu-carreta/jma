@@ -7,6 +7,10 @@ class MenuController extends BaseController {
         $categorias = parent::desplegarCategoria();
 
         $this->array_view['categorias'] = $categorias;
+        
+        $modulos = Modulo::all();
+        
+        $this->array_view['modulos'] = $modulos;
 
         //return View::make('menu.lista', array('menus' => $menus, 'categorias' => $categorias));
         return View::make('menu.administrar', $this->array_view);

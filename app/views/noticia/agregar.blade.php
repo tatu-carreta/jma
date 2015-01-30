@@ -20,7 +20,16 @@
                 <h3>Título de la noticia</h3>
                 <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" maxlength="50">
 
-                <h3>Detalles técnicos</h3>
+                <h3>Fecha</h3>
+                <input class="block anchoTotal marginBottom" type="date" name="fecha" placeholder="Fecha" required="true" maxlength="50">
+
+                <h3>Fuente</h3>
+                <input class="block anchoTotal marginBottom" type="text" name="fuente" placeholder="Fuente" required="true" maxlength="50">
+
+                <h3>Descripción</h3>
+                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" maxlength="50">
+
+                <h3>Cuerpo</h3>
                 <div class="divEditorTxt marginBottom2">
                     <textarea id="texto" contenteditable="true" name="cuerpo"></textarea>
                 </div>
@@ -29,7 +38,7 @@
             <!-- Abre columna de imágenes -->
             <div class="col30 fondoDestacado padding1 cargaImg">
                 <h3>Imagen principal</h3>
-                @include('imagen.modulo-imagen-producto-maxi')
+                @include('imagen.modulo-imagen-noticia-maxi')
             </div>
 
             <div class="clear"></div>
@@ -44,7 +53,6 @@
 
 
             {{Form::hidden('seccion_id', $seccion_id)}}
-            {{Form::hidden('descripcion', '')}}
         {{Form::close()}}
     </section>
 @stop
