@@ -12,6 +12,14 @@
         {{ Form::open(array('url' => 'admin/noticia/editar', 'files' => true)) }}
             <h2 class="marginBottom2"><span>Carga y modificación de noticias</span></h2>
 
+        @if(Auth::user()->can('cambiar_seccion_item'))
+            <select name="seccion_nueva_id">
+                <option value="">Seleccione Nueva Sección</option>
+                @foreach($secciones as $seccion)
+                <option value="{{$seccion->id}}" @if($seccion->id == $item->seccionItem()->id) selected @endif>@if($seccion->nombre != ""){{$seccion->nombre}}@else Sección {{$seccion->id}} - {{$seccion->menuSeccion()->nombre}}@endif</option>
+                @endforeach
+            </select>
+        @endif
             <!-- abre datos del Producto-->
             <div class="col70Admin datosProducto">
                 <h3>Título de la noticia</h3>

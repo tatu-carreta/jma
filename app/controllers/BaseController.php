@@ -3,9 +3,8 @@
 class BaseController extends Controller {
 
     protected $project_name = 'jma';
-    
     protected $array_view = array();
-    
+
     public function __construct() {
         $this->array_view['project_name'] = $this->project_name;
         $this->array_view['menus'] = $this->desplegarMenu();
@@ -115,4 +114,31 @@ class BaseController extends Controller {
         return Slide::where('estado', 'A')->where('tipo', 'I')->first();
     }
 
+    protected function seccionesDinamicas() {
+        $secciones_dinamicas = array();
+
+        $secciones = Seccion::where('estado', 'A')->get();
+
+        foreach ($secciones as $seccion) {
+            if (!is_null($seccion->menuSeccion()->categoria())) {
+                array_push($secciones_dinamicas, $seccion);
+            }
+        }
+
+        return $secciones_dinamicas;
+    }
+
+    protected function seccionesEstaticas() {
+        $secciones_estaticas = array();
+
+        $secciones = Seccion::where('estado', 'A')->get();
+
+        foreach ($secciones as $seccion) {
+            if (is_null($seccion->menuSeccion()->categoria())) {
+                array_push($secciones_estaticas, $seccion);
+            }
+        }
+
+        return $secciones_estaticas;
+    }
 }

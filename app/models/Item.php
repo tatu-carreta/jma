@@ -113,7 +113,14 @@ class Item extends Eloquent {
             }
 
             if (isset($input['imagen_portada']) && ($input['imagen_portada'] != "")) {
-                $imagen_creada = Imagen::agregarImagen($input['imagen_portada'], $input['epigrafe_imagen_portada']);
+
+                if (isset($input['epigrafe_imagen_portada']) && ($input['epigrafe_imagen_portada'] != "")) {
+                    $epigrafe_imagen_portada = $input['epigrafe_imagen_portada'];
+                } else {
+                    $epigrafe_imagen_portada = NULL;
+                }
+
+                $imagen_creada = Imagen::agregarImagen($input['imagen_portada'], $epigrafe_imagen_portada);
 
                 $item->imagenes()->attach($imagen_creada['data']->miniatura()->id, array("destacado" => "A"));
             }
@@ -306,6 +313,18 @@ class Item extends Eloquent {
 
                         $imagen_modificada = Imagen::editar($datos);
                     }
+                }
+            }
+
+            if (isset($input['seccion_nueva_id']) && ($input['seccion_nueva_id'] != "")) {
+                if ($item->seccionItem()->id != $input['seccion_nueva_id']) {
+                    $data_borrar = array(
+                        'item_id' => $item->id,
+                        'seccion_id' => $item->seccionItem()->id
+                    );
+                    $item->borrarItemSeccion($data_borrar);
+
+                    $item->secciones()->attach($input['seccion_nueva_id'], array('estado' => 'A'));
                 }
             }
 

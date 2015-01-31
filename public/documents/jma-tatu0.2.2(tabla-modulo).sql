@@ -1,3 +1,14 @@
+DROP TABLE IF EXISTS `modulo`;
+CREATE TABLE `modulo` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`nombre` VARCHAR(200) NOT NULL COLLATE 'utf8_unicode_ci',
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_unicode_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=3
+;
+
 DROP TABLE IF EXISTS `menu_modulo`;
 CREATE TABLE `menu_modulo` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -13,17 +24,6 @@ CREATE TABLE `menu_modulo` (
 	INDEX `FK__modulo` (`modulo_id`),
 	CONSTRAINT `FK__menu` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`id`),
 	CONSTRAINT `FK__modulo` FOREIGN KEY (`modulo_id`) REFERENCES `modulo` (`id`)
-)
-COLLATE='utf8_unicode_ci'
-ENGINE=InnoDB
-AUTO_INCREMENT=3
-;
-
-DROP TABLE IF EXISTS `modulo`;
-CREATE TABLE `modulo` (
-	`id` INT(11) NOT NULL AUTO_INCREMENT,
-	`nombre` VARCHAR(200) NOT NULL COLLATE 'utf8_unicode_ci',
-	PRIMARY KEY (`id`)
 )
 COLLATE='utf8_unicode_ci'
 ENGINE=InnoDB

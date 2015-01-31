@@ -75,10 +75,12 @@ class NoticiaController extends BaseController {
 
         //Me quedo con el item, buscando por id
         $noticia = Noticia::find($id);
+        $secciones = parent::seccionesDinamicas();
 
         if ($noticia) {
             $this->array_view['item'] = $noticia->texto()->item();
             $this->array_view['noticia'] = $noticia;
+            $this->array_view['secciones'] = $secciones;
             $this->array_view['continue'] = $next;
             return View::make('noticia.editar', $this->array_view);
         } else {

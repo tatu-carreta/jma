@@ -32,7 +32,7 @@
                 <h2>{{ $item -> titulo }}</h2> 
                 <div class="editor">
                     <h4>Fecha</h4>
-                    {{ $item->texto()->noticia()->fecha }}
+                    {{ date('d/m/Y', strtotime($item->texto()->noticia()->fecha)) }}
                 </div>
                 <div class="editor">
                     <h4>Fuente</h4>
