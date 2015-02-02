@@ -70,10 +70,7 @@
     
     </div>
 
-<div class="colFotos">
 
-
-</div>
 <div class="clear"></div>
 
     @if(Auth::check())

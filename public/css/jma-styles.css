@@ -3,6 +3,8 @@ ul, li {margin: 0; padding: 0; list-style: none}
 a {text-decoration: none}
 p {font-size: 1.125em}
 h2 {font-size: 1.125em; text-transform: uppercase;}
+i{cursor:pointer;}
+.sortable{cursor:move;}
 .clear {clear: both;}
 .container {max-width: 1180px; margin: 0 auto; padding-left:20px; padding-right:20px; }
 
