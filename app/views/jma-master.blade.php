@@ -1,9 +1,9 @@
 <!Doctype html>
-<html lang="ES">
+<html lang="es">
     <head>
         @section('head')
         <meta charset="UTF-8">
-        <title></title>
+        <title>JMA - Perfiles de Acero Galvanizado</title>
 
         <!-- abre LINK -->
 
@@ -13,14 +13,23 @@
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/jma-styles.css')}}"> 
         
         -->
+        <link href="favicon.ico" rel="shortcut icon">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+        <meta name="description" content="">
+        <meta name="Keywords" content="">
+        <meta property="og:image" content="" />
+        <meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
         
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles-admin.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-styles.css')}}"> 
+        <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-stylesmenu.css')}}">
         <link rel="stylesheet" href="{{URL::to('font-awesome-4.2.0/css/font-awesome.css')}}">
         
         <!-- abre SCRIPT -->
         <script src="{{URL::to('js/jquery-1.11.0.min.js')}}"></script>
         <script src="{{URL::to('js/funcs.js')}}"></script>
+        <script src="{{URL::to('js/'.$project_name.'-menu-dropdown.js')}}"></script>
+        <script src="{{URL::to('js/jquery.cross-slide.min.js')}}"></script>
         @show
     </head>
     <body>
@@ -55,12 +64,31 @@
             @endif
         </div>
         @endif
-            <header>
-                <div class="container">
-                    @include('menu.desplegar-menu')
-                </div>            
-            </header>	
-            @yield('div_header')
+        <!-- H E A D E R -->
+	<header class="container">
+            <a href="{{URL::to('')}}"><img class="marca" src="{{URL::to('images/jma.png')}}" alt="Marca JMA Perfiles de Acero Galvanizado"></a>
+            @if(!Auth::check())
+            <div class="suscribirse">
+                <label for="suscribir">Suscripción a Newsletter</label>
+                <form>
+                    <input type="email" name="" id="suscribir" placeholder="Ingrese su mail">
+                    <input type="submit">
+                </form>
+            </div>
+            @endif
+            <div class="clear"></div>
+	</header>
+        
+        @yield('div_header')
+
+	<!-- N A V -->
+	<nav>
+		<div id="cssmenu" class="menu">
+                    @include('menu.'.$project_name.'-desplegar-menu')
+		</div>
+		<div class="clear"></div>
+	</nav>
+            
         @show
         <!-- abre S E C T I O N -->
 
@@ -69,9 +97,8 @@
         @section('footer')
         <!-- abre F O O T E R -->
         <footer>
-            <div class="container">
-		
-            </div>
+            <img class="hoja" src="{{URL::to('images/hoja.png')}}">
+            <p>En <strong>JMA</strong> cuidamos cada uno de los procesos de manera responsable, minimizando el impacto ambiental. Sabemos que colaborando en el cuidado del medio ambiente beneficiamos no sólo a nuestras familias y a la sociedad actual, sino también a las generaciones por venir. El medio ambiente, una prioridad para nosotros.</p>
         </footer>
         
         <script src="{{URL::to('ckeditor/ckeditor.js')}}"></script>
@@ -87,7 +114,6 @@
                 });
             });
         </script>
-        <script src="{{URL::to('js/menu-funcs.js')}}"></script>
 
         @show
     </body>

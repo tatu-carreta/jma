@@ -1,5 +1,5 @@
+<div class="colTextos bordeVerdeLateral paddingTextos">
 
-<div class="divProductos">
     @if(($seccion->titulo != "") || (Auth::check()))<h3 class="floatLeft marginRight" id="{{$seccion->estado.$seccion->id}}">@if($seccion->titulo != ""){{ $seccion -> titulo }} @endif</h3>@endif
     @if(Auth::check())
         @if(Auth::user()->can("editar_seccion"))
@@ -18,7 +18,7 @@
     @if(Auth::check())
     {{ Form::open(array('url' => 'admin/item/ordenar-por-seccion')) }}
     @endif
-    <ul class="ulProductos @if(Auth::check()) sortable @endif">
+    <ul class="listaNoticias @if(Auth::check()) sortable @endif">
             @foreach($seccion -> items as $i)
             <li>
                 @if(Auth::check())
@@ -47,13 +47,19 @@
                 @if(!Auth::check())
                     <a href="{{URL::to('noticia/'.$i->url)}}">
                 @endif
-                <img class="lazy" data-original="@if(!is_null($i->imagen_destacada())){{ URL::to($i->imagen_destacada()->carpeta.$i->imagen_destacada()->nombre) }}@else{{URL::to('images/sinImg.gif')}}@endif" alt="{{$i->titulo}}">
+                <div class="divImgNoticia">
+                    <img class="lazy" data-original="@if(!is_null($i->imagen_destacada())){{ URL::to($i->imagen_destacada()->carpeta.$i->imagen_destacada()->nombre) }}@else{{URL::to('images/sinImg.gif')}}@endif" alt="{{$i->titulo}}">
+                </div>
+                <div class="divInfoNoticia">
+                        <p class="fecha">{{$i->texto()->noticia()->fecha}}</p>
+                        <h3>{{$i->titulo}}</h3>
+                        <p class="bajada">{{$i->descripcion}}</p>	
+                </div>
+                <div class="clear"></div>
                 @if(!Auth::check())
                     </a>
                 @endif
-
-                <p class="tituloProducto"><span>{{ $i->titulo }}</span></p>
-                <a class="detalle" href="{{URL::to('noticia/'.$i->url)}}">Detalle</a>	
+                
                 @if(Auth::check())
                 <input type="hidden" name="orden[]" value="{{$i->id}}">
                 @endif            		
@@ -61,6 +67,14 @@
             @endforeach
         
     </ul>
+    
+    </div>
+
+<div class="colFotos">
+
+
+</div>
+<div class="clear"></div>
 
     @if(Auth::check())
     {{Form::hidden('seccion_id', $seccion->id)}}

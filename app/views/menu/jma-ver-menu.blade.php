@@ -22,12 +22,12 @@
     @if(Session::has('mensaje'))
     <script src="{{URL::to('js/divAlertaFuncs.js')}}"></script>
     @endif
-    <section>
+    <section class="container">
         @if (Session::has('mensaje'))
             <div class="divAlerta ok alert-success">{{ Session::get('mensaje') }}<i onclick="" class="cerrarDivAlerta fa fa-times fa-lg"></i></div>
         @endif
 	<div class="container">
-	    <h2><span>{{ $menu->nombre }}</span></h2>
+	    <h2>{{ $menu->nombre }}</h2>
             @if(Auth::check())
                 <div class="divNuevaSeccion">
                     <div class="floatRight">

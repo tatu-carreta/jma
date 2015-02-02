@@ -4,7 +4,7 @@
     <!-- abre nuevo slide -->
     <script>
         $(function() {
-            $('.slides').crossSlide({
+            $('.slide').crossSlide({
                 speed: 60,
                 fade: 1
               }, [
@@ -17,25 +17,42 @@
                         { src: "{{URL::to('images/slide-2.jpg')}}",   dir: 'down' },
                         { src: "{{URL::to('images/slide-3.jpg')}}",  dir: 'up'   },
                         { src: "{{URL::to('images/slide-4.jpg')}}",  dir: 'down'   },
+                        { src: "{{URL::to('images/slide-5.jpg')}}",  dir: 'down'   }
                     @endif
             ]);
         });
     </script>
-    <!-- cierra nuevo slide -->
-    <div class="slider sliderHome">
-        <div class="txtDestacado">
-            <div class="container">
-            </div>
-        </div>
-        <ul class="slides">
-            
-        </ul>
-    </div>
+    
+    <!-- S L I D E -->
+    <div class="slide"></div>
 @stop
 
 @section('contenido')
-<section>
-    <div class="container">
+<section class="container">
+    <div class="colTextoHome">
+        <h1>Somos la Empresa Argentina Líder en fabricación y comercialización de Perfiles de Acero Galvanizado, desarrollando todas las variantes que demandan el mercado interno y externo:</h1>
     </div>
+    <div class="colFotosHome">
+        <h2>PERFILES DESMONTABLES</h2>
+        <div class="bordeVerdeLateral">
+            <img src="{{URL::to('images/perfiles-desmontables.jpg')}}" alt="Perfiles Desmontables">
+            <p>Sistema de suspensión para cielorrasos desmontables</p>
+        </div>
+    </div>
+    <div class="colFotosHome">
+        <h2>DRYWALL</h2>
+        <div class="bordeVerdeLateral">
+            <img src="{{URL::to('images/drywall.jpg')}}" alt="Perfiles Desmontables">
+            <p>Perfiles y accesorios para construcción en seco</p>
+        </div>
+    </div>
+    <div class="colFotosHome">
+        <h2>STEEL FRAMING</h2>
+        <div class="bordeVerdeLateral">
+            <img src="{{URL::to('images/steel-framing.jpg')}}" alt="Perfiles Desmontables">
+            <p>Perfiles <br>estructurales</p>
+        </div>
+    </div>
+    <div class="clear"></div>
 </section>
 @stop
