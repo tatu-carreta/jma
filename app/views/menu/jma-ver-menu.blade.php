@@ -55,6 +55,12 @@
                         @include('seccion.'.$project_name.'-ver-seccion-producto')
                     @elseif($menu->modulo()->nombre == 'noticia')
                         @include('seccion.'.$project_name.'-ver-seccion-noticia')
+                    @elseif($menu->modulo()->nombre == 'evento')
+                        @include('seccion.'.$project_name.'-ver-seccion-evento')
+                    @elseif($menu->modulo()->nombre == 'portfolio_simple')
+                        @include('seccion.'.$project_name.'-ver-seccion-portfolio-simple')
+                    @elseif($menu->modulo()->nombre == 'portfolio_completo')
+                        @include('seccion.'.$project_name.'-ver-seccion-portfolio-completo')
                     @else
                         @include('seccion.'.$project_name.'-ver-seccion')
                     @endif

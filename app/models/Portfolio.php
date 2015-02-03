@@ -1,11 +1,11 @@
 <?php
 
-class Texto extends Item {
+class Portfolio extends Item {
 
     //Tabla de la BD
-    protected $table = 'texto';
+    protected $table = 'portfolio_simple';
     //Atributos que van a ser modificables
-    protected $fillable = array('item_id', 'cuerpo');
+    protected $fillable = array('item_id');
     //Hace que no se utilicen los default: create_at y update_at
     public $timestamps = false;
 
@@ -23,22 +23,15 @@ class Texto extends Item {
 
         $item = Item::agregarItem($input);
 
-        if (isset($input['cuerpo'])) {
+        $portfolio_simple = static::create(['item_id' => $item['data']->id]);
 
-            $cuerpo = $input['cuerpo'];
-        } else {
-            $cuerpo = NULL;
-        }
-
-        $texto = static::create(['item_id' => $item['data']->id, 'cuerpo' => $cuerpo]);
-
-        if ($texto) {
+        if ($portfolio_simple) {
             $respuesta['error'] = false;
-            $respuesta['mensaje'] = "Texto creado.";
-            $respuesta['data'] = $texto;
+            $respuesta['mensaje'] = "Portfolio creado.";
+            $respuesta['data'] = $portfolio_simple;
         } else {
             $respuesta['error'] = true;
-            $respuesta['mensaje'] = "Error en el texto. Compruebe los campos.";
+            $respuesta['mensaje'] = "Error en el portfolio. Compruebe los campos.";
         }
 
         return $respuesta;
@@ -57,11 +50,9 @@ class Texto extends Item {
             $respuesta['error'] = true;
         } else {
 
-            $texto = Texto::find($input['texto_id']);
+            $portfolio_simple = Portfolio::find($input['portfolio_id']);
 
-            $texto->cuerpo = $input['cuerpo'];
-
-            $texto->save();
+            $portfolio_simple->save();
 
             if (isset($input['descripcion'])) {
 
@@ -72,9 +63,9 @@ class Texto extends Item {
 
             $item = Item::editarItem($input);
 
-            $respuesta['mensaje'] = 'Texto modificado.';
+            $respuesta['mensaje'] = 'Portfolio modificado.';
             $respuesta['error'] = false;
-            $respuesta['data'] = $texto;
+            $respuesta['data'] = $portfolio_simple;
         }
 
         return $respuesta;
@@ -84,16 +75,12 @@ class Texto extends Item {
         return Item::find($this->item_id);
     }
 
-    public function noticia() {
-        return Noticia::where('texto_id', $this->id)->first();
+    public function portfolio_completo() {
+        return PortfolioCompleto::where('portfolio_simple_id', $this->id)->first();
     }
     
-    public function evento() {
-        return Evento::where('texto_id', $this->id)->first();
-    }
-
     public static function buscar($item_id) {
-        return Texto::where('item_id', $item_id)->first();
+        return Portfolio::where('item_id', $item_id)->first();
     }
 
 }

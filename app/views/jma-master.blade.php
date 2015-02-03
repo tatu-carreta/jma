@@ -21,6 +21,8 @@
         <meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
         
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles-admin.css')}}"> 
+        <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/jquery-ui.css')}}"> 
+        <link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles.css')}}"> -->
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-styles.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-stylesmenu.css')}}">
         <link rel="stylesheet" href="{{URL::to('font-awesome-4.2.0/css/font-awesome.css')}}">

@@ -1,11 +1,11 @@
 <?php
 
-class Evento extends Texto {
+class PortfolioCompleto extends Texto {
 
     //Tabla de la BD
-    protected $table = 'evento';
+    protected $table = 'portfolio_completo';
     //Atributos que van a ser modificables
-    protected $fillable = array('texto_id', 'fecha_desde', 'fecha_hasta');
+    protected $fillable = array('portfolio_simple_id', 'cuerpo');
     //Hace que no se utilicen los default: create_at y update_at
     public $timestamps = false;
 
@@ -14,32 +14,25 @@ class Evento extends Texto {
 
 
         //Lo crea definitivamente
-        $texto = Texto::agregar($input);
+        $portfolio_simple = Portfolio::agregar($input);
 
-        if (isset($input['fecha_desde'])) {
+        if (isset($input['cuerpo'])) {
 
-            $fecha_desde = $input['fecha_desde'];
+            $cuerpo = $input['cuerpo'];
         } else {
-            $fecha_desde = NULL;
+            $cuerpo = NULL;
         }
 
-        if (isset($input['fecha_hasta'])) {
+        if (!$portfolio_simple['error']) {
 
-            $fecha_hasta = $input['fecha_hasta'];
-        } else {
-            $fecha_hasta = NULL;
-        }
+            $portfolio_completo = static::create(['portfolio_simple_id' => $portfolio_simple['data']->id, 'cuerpo' => $cuerpo]);
 
-        if (!$texto['error']) {
-
-            $evento = static::create(['texto_id' => $texto['data']->id, 'fecha_desde' => $fecha_desde, 'fecha_hasta' => $fecha_hasta]);
-
-            $respuesta['data'] = $evento;
+            $respuesta['data'] = $portfolio_completo;
             $respuesta['error'] = false;
-            $respuesta['mensaje'] = "Evento creado.";
+            $respuesta['mensaje'] = "Portfolio creado.";
         } else {
             $respuesta['error'] = true;
-            $respuesta['mensaje'] = "El evento no pudo ser creado. Compruebe los campos.";
+            $respuesta['mensaje'] = "El portfolio no pudo ser creado. Compruebe los campos.";
         }
 
 
@@ -60,34 +53,26 @@ class Evento extends Texto {
             $respuesta['error'] = true;
         } else {
 
-            $evento = Evento::find($input['evento_id']);
+            $portfolio_completo = PortfolioCompleto::find($input['portfolio_completo_id']);
 
-            if (isset($input['fecha_desde'])) {
+            if (isset($input['cuerpo'])) {
 
-                $fecha_desde = $input['fecha_desde'];
+                $cuerpo = $input['cuerpo'];
             } else {
-                $fecha_desde = NULL;
+                $cuerpo = NULL;
             }
 
-            if (isset($input['fecha_hasta'])) {
+            $portfolio_completo->cuerpo = $cuerpo;
 
-                $fecha_hasta = $input['fecha_hasta'];
-            } else {
-                $fecha_hasta = NULL;
-            }
+            $portfolio_completo->save();
 
-            $evento->fecha_desde = $fecha_desde;
-            $evento->fecha_hasta = $fecha_hasta;
+            $input['portfolio_id'] = $portfolio_completo->portfolio_simple_id;
 
-            $evento->save();
+            $portfolio_simple = Portfolio::editar($input);
 
-            $input['texto_id'] = $evento->texto_id;
-
-            $texto = Texto::editar($input);
-
-            $respuesta['mensaje'] = 'Evento modificado.';
+            $respuesta['mensaje'] = 'Portfolio modificado.';
             $respuesta['error'] = false;
-            $respuesta['data'] = $evento;
+            $respuesta['data'] = $portfolio_completo;
         }
 
         return $respuesta;
@@ -115,7 +100,7 @@ class Evento extends Texto {
 
             $item->save();
 
-            $respuesta['mensaje'] = 'Evento eliminado.';
+            $respuesta['mensaje'] = 'Portfolio eliminado.';
             $respuesta['error'] = false;
             $respuesta['data'] = $item;
         }
@@ -138,7 +123,7 @@ class Evento extends Texto {
 
             $baja_item_seccion = DB::table('item_seccion')->where($input)->update(array('estado' => 'B'));
 
-            $respuesta['mensaje'] = 'Evento eliminado.';
+            $respuesta['mensaje'] = 'Portfolio eliminado.';
             $respuesta['error'] = false;
             $respuesta['data'] = $baja_item_seccion;
         }
@@ -158,25 +143,25 @@ class Evento extends Texto {
             $respuesta['error'] = true;
         } else {
 
-            $evento = Evento::find($input['evento_id']);
+            $portfolio_completo = PortfolioCompleto::find($input['portfolio_completo_id']);
 
             $data = array(
-                'item_id' => $evento->texto()->item()->id,
-                'seccion_id' => $evento->texto()->item()->seccionItem()->id
+                'item_id' => $portfolio_completo->portfolio_simple()->item()->id,
+                'seccion_id' => $portfolio_completo->portfolio_simple()->item()->seccionItem()->id
             );
 
             $item = Item::destacar($data);
 
-            $respuesta['mensaje'] = 'Evento destacado.';
+            $respuesta['mensaje'] = 'Portfolio destacado.';
             $respuesta['error'] = false;
-            $respuesta['data'] = $evento;
+            $respuesta['data'] = $portfolio_completo;
         }
 
         return $respuesta;
     }
 
-    public function texto() {
-        return Texto::find($this->texto_id);
+    public function portfolio_simple() {
+        return Portfolio::find($this->portfolio_simple_id);
     }
 
 }

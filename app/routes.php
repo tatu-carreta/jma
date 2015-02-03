@@ -49,6 +49,15 @@ Route::get('producto/{url}', 'ProductoController@mostrarInfoProducto');
 //Ruteo de Noticia
 Route::get('noticia/{url}', 'NoticiaController@mostrarInfo');
 
+//Ruteo de Evento
+Route::get('evento/{url}', 'EventoController@mostrarInfo');
+
+//Ruteo de Portfolio
+Route::get('portfolio/{url}', 'PortfolioController@mostrarInfo');
+
+//Ruteo de PortfolioCompleto
+Route::get('portfolio_completo/{url}', 'PortfolioCompletoController@mostrarInfo');
+
 Route::post('admin/producto/producto-consulta', 'ProductoController@consultarProductoLista');
 Route::post('admin/producto/consulta-general', 'ProductoController@consultaGeneral');
 
@@ -227,6 +236,45 @@ Route::group(array('before' => 'auth'), function() {
 //            
 //            Route::post('admin/producto/destacar', 'ProductoController@destacar');
             
+            
+            /*
+             * Ruteo de Evento
+             */
+            Route::get('admin/evento', 'EventoController@vistaListado');
+
+            Route::get('admin/evento/agregar/{seccion_id}', 'EventoController@vistaAgregar');
+
+            Route::post('admin/evento/agregar', 'EventoController@agregar');
+
+            Route::get('admin/evento/editar/{id}/{next}', 'EventoController@vistaEditar');
+
+            Route::post('admin/evento/editar', 'EventoController@editar');
+            
+            /*
+             * Ruteo de Portfolio
+             */
+            Route::get('admin/portfolio', 'PortfolioController@vistaListado');
+
+            Route::get('admin/portfolio/agregar/{seccion_id}', 'PortfolioController@vistaAgregar');
+
+            Route::post('admin/portfolio/agregar', 'PortfolioController@agregar');
+
+            Route::get('admin/portfolio/editar/{id}/{next}', 'PortfolioController@vistaEditar');
+
+            Route::post('admin/portfolio/editar', 'PortfolioController@editar');
+            
+            /*
+             * Ruteo de PortfolioCompleto
+             */
+            Route::get('admin/portfolio_completo', 'PortfolioCompletoController@vistaListado');
+
+            Route::get('admin/portfolio_completo/agregar/{seccion_id}', 'PortfolioCompletoController@vistaAgregar');
+
+            Route::post('admin/portfolio_completo/agregar', 'PortfolioCompletoController@agregar');
+
+            Route::get('admin/portfolio_completo/editar/{id}/{next}', 'PortfolioCompletoController@vistaEditar');
+
+            Route::post('admin/portfolio_completo/editar', 'PortfolioCompletoController@editar');
             
             
             /*
