@@ -18,7 +18,7 @@
             <!-- Abre columna de descripción -->
             <div class="col70Admin datosProducto">
                 <h3>Título de la noticia</h3>
-                <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" maxlength="100">
 
                 <h3>Fecha</h3>
                 <input class="block anchoTotal marginBottom" type="date" name="fecha" placeholder="Fecha" required="true" maxlength="50">
@@ -27,7 +27,7 @@
                 <input class="block anchoTotal marginBottom" type="text" name="fuente" placeholder="Fuente" required="true" maxlength="50">
 
                 <h3>Descripción</h3>
-                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" maxlength="200">
 
                 <h3>Cuerpo</h3>
                 <div class="divEditorTxt marginBottom2">
@@ -36,7 +36,7 @@
             </div>
 
             <!-- Abre columna de imágenes -->
-            <div class="col30 fondoDestacado padding1 cargaImg">
+            <div class="col30Admin fondoDestacado padding1 cargaImg">
                 <h3>Imagen principal</h3>
                 @include('imagen.modulo-imagen-noticia-maxi')
             </div>

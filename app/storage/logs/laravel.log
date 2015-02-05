@@ -281,3 +281,341 @@ Stack trace:
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
 #1 {main} [] []
+[2015-02-05 12:32:09] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:41:42] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:41:55] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:43:03] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:44:47] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:48:30] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:52:47] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:57:34] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:59:37] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 12:59:46] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 13:00:33] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 13:05:00] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 13:06:47] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 13:07:52] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 13:08:36] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 13:12:46] production.ERROR: exception 'ErrorException' with message 'Undefined variable: slide_index' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda(91): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91, Array)
+#1 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#6 C:\xampp\htdocs\jma\app\storage\views\be408fce8decda9cf82ea491e80ae6c2(50): Illuminate\View\View->render()
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#23 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#24 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: slide_index (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\app\storage\views\be408fce8decda9cf82ea491e80ae6c2(50): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: slide_index (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php) (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2015-02-05 13:13:01] production.ERROR: exception 'ErrorException' with message 'Undefined variable: slide_index' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda(91): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91, Array)
+#1 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#6 C:\xampp\htdocs\jma\app\storage\views\be408fce8decda9cf82ea491e80ae6c2(50): Illuminate\View\View->render()
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#23 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#24 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: slide_index (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\app\storage\views\be408fce8decda9cf82ea491e80ae6c2(50): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: slide_index (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php) (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2015-02-05 13:13:10] production.ERROR: exception 'ErrorException' with message 'Undefined variable: slide_index' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda(91): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91, Array)
+#1 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#6 C:\xampp\htdocs\jma\app\storage\views\be408fce8decda9cf82ea491e80ae6c2(50): Illuminate\View\View->render()
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#23 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#24 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: slide_index (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\app\storage\views\be408fce8decda9cf82ea491e80ae6c2(50): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: slide_index (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php) (View: C:\xampp\htdocs\jma\app\views\jma-master.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\03c2415c878555c4fb54ffb2a41b7eda:91
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2015-02-05 16:01:57] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:07:55] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:08:15] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:09:58] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:10:25] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:11:08] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:24:18] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:27:51] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:28:18] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:31:49] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-05 16:34:45] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

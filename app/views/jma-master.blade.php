@@ -68,13 +68,13 @@
         @endif
         <!-- H E A D E R -->
 	<header class="container">
-            <a href="{{URL::to('')}}"><img class="marca" src="{{URL::to('images/jma.png')}}" alt="Marca JMA Perfiles de Acero Galvanizado"></a>
+            <a class="marca" href="{{URL::to('')}}"><img src="{{URL::to('images/jma.png')}}" alt="Marca JMA Perfiles de Acero Galvanizado"></a>
             @if(!Auth::check())
             <div class="suscribirse">
                 <label for="suscribir">Suscripción a Newsletter</label>
                 <form>
                     <input type="email" name="" id="suscribir" placeholder="Ingrese su mail">
-                    <input type="submit">
+                    <input class="flecha" type="submit" value="">
                 </form>
             </div>
             @endif

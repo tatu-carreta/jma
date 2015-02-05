@@ -17,39 +17,30 @@
             @endif
         @endif
         
-        <!--columna producto y descripcion -->
-        <div class="col70">
-            <div class="imgProd">
-                        @if(count($item->imagen_destacada()) > 0)
-                                <img src="{{ URL::to($item->imagen_destacada()->carpeta.$item->imagen_destacada()->nombre) }}" alt="{{$item->titulo}}">
-                                <p>{{$item->imagen_destacada()->epigrafe}}</p>
-                        @else
-                            <li><img src="{{ URL::to('images/sinImg.gif') }}" alt="{{$item->titulo}}"></li>
-                        @endif
+        <!--columna Noticia -->
+        <div class="divNoticia"> 
+            <div class="divCpoNoticia colTextos bordeVerdeLateral paddingTextos">
+                <h2>{{ $item -> titulo }}</h2>
+                <div class="editor">
+                    <p class="fecha">{{ date('d/m/Y', strtotime($item->texto()->noticia()->fecha)) }}</p>
+                    <p>Fuente: <strong>{{ $item->texto()->noticia()->fuente }}</strong></p>
+                    <p class="bajada">{{ $item->descripcion }}</p>
+                </div>
+                <div class="editor">
+                    <p>{{ $item->texto()->cuerpo }}</p>
+                </div>
             </div>
-            
-            <div class="detalleProd">
-                <h2>{{ $item -> titulo }}</h2> 
-                <div class="editor">
-                    <h4>Fecha</h4>
-                    {{ date('d/m/Y', strtotime($item->texto()->noticia()->fecha)) }}
-                </div>
-                <div class="editor">
-                    <h4>Fuente</h4>
-                    {{ $item->texto()->noticia()->fuente }}
-                </div>
-                <div class="editor">
-                    <h4>Descripcion</h4>
-                    {{ $item->descripcion }}
-                </div>
-                <div class="editor">
-                    <h4>Cuerpo</h4>
-                    {{ $item->texto()->cuerpo }}
-                </div>
+        
+            <div class="imgCpoNoticia colFotos">
+                @if(count($item->imagen_destacada()) > 0)
+                        <img src="{{ URL::to($item->imagen_destacada()->carpeta.$item->imagen_destacada()->nombre) }}" alt="{{$item->titulo}}">
+                        <p class="epigrafe">{{$item->imagen_destacada()->epigrafe}}</p>
+                @else
+                    <li><img src="{{ URL::to('images/sinImg.gif') }}" alt="{{$item->titulo}}"></li>
+                @endif
             </div>
             <div class="clear"></div>
         </div>
-        <div class="clear"></div>
     </div>
 </section>
 @stop

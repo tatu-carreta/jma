@@ -23,7 +23,7 @@
             <!-- abre datos del Producto-->
             <div class="col70Admin datosProducto">
                 <h3>Título de la noticia</h3>
-                <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" value="{{ $item->titulo }}" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" value="{{ $item->titulo }}" maxlength="100">
                 
                 <h3>Fecha</h3>
                 <input class="block anchoTotal marginBottom" type="date" name="fecha" placeholder="Fecha" required="true" value="{{ $noticia->fecha }}" maxlength="50">
@@ -32,7 +32,7 @@
                 <input class="block anchoTotal marginBottom" type="text" name="fuente" placeholder="Fuente" required="true" value="{{ $noticia->fuente }}" maxlength="50">
 
                 <h3>Descripción</h3>
-                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" value="{{ $item->descripcion }}" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" value="{{ $item->descripcion }}" maxlength="200">
                 
                 <h3>Cuerpo</h3>
                 <div class="divEditorTxt marginBottom2">
@@ -44,7 +44,7 @@
 
 
             <!-- Columna 60% imágenes-->
-            <div class="col30 fondoDestacado padding1 cargaImg">
+            <div class="col30Admin fondoDestacado padding1 cargaImg">
                 <h3>Imagen principal</h3>
                 @if(!is_null($item->imagen_destacada()))
                     <div class="divCargaImgProducto">
