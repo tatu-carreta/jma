@@ -19,7 +19,7 @@
     {{ Form::open(array('url' => 'admin/item/ordenar-por-seccion')) }}
     @endif
     <ul class="listaNoticias @if(Auth::check()) sortable @endif">
-            @foreach($seccion -> items as $i)
+            @foreach($seccion -> items_noticias() as $i)
             <li>
                 @if(Auth::check())
                 <div class="iconos">
@@ -51,7 +51,7 @@
                     <img class="lazy" data-original="@if(!is_null($i->imagen_destacada())){{ URL::to($i->imagen_destacada()->carpeta.$i->imagen_destacada()->nombre) }}@else{{URL::to('images/sinImg.gif')}}@endif" alt="{{$i->titulo}}">
                 </div>
                 <div class="divInfoNoticia">
-                        <p class="fecha">{{$i->texto()->noticia()->fecha}}</p>
+                        <p class="fecha">{{ date('d/m/Y', strtotime($i->texto()->noticia()->fecha)) }}</p>
                         <h3>{{$i->titulo}}</h3>
                         <p class="bajada">{{$i->descripcion}}</p>	
                 </div>

@@ -220,4 +220,16 @@ class Seccion extends Eloquent {
         return $this->hasMany('Slide', 'seccion_id')->where('estado', 'A')->where('tipo', 'E');
     }
 
+    public function items_noticias() {
+        $noticias = Noticia::orderBy('fecha', 'DESC')->get();
+        
+        $items = array();
+
+        foreach ($noticias as $noticia) {
+            array_push($items, Item::find($noticia->texto()->item()->id));
+        }
+
+        return $items;
+    }
+
 }
