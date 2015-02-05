@@ -81,7 +81,10 @@
             <div class="clear"></div>
 	</header>
         
-        @yield('div_header')
+        <!-- abre nuevo slide -->
+        
+        <!-- S L I D E -->
+        <div class="slide"></div>
 
 	<!-- N A V -->
 	<nav>
@@ -116,7 +119,26 @@
                 });
             });
         </script>
-
+        <script>
+            $(function() {
+                $('.slide').crossSlide({
+                    speed: 60,
+                    fade: 1
+                  }, [
+                        @if(!is_null($slide_index) && !is_null($slide_index->imagenes))
+                            @foreach($slide_index->imagenes as $img)
+                                { src: "{{ URL::to($img->carpeta.$img->nombre) }}", dir: 'up'   },
+                            @endforeach
+                        @else
+                            { src: "{{URL::to('images/slide-1.jpg')}}", dir: 'up'   },
+                            { src: "{{URL::to('images/slide-2.jpg')}}",   dir: 'down' },
+                            { src: "{{URL::to('images/slide-3.jpg')}}",  dir: 'up'   },
+                            { src: "{{URL::to('images/slide-4.jpg')}}",  dir: 'down'   },
+                            { src: "{{URL::to('images/slide-5.jpg')}}",  dir: 'down'   }
+                        @endif
+                ]);
+            });
+        </script>
         @show
     </body>
 </html>

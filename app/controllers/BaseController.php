@@ -10,6 +10,7 @@ class BaseController extends Controller {
         $this->array_view['menus'] = $this->desplegarMenu();
         $this->array_view['menu_estatico'] = $this->menuEstatico();
         $this->array_view['menu_dinamico'] = $this->menuDinamico();
+        $this->array_view['slide_index'] = $this->slideIndex();
     }
 
     /**
