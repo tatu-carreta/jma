@@ -5,7 +5,7 @@
 
 @section('contenido')
     <script src="{{URL::to('js/ckeditorLimitado.js')}}"></script>
-    <div class="modal">
+    <div>
         <h2>carga y modificación de textos</h2>
 
         {{ Form::open(array('url' => 'admin/texto/editar')) }}

@@ -4,7 +4,7 @@
 @section('header')@stop
 
 @section('contenido')
-<div class="modal">
+<div>
     <h2>Crear Slide</h2>
 
     {{ Form::open(array('url' => 'admin/slide/agregar', 'files' => true)) }}

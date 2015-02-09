@@ -4,7 +4,7 @@
 @section('header')@stop
 
 @section('contenido')
-    <div class="modal">
+    <div>
         <h2>Crear Galería</h2>
 
         {{ Form::open(array('url' => 'admin/galeria/agregar', 'files' => true)) }}

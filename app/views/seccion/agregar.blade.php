@@ -4,7 +4,7 @@
 @section('header')@stop
 
 @section('contenido')
-<div class="modal">
+<div>
     {{ Form::open(array('url' => 'admin/seccion/agregar')) }}
     <h2>carga y modificación de secciones</h2>
     <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Nombre de la Sección">

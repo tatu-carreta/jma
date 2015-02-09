@@ -4,7 +4,7 @@
 @section('header')@stop
 
 @section('contenido')
-    <div class="modal">
+    <div>
         <script>
             $(function () {
                 $('.sortable').sortable();

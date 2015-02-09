@@ -10,7 +10,7 @@
         });
     </script>
 
-    <div class="modal">
+    <div>
         <h2>carga y modificación de html</h2>
 
         {{ Form::open(array('url' => 'admin/html/editar')) }}

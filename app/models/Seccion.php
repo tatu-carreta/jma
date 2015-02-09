@@ -238,4 +238,3 @@ class Seccion extends Eloquent {
     }
 
 }
-\Illuminate\Pagination\Presenter
