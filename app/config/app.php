@@ -109,6 +109,8 @@ return array(
         //'TwigBridge\TwigServiceProvider',
         'Intervention\Image\ImageServiceProvider',
         'Zizaco\Entrust\EntrustServiceProvider',
+        'Thujohn\Pdf\PdfServiceProvider',
+        'Maatwebsite\Excel\ExcelServiceProvider',
     ),
     /*
       |--------------------------------------------------------------------------
@@ -146,6 +148,7 @@ return array(
         'Eloquent' => 'Illuminate\Database\Eloquent\Model',
         'Entrust' => 'Zizaco\Entrust\EntrustFacade',
         'Event' => 'Illuminate\Support\Facades\Event',
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
         'File' => 'Illuminate\Support\Facades\File',
         'Form' => 'Illuminate\Support\Facades\Form',
         'Hash' => 'Illuminate\Support\Facades\Hash',
@@ -155,6 +158,7 @@ return array(
         'Lang' => 'Illuminate\Support\Facades\Lang',
         'Log' => 'Illuminate\Support\Facades\Log',
         'Mail' => 'Illuminate\Support\Facades\Mail',
+        'PDF' => 'Thujohn\Pdf\PdfFacade',
         'Paginator' => 'Illuminate\Support\Facades\Paginator',
         'Password' => 'Illuminate\Support\Facades\Password',
         'Queue' => 'Illuminate\Support\Facades\Queue',

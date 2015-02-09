@@ -1,10 +1,29 @@
-1.12.0 / 2014-X-X
+1.14.0 / 2015-02-06
+===================
+* Added isBirthday()
+* Various refactorings
+* Merged MonthsNoOverflow helpers
+* Added 2nd param to diffForHumans() to remove string modifier text
+* Improved readme for installation
+* Simplified __get method
+* timezone support for method formatLocalized
+* Added helpers secondsSinceMidnight() / secondsUntilEndOfDay()
+
+1.13.0 / 2014-09-25
+===================
+* Fixed diffInDaysFiltered() bug.
+* Removed default param from formatLocalized() (thanks @vlakoff)
+* Various refactorings (thanks @lucasmichot @euromark)
+* Updated toXXXString() methods to be camel cased (thanks @euromark)
+* Now using 4 spaces for indent. (thanks @lucasmichot @euromark)
+
+1.12.0 / 2014-09-09
 ===================
 * Add new functions diffInDaysFiltered(), diffInWeekdays() and diffInWeekendDays() (thanks @m4tthumphrey)
 * Fixed XofQuarter methods when moving to a month that doesn't have that day it jumps forward #168
 * Support for microseconds during instantiation and copy.  Be aware that microseconds are ignored for doing any of the math.
 * Microsecond getter.
-* Various refactorings (thanks @lucasmichot)
+* Various refactorings (thanks @lucasmichot @lorenzo)
 
 1.11.0 / 2014-08-25
 ===================
