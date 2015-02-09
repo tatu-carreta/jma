@@ -42,4 +42,38 @@ class HomeController extends BaseController {
         return View::make($this->project_name . '-error', $this->array_view);
     }
 
+    public function consultaContacto() {
+
+        $data = Input::all();
+        $this->array_view['data'] = $data;
+
+        Mail::send('emails.consulta-contacto', $this->array_view, function($message) use($data) {
+                    $message->from($data['email'], $data['nombre'])
+                            ->to('max.-ang@hotmail.com.ar')
+                            ->subject('Consulta')
+                    ;
+                });
+
+        if (count(Mail::failures()) > 0) {
+            $mensaje = 'El mail no pudo enviarse.';
+        } else {
+            $mensaje = 'El mail se envió correctamente';
+        }
+
+        if (isset($data['continue']) && ($data['continue'] != "")) {
+            switch ($data['continue']) {
+                case "contacto":
+                    return Redirect::to('contacto')->with('mensaje', $mensaje);
+                    break;
+                case "menu":
+                    $menu = Menu::find($data['menu_id']);
+
+                    return Redirect::to('menu/' . $menu->url)->with('mensaje', $mensaje);
+                    break;
+            }
+        }
+
+        return Redirect::to("/")->with('mensaje', $mensaje);
+        //return View::make('producto.editar', $this->array_view);
+    }
 }

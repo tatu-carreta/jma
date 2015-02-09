@@ -61,6 +61,8 @@ Route::get('portfolio_completo/{url}', 'PortfolioCompletoController@mostrarInfo'
 Route::post('admin/producto/producto-consulta', 'ProductoController@consultarProductoLista');
 Route::post('admin/producto/consulta-general', 'ProductoController@consultaGeneral');
 
+Route::post('consulta', 'HomeController@consultaContacto');
+
 // Para todas estas rutas el usuario debe haber iniciado sesión. 
 Route::group(array('before' => 'auth'), function() {
 
