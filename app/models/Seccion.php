@@ -221,7 +221,7 @@ class Seccion extends Eloquent {
     }
 
     public function items_noticias() {
-        $noticias = Noticia::orderBy('fecha', 'DESC')->get();
+        $noticias = Noticia::orderBy('fecha', 'DESC')->simplePaginate(2);
         
         $items = array();
 
@@ -229,7 +229,13 @@ class Seccion extends Eloquent {
             array_push($items, Item::find($noticia->texto()->item()->id));
         }
 
-        return $items;
+        $result = array(
+            'paginador' => $noticias,
+            'noticias' => $items
+        );
+        
+        return $result;
     }
 
 }
+\Illuminate\Pagination\Presenter

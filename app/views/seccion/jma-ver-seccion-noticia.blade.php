@@ -19,7 +19,7 @@
     {{ Form::open(array('url' => 'admin/item/ordenar-por-seccion')) }}
     @endif
     <ul class="listaNoticias @if(Auth::check()) sortable @endif">
-            @foreach($seccion -> items_noticias() as $i)
+            @foreach($seccion -> items_noticias()['noticias'] as $i)
             <li>
                 @if(Auth::check())
                 <div class="iconos">
@@ -65,9 +65,10 @@
                 @endif            		
             </li>
             @endforeach
+            
         
     </ul>
-    
+    {{$seccion->items_noticias()['paginador']->links()}}
     </div>
 
 

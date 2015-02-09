@@ -791,3 +791,89 @@ Stack trace:
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
 #1 {main} [] []
+[2015-02-09 10:43:12] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function links() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\7e39659657707282ae5a0ef083401cfc:69
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-09 10:46:52] production.ERROR: exception 'ErrorException' with message 'Use of undefined constant noticias - assumed 'noticias'' in C:\xampp\htdocs\jma\app\storage\views\7e39659657707282ae5a0ef083401cfc:23
+Stack trace:
+#0 C:\xampp\htdocs\jma\app\storage\views\7e39659657707282ae5a0ef083401cfc(23): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#6 C:\xampp\htdocs\jma\app\storage\views\959ecd37088189a94d65ae9bd34bf4e5(55): Illuminate\View\View->render()
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#23 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#24 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'ErrorException' with message 'Use of undefined constant noticias - assumed 'noticias' (View: C:\xampp\htdocs\jma\app\views\seccion\jma-ver-seccion-noticia.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\7e39659657707282ae5a0ef083401cfc:23
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\app\storage\views\959ecd37088189a94d65ae9bd34bf4e5(55): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9745): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'ErrorException' with message 'Use of undefined constant noticias - assumed 'noticias' (View: C:\xampp\htdocs\jma\app\views\seccion\jma-ver-seccion-noticia.blade.php) (View: C:\xampp\htdocs\jma\app\views\seccion\jma-ver-seccion-noticia.blade.php)' in C:\xampp\htdocs\jma\app\storage\views\7e39659657707282ae5a0ef083401cfc:23
+Stack trace:
+#0 C:\xampp\htdocs\jma\bootstrap\compiled.php(9747): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException))
+#1 C:\xampp\htdocs\jma\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\jma\bootstrap\compiled.php(9624): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\jma\bootstrap\compiled.php(9611): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\jma\bootstrap\compiled.php(9602): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\jma\bootstrap\compiled.php(10300): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\jma\bootstrap\compiled.php(9831): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\jma\bootstrap\compiled.php(5195): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\jma\bootstrap\compiled.php(5003): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\jma\bootstrap\compiled.php(4989): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\jma\bootstrap\compiled.php(717): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\jma\bootstrap\compiled.php(698): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\jma\bootstrap\compiled.php(7711): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\xampp\htdocs\jma\bootstrap\compiled.php(8314): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\xampp\htdocs\jma\bootstrap\compiled.php(8261): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\xampp\htdocs\jma\bootstrap\compiled.php(10900): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\xampp\htdocs\jma\bootstrap\compiled.php(659): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2015-02-09 10:50:01] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'' in C:\xampp\htdocs\jma\app\storage\views\7e39659657707282ae5a0ef083401cfc:69
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
