@@ -37,7 +37,7 @@ class Imagen extends Eloquent {
 
             $file = $imagen;
 
-            $count = count($file->getClientOriginalName()) - 5;
+            $count = count($file->getClientOriginalName()) - 4;
 
             $filename = Str::limit(Str::slug($file->getClientOriginalName()), $count, "");
             $extension = $file->getClientOriginalExtension(); //if you need extension of the file
@@ -56,7 +56,7 @@ class Imagen extends Eloquent {
 
             //$upload_success = $file->move($directory, $filename);
 
-            if (Image::make($file)->resize(null, 800, function ($constraint) {
+            if (Image::make($file)->resize(490, null, function ($constraint) {
                         $constraint->aspectRatio();
                         $constraint->upsize();
                     })->save($directory . $filename)) {
@@ -73,7 +73,7 @@ class Imagen extends Eloquent {
 
                 $imagen = static::create($datos);
 
-                $temporary = Image::make($file)->resize(null, 600, function ($constraint) {
+                $temporary = Image::make($file)->resize(490, null, function ($constraint) {
                             $constraint->aspectRatio();
                             $constraint->upsize();
                         })->save(public_path() . "/temporary/" . $filename);
@@ -139,7 +139,12 @@ class Imagen extends Eloquent {
 
                 $upload = Image::make(public_path() . "/temporary/" . $file)->crop($w, $h, $x, $y)->resize(220, 220)->save($directory . $filename);
             } else {
-                $upload = Image::make(public_path() . "/temporary/" . $file)->resize(340, 340)->save($directory . $filename);
+                //para relacion height auto
+                $upload = Image::make(public_path() . "/temporary/" . $file)->resize(230, null, function ($constraint) {
+                    $constraint->aspectRatio();
+                })->save($directory . $filename);
+                //para cuadrado
+                //$upload = Image::make(public_path() . "/temporary/" . $file)->resize(340, 340)->save($directory . $filename);
             }
 
             if ($upload) {

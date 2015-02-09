@@ -82,7 +82,7 @@ class Item extends Eloquent {
                     }
                 } else {
                     $coordenadas = array("x" => $input['x'], "y" => $input['y'], "w" => $input['w'], "h" => $input['h']);
-                    $imagen_creada = Imagen::agregarImagen($input['file'], $input['epigrafe'], $coordenadas);
+                    $imagen_creada = Imagen::agregarImagen($input['file'], $input['epigrafe_imagen_portada'], $coordenadas);
 
                     $item->imagenes()->attach($imagen_creada['data']->miniatura()->id, array("destacado" => "A"));
                 }

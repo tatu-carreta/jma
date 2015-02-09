@@ -1028,3 +1028,11 @@ Stack trace:
 #28 C:\xampp\htdocs\jma\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #29 C:\xampp\htdocs\jma\public\index.php(49): Illuminate\Foundation\Application->run()
 #30 {main} [] []
+[2015-02-09 16:15:48] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-09 16:15:49] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

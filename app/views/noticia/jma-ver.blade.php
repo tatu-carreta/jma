@@ -33,8 +33,8 @@
         
             <div class="imgCpoNoticia colFotos">
                 @if(count($item->imagen_destacada()) > 0)
-                        <img src="{{ URL::to($item->imagen_destacada()->carpeta.$item->imagen_destacada()->nombre) }}" alt="{{$item->titulo}}">
-                        <p class="epigrafe">{{$item->imagen_destacada()->epigrafe}}</p>
+                        <img src="{{ URL::to($item->imagen_destacada()->ampliada()->carpeta.$item->imagen_destacada()->ampliada()->nombre) }}" alt="{{$item->titulo}}">
+                        <p class="epigrafe">{{$item->imagen_destacada()->ampliada()->epigrafe}}</p>
                 @else
                     <li><img src="{{ URL::to('images/sinImg.gif') }}" alt="{{$item->titulo}}"></li>
                 @endif
