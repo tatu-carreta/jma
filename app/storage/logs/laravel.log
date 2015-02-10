@@ -1036,3 +1036,23 @@ Stack trace:
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
 #1 {main} [] []
+[2015-02-10 08:31:27] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function noticia() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\c5cd93bf4ac24a1f8f04658528a17bfb:33
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-10 08:31:45] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function noticia() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\f28f99b310d588329fb08d976a59f201:33
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-10 08:34:24] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\f28f99b310d588329fb08d976a59f201:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-10 08:34:27] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\c5cd93bf4ac24a1f8f04658528a17bfb:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-10 09:44:22] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\f28f99b310d588329fb08d976a59f201:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

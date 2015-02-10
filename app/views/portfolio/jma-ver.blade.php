@@ -13,7 +13,7 @@
        
         @if(Auth::check())
             @if(Auth::user()->can("editar_item"))
-            <a href="{{URL::to('admin/noticia/editar/'.$item->texto()->noticia()->id)}}" data='{{$item -> seccionItem() -> id}}' style="display:none">Editar<i class="fa fa-pencil fa-lg"></i></a>
+            <a href="{{URL::to('admin/portfolio/editar/'.$item->portfolio()->id)}}" data='{{$item -> seccionItem() -> id}}' style="display:none">Editar<i class="fa fa-pencil fa-lg"></i></a>
             @endif
         @endif
         
@@ -31,20 +31,8 @@
             <div class="detalleProd">
                 <h2>{{ $item -> titulo }}</h2> 
                 <div class="editor">
-                    <h4>Fecha</h4>
-                    {{ date('d/m/Y', strtotime($item->texto()->noticia()->fecha)) }}
-                </div>
-                <div class="editor">
-                    <h4>Fuente</h4>
-                    {{ $item->texto()->noticia()->fuente }}
-                </div>
-                <div class="editor">
                     <h4>Descripcion</h4>
                     {{ $item->descripcion }}
-                </div>
-                <div class="editor">
-                    <h4>Cuerpo</h4>
-                    {{ $item->texto()->cuerpo }}
                 </div>
             </div>
             <div class="clear"></div>

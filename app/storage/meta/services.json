@@ -29,7 +29,8 @@
         "Intervention\\Image\\ImageServiceProvider",
         "Zizaco\\Entrust\\EntrustServiceProvider",
         "Thujohn\\Pdf\\PdfServiceProvider",
-        "Maatwebsite\\Excel\\ExcelServiceProvider"
+        "Maatwebsite\\Excel\\ExcelServiceProvider",
+        "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
     ],
     "eager": [
         "Illuminate\\Cookie\\CookieServiceProvider",
@@ -42,7 +43,8 @@
         "Intervention\\Image\\ImageServiceProvider",
         "Zizaco\\Entrust\\EntrustServiceProvider",
         "Thujohn\\Pdf\\PdfServiceProvider",
-        "Maatwebsite\\Excel\\ExcelServiceProvider"
+        "Maatwebsite\\Excel\\ExcelServiceProvider",
+        "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
     ],
     "deferred": {
         "artisan": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",
@@ -119,24 +121,62 @@
         "validation.presence": "Illuminate\\Validation\\ValidationServiceProvider"
     },
     "when": {
-        "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [],
-        "Illuminate\\Auth\\AuthServiceProvider": [],
-        "Illuminate\\Cache\\CacheServiceProvider": [],
-        "Illuminate\\Session\\CommandsServiceProvider": [],
-        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [],
-        "Illuminate\\Routing\\ControllerServiceProvider": [],
-        "Illuminate\\Hashing\\HashServiceProvider": [],
-        "Illuminate\\Html\\HtmlServiceProvider": [],
-        "Illuminate\\Log\\LogServiceProvider": [],
-        "Illuminate\\Mail\\MailServiceProvider": [],
-        "Illuminate\\Database\\MigrationServiceProvider": [],
-        "Illuminate\\Pagination\\PaginationServiceProvider": [],
-        "Illuminate\\Queue\\QueueServiceProvider": [],
-        "Illuminate\\Redis\\RedisServiceProvider": [],
-        "Illuminate\\Remote\\RemoteServiceProvider": [],
-        "Illuminate\\Auth\\Reminders\\ReminderServiceProvider": [],
-        "Illuminate\\Database\\SeedServiceProvider": [],
-        "Illuminate\\Translation\\TranslationServiceProvider": [],
-        "Illuminate\\Validation\\ValidationServiceProvider": []
+        "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [
+
+        ],
+        "Illuminate\\Auth\\AuthServiceProvider": [
+
+        ],
+        "Illuminate\\Cache\\CacheServiceProvider": [
+
+        ],
+        "Illuminate\\Session\\CommandsServiceProvider": [
+
+        ],
+        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [
+
+        ],
+        "Illuminate\\Routing\\ControllerServiceProvider": [
+
+        ],
+        "Illuminate\\Hashing\\HashServiceProvider": [
+
+        ],
+        "Illuminate\\Html\\HtmlServiceProvider": [
+
+        ],
+        "Illuminate\\Log\\LogServiceProvider": [
+
+        ],
+        "Illuminate\\Mail\\MailServiceProvider": [
+
+        ],
+        "Illuminate\\Database\\MigrationServiceProvider": [
+
+        ],
+        "Illuminate\\Pagination\\PaginationServiceProvider": [
+
+        ],
+        "Illuminate\\Queue\\QueueServiceProvider": [
+
+        ],
+        "Illuminate\\Redis\\RedisServiceProvider": [
+
+        ],
+        "Illuminate\\Remote\\RemoteServiceProvider": [
+
+        ],
+        "Illuminate\\Auth\\Reminders\\ReminderServiceProvider": [
+
+        ],
+        "Illuminate\\Database\\SeedServiceProvider": [
+
+        ],
+        "Illuminate\\Translation\\TranslationServiceProvider": [
+
+        ],
+        "Illuminate\\Validation\\ValidationServiceProvider": [
+
+        ]
     }
 }
