@@ -28,7 +28,7 @@ header {height: 5em; padding-top: 1.250em; position: relative;}
 nav {position: relative; z-index: 10;}
 .menu {float:right;}
 
-section {padding-top: 3em; min-height: 20em}
+section {padding-top: 3em; min-height: 20em; position: relative;}
 
 /* F O O T E R */
 footer {position:relative; margin-top: 2.500em; padding: 1px 120px 10px 30px; color:white; background: #bad433; }
@@ -47,10 +47,26 @@ footer p {font-size: 1em}
 .colFotos {max-width: 31em; float: right;}
 
 /* P L A N T A */
-.galeriaPlanta {padding-left:1em; border-bottom:#BAD532 2px solid; border-left:#BAD532 2px solid; position: relative;}
-	.galeriaPlanta img {display: inline-block; width: 135px; height:auto; margin-right: 2em; transition: 1.5s ease;-moz-transition: 1.5s ease;-webkit-transition: 1.5s ease;-o-transition: 1.5s ease;}
+.galeriaPlanta {padding-left:1em; position: relative;}
+	.galeriaPlanta img {display: inline-block; width: 135px; height:auto; margin-right: 2em; transition: 1.5s ease;-moz-transition: 1.5s ease;-webkit-transition: 1.5s ease;-o-transition: 1.5s ease; position: relative; top: 1.5em;}
 	.galeriaPlanta img:last-child {margin-right: 0;}
 	.galeriaPlanta img:hover {transform: scale(1.4);-moz-transform: scale(1.4); -webkit-transform: scale(1.4); -o-transform: scale(1.4); -ms-transform: scale(1.4);}
+
+/* P E R F I L E S,  D R Y W A L L,  S T E E L */
+.tablasPerfiles,  .tablasDrywall, .tablasSteel {padding-top: 2em; }
+.bandaGris {background: #BEC7B4; padding: 0.1em 1em; vertical-align: middle; position: relative; top:2px; z-index: 100 }
+	.bandaGris a span {display: none; }
+	.bandaGris > span {line-height: 38px; display: block; float: left;}
+	.btnIcon {float: right;}
+	a.verGuia {background: url(../images/btnVer.png) no-repeat 0 6px; display: inline-block; width:90px; height: 38px; margin-right: 2em }
+	a.descargar {background: url(../images/btnDescargar.png) no-repeat; display: inline-block; width:171px; height: 38px; }
+
+.bandaNaranja {background: #F16322; color: #fff; padding: 0.5em 1em; text-align: center; font-size: 22px}
+h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
+.suma {display: block; width: 134px; height: 134px; position: absolute; right: 12em; bottom: 2em}
+
+.col50 {width:48%;}
+.tablaDerecha {text-align: right;}
 
 /* N O T I C I A S */
 .fecha {margin-top: 0; color: #BAD532 }
@@ -67,13 +83,42 @@ footer p {font-size: 1em}
 	.divNoticia .imgCpoNoticia img {width: 100%; height: auto}
 .epigrafe {font-size: 1em}
 
+/* C O N T A C T O */
+.colForm {width: 28%; float: left; margin-right: 2% }
+.colContentMapas {width: 69%; float: right;}
+	.colMapa1 {width: 48%; float:left;}
+	.colMapa2 {width: 48%; float:right;}
+	.colMapa1, .colMapa2 {display: table-cell; vertical-align: bottom; height: 500px}
+	.colMapa1 > p, .colMapa2 > p {margin-top: 0}
+.colContentMapas iframe {width: 100%; height: 260px; border:#BAD532 1px solid; box-sizing:border-box;}
+
+.dir, .tel, .mail, .ind {padding-left: 36px; background-repeat: no-repeat; background-position: left top; }
+.dir {background-image: url(../images/ico-dir.png);}
+.ind {background-image: url(../images/ico-ind.png); padding-top: 1.3em; padding-left: 38px !important;}
+.tel {background-image: url(../images/ico-tel.png); line-height: 29px;}
+.mail {background-image: url(../images/ico-mail.png); line-height: 29px;}
+.marcaContacto {text-align: center}
+
+.colForm input[type="text"], .colForm input[type="email"] {background: #fff; border: 1px solid #BAD532;  padding: 6px 12px; font-family: 'Lato', sans-serif; font-size: 16px; margin-bottom: 10px; width: 100%;  box-sizing:border-box;}
+.colForm textarea{border: 1px solid #BAD532; font-family: 'Lato', sans-serif; font-size: 16px; height: 178px; width: 100%; margin-bottom: 1em; box-sizing:border-box;  }
+.enviar {background:#BAD532; border:none; color:#fff; font-size: 16px; padding: 0.625em 0.938em; border-radius: 0.250em; -webkit-border-radius: 0.250em;-moz-border-radius: 0.250em;-o-border-radius: 0.250em; }
+.enviar:hover {background: #93AF52; }
+.copy {margin-top: 70px; font-size: 14px}
+.copy a {color:black; text-decoration: none}
+
 /* Generales */
+.floatRight {float: right;}
+.floatLeft {float: left}
 .bordeVerde {border:#BAD532 2px solid}
 .bordeVerdeLateral {border-top:#BAD532 2px solid; border-left:#BAD532 2px solid;}
+.bordeLateralBajo {border-bottom:#BAD532 2px solid; border-left:#BAD532 2px solid;}
+.bordeLateral {border-left:#BAD532 2px solid;}
+.leftNeg {position:relative; left: -2px}
 .paddingTextos {padding-left: 1em;padding-top: 1em;}
 	.paddingTextos > * {margin-top: 0}
-.marginBottom1{margin-bottom: 1em }
-.marginBottom2{margin-bottom: 2em }
+.marginBottom05 {margin-bottom: 0.5em }	
+.marginBottom1 {margin-bottom: 1em }
+.marginBottom2 {margin-bottom: 2em }
 
 .items {margin-left: -6px; font-size: 1.125em}
 .items li {list-style-image: url(../images/item.png); padding-left: 8px}
