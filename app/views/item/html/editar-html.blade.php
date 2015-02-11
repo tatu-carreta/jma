@@ -6,7 +6,10 @@
 @section('contenido')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('textarea#cuerpo').ckeditor();
+            //$('textarea#cuerpo').ckeditor();
+            CKEDITOR.replace( 'cuerpo', {
+                    allowedContent: true
+            } );
         });
     </script>
 
