@@ -63,6 +63,8 @@ Route::post('admin/producto/consulta-general', 'ProductoController@consultaGener
 
 Route::post('consulta', 'HomeController@consultaContacto');
 
+Route::post('registrar-newsletter', 'ClienteController@registrar');
+
 // Para todas estas rutas el usuario debe haber iniciado sesión. 
 Route::group(array('before' => 'auth'), function() {
 
