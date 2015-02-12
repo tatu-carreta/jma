@@ -127,8 +127,8 @@ input[type="text"], input[type="email"], input[type="password"], input[type="dat
 ::-moz-placeholder { /* Firefox 19+ */ font-family: 'Roboto Condensed', sans-serif; font-size: 0.9em; font-weight: 300 }
 :-ms-input-placeholder { font-family: 'Roboto Condensed', sans-serif; font-size: 0.9em; font-weight: 300 }
 
-textarea {background: #fff; border: 1px solid #C4C6C6; border-radius: 0.250em; -webkit-border-radius: 0.250em;-moz-border-radius: 0.250em;-o-border-radius: 0.250em; display: block; padding: 0.5em 0.7em;font-family: 'Source Sans Pro', sans-serif; font-size: 1.125em; box-sizing: border-box; }
-select {background: #fff; border: 1px solid #CBCBCB; border-radius: 0.250em; -webkit-border-radius: 0.250em;-moz-border-radius: 0.250em;-o-border-radius: 0.250em; padding: 0.6em 1em; min-width: 13.750em; font-size: 0.95em;
+textarea {background: #fff; border: 1px solid #C4C6C6; display: block; padding: 0.5em 0.7em;font-family: 'Source Sans Pro', sans-serif; font-size: 1.125em; box-sizing: border-box; }
+select {background: #fff; border: 1px solid #CBCBCB;  padding: 0.6em 1em; min-width: 13.750em; font-size: 0.95em;
 font-family: 'Source Sans Pro', sans-serif; }
 select option {padding:0.5em 0; border-bottom: 1px solid #333; color:#0e4b70;}
 
