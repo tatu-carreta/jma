@@ -29,9 +29,15 @@
         
         <!-- abre SCRIPT -->
         <script src="{{URL::to('js/jquery-1.11.0.min.js')}}"></script>
+        <script src="{{URL::to('js/jquery-ui.min.js')}}"></script>
         <script src="{{URL::to('js/funcs.js')}}"></script>
         <script src="{{URL::to('js/'.$project_name.'-menu-dropdown.js')}}"></script>
         <script src="{{URL::to('js/jquery.cross-slide.min.js')}}"></script>
+        <script>
+            $(function() {
+                $( "#tabs" ).tabs();
+            });
+        </script>
         @show
     </head>
     <body>
@@ -134,8 +140,7 @@
                             { src: "{{URL::to('images/slide-1.jpg')}}", dir: 'up'   },
                             { src: "{{URL::to('images/slide-2.jpg')}}",   dir: 'down' },
                             { src: "{{URL::to('images/slide-3.jpg')}}",  dir: 'up'   },
-                            { src: "{{URL::to('images/slide-4.jpg')}}",  dir: 'down'   },
-                            { src: "{{URL::to('images/slide-5.jpg')}}",  dir: 'down'   }
+                            { src: "{{URL::to('images/slide-4.jpg')}}",  dir: 'down' }
                         @endif
                 ]);
             });

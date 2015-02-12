@@ -7,6 +7,7 @@
 <link href="favicon.ico" rel="shortcut icon">
 <link href="../../css/jma-styles.css" rel="stylesheet">
 <link href="../../css/jma-stylesmenu.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
 <meta name="description" content="">
@@ -15,10 +16,14 @@
 <meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
 
 <!-- J Q U E R Y -->
-<script src="js/modernizr.custom.98616.js"></script>
+<script src="http://localhost/jma/public/js/modernizr.custom.98616.js"></script>
 <script src="js/jquery-1.11.0.min.js"></script> 
-<script src="js/script.js"></script>
-
+<script src="js/jquery-ui.min.js"></script> 
+		<script>
+			$(function() {
+				$( "#tabs" ).tabs();
+			});
+		</script>
 <!-- Plugin Slide -->
 <script src="js/jquery.cross-slide.min.js"></script>
 <script>
@@ -82,41 +87,52 @@
 	</nav>
 
 	<section class="container">
-		<h3>Perfiles y accesorios para construcción en seco</h3>
-		<div class="colTextos">
-			<div class="bordeVerdeLateral paddingTextos">
-				<p>Drywall es el sitema de Perfiles de Acero Galvanizado y accesorios, que se aplica a la construcción de tabiques, revestimientos y cielorrasos. Resulta el sistema ideal para todo tipo de divisiones interiores.</p>
+		<h3>Sistema de suspensión para cielorrasos desmontables</h3>
+		<!-- abre TABS -->
+			<div id="tabs" class="solapas">
+				<div id="tabs-1">
+					<div class="bordeVerdeLateral paddingTextos">
+						<p>El sistema de suspensión desarrollado con Perfiles de Acero Galvanizado JMA se caracteriza
+							por su resistencia, durabilidad y alta estabilidad. La estructura es visible solamente mediante una
+							cara expuesta que otorga a cada proyecto una apariencia limpia y refinada, siendo la solución
+							ideal para múltiples aplicaciones.</p>
 
-				<ul class="items">
-					<li>Liviano, versátil, muy resistente, económico y de fácil instalación.</li>
-					<li>Con perforaciones especialmente diseñadas para canalizar instalaciones eléctricas y sanitarias.</li>
-					<li>Superficie punteada que servirá como guía al momento de insertar tornillos.</li>
-					<li>Con recubrimiento de zinc, que actúa como barrera a la corrosión por infiltración de humedad.</li>
-					<li>Las estructuras permanecen perfectamente alineadas lo largo del tiempo.</li>
+						<ul class="items">
+							<li>El perfil T principal (larguero) proporciona una conexión fuerte y segura con una precisa alineación.</li>
+							<li>El perfil T secundario permite asegurar la conexión con facilidad para desmontarse,
+								volver a utilizar o reubicarse.</li>
+							<li>Los perfiles T con altura de 32 mm (larguero y travesaño) mantienen los componentes verticales
+								y estables donde se instalan las luminarias.</li>
+							<li>Cubierta galvanizada que inhibe la formación de óxido rojo.</li>
+							<li>Puede ser complementado con otro tipo de acabados interiores.</li>
+						</ul>
+					</div>
+					<div class="bordeLateralBajo tablasPerfiles">
+						<img class="bordeVerde marginBottom1 leftNeg" src="http://localhost/jma/public/images/tabla-perfiles-1.png" alt="JMA">
+						<img class="bordeVerde marginBottom2 leftNeg" src="http://localhost/jma/public/images/tabla-perfiles-2.png" alt="JMA">
+						<img class="bordeVerde marginBottom2 leftNeg" src="http://localhost/jma/public/images/tabla-perfiles-3.png" alt="JMA">
+					</div>
+				</div>
+
+				<div id="tabs-2">
+				    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+				</div>
+
+				<ul class="bandaGris">
+					<li><span>GUÍA DE INSTALACIÓN</span></li>
+				   	<li><a href="#tabs-1">Características</a></li>
+				    <li><a href="#tabs-2" class="verGuia"><span>Ver Guía</span></a></li>
+					<li><a href="" class="descargar"><span>Descargar</span></a></li>
 				</ul>
 			</div>
-			<div class="bordeLateralBajo tablasDrywall">
-				<h4 class="bandaNaranja">PERFILES RIGIDIZADOS + RESISTENTES</h4>
-				<h4 class="subtitulos">ESQUEMA DE INSTALACIÓN</h4>
-				<img class="marginBottom1" src="http://localhost/jma/public/images/esquema.png" alt="Drywall. Esquema de instalación">
-				<h4 class="subtitulos">PERFILES NORMALIZADOS 0,50 mm IRAM IAS 500-243</h4>
-				<img class="marginBottom1" src="http://localhost/jma/public/images/soleras-montantes.png" alt="Drywall. Perfiles Normalizados">
-				<h4 class="subtitulos">ACCESORIOS</h4>
-				<img class="marginBottom1" src="http://localhost/jma/public/images/accesorios.png" alt="Drywall. Accesorios">
-				<div class="bandaGris">
-				<div class="btnIcon">
-					<a href="" class="descargar"><span>Descargar</span></a>
-				</div>
-				<div class="clear"></div>
-			</div>
-			</div>
-			
-			<img class="suma" src="http://localhost/jma/public/images/suma-calidad.png" alt="Sumá Calidad">
-		</div>
+		<!-- cierra TABS -->
+
 
 		<div class="colFotos">
-			<img class="bordeVerde marginBottom1" src="http://localhost/jma/public/images/drywall-1.jpg" alt="Drywall JMA">
-			<img class="bordeVerde marginBottom1" src="http://localhost/jma/public/images/drywall-2.jpg" alt="Drywall JMA">
+			<img class="bordeVerde marginBottom1" src="http://localhost/jma/public/images/perfiles-1.jpg" alt="JMA">
+			<img class="bordeVerde marginBottom1" src="http://localhost/jma/public/images/perfiles-2.jpg" alt="JMA">
+			<img class="bordeVerde marginBottom1" src="http://localhost/jma/public/images/perfiles-3.jpg" alt="JMA">
+			<img src="http://localhost/jma/public/images/perfiles-4.jpg" alt="JMA">
 		</div>
 		<div class="clear"></div>
 	</section>
