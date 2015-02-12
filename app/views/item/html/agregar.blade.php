@@ -8,7 +8,8 @@
         $(document).ready(function() {
             //$('textarea#cuerpo').ckeditor();
             CKEDITOR.replace( 'html', {
-                    allowedContent: true
+                    allowedContent: true,
+                    fillEmptyBlocks: false
             } );
         });
     </script>
