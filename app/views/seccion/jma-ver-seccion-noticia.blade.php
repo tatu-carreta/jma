@@ -52,7 +52,7 @@
                 </div>
                 <div class="divInfoNoticia">
                         <p class="fecha">{{ date('d/m/Y', strtotime($i->texto()->noticia()->fecha)) }}</p>
-                        <h3>{{$i->titulo}}</h3>
+                        <h2>{{$i->titulo}}</h2>
                         <p class="bajada">{{$i->descripcion}}</p>	
                 </div>
                 <div class="clear"></div>
