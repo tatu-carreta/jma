@@ -79,10 +79,10 @@
             @if(!Auth::check())
             <div class="suscribirse">
                 <label for="suscribir">Suscripción a Newsletter</label>
-                <form>
-                    <input type="email" name="" id="suscribir" placeholder="Ingrese su mail">
+                {{ Form::open(array('url' => 'registrar-newsletter')) }}
+                    <input type="email" name="email" id="suscribir" placeholder="Ingrese su mail" required="">
                     <input class="flecha" type="submit" value="">
-                </form>
+                {{ Form::close() }}
             </div>
             @endif
             <div class="clear"></div>

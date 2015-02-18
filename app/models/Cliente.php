@@ -23,7 +23,7 @@ class Cliente extends Eloquent {
         $validator = Validator::make($input, $reglas);
 
         if ($validator->fails()) {
-            $respuesta['mensaje'] = "El nombre de la marca ya existe o supera los 30 caracteres.";
+            $respuesta['mensaje'] = "El email es inválido.";
 
             //Si está todo mal, carga lo que corresponde en el mensaje.
 

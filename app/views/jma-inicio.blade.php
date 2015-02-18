@@ -1,7 +1,13 @@
 @extends($project_name.'-master')
 
 @section('contenido')
+    @if(Session::has('mensaje'))
+        <script src="{{URL::to('js/divAlertaFuncs.js')}}"></script>
+    @endif
 <section class="container">
+    @if (Session::has('mensaje'))
+        <div class="divAlerta ok alert-success">{{ Session::get('mensaje') }}<i onclick="" class="cerrarDivAlerta fa fa-times fa-lg"></i></div>
+    @endif
     <div class="colTextoHome">
         <h1>Somos la Empresa Argentina Líder en fabricación y comercialización de Perfiles de Acero Galvanizado, desarrollando todas las variantes que demandan el mercado interno y externo:</h1>
     </div>

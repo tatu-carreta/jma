@@ -61,37 +61,14 @@ Route::get('portfolio_completo/{url}', 'PortfolioCompletoController@mostrarInfo'
 Route::post('admin/producto/producto-consulta', 'ProductoController@consultarProductoLista');
 Route::post('admin/producto/consulta-general', 'ProductoController@consultaGeneral');
 
-Route::post('consulta', 'HomeController@consultaContacto');
+Route::post('consulta', 'ClienteController@consultaContacto');
 
 Route::post('registrar-newsletter', 'ClienteController@registrar');
 
 // Para todas estas rutas el usuario debe haber iniciado sesión. 
 Route::group(array('before' => 'auth'), function() {
 
-    Route::get('admin/exportar-clientes', function() {
-        Excel::create('Clientes' . date('Ymd'), function($excel) {
-            $excel->sheet('Clientes', function($sheet) {
-
-                $menus = Menu::all();
-
-                $datos = array(
-                    array('Nombre'),
-                );
-
-                foreach ($menus as $menu) {
-                    array_push($datos, array($menu->nombre));
-                }
-
-                $sheet->fromModel($datos, null, 'A1', false, false);
-
-                $sheet->row(1, function($row) {
-
-                    // call cell manipulation methods
-                    $row->setFontWeight('bold');
-                });
-            });
-        })->download('xls');
-    });
+    Route::get('admin/exportar-clientes', 'ClienteController@exportarEmail');
 
     /*
      * Ruteo de Categoría
