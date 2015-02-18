@@ -1056,3 +1056,15 @@ Stack trace:
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
 #1 {main} [] []
+[2015-02-18 14:40:28] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-18 14:40:53] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-02-18 14:41:50] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function seccionItem() on a non-object' in C:\xampp\htdocs\jma\app\storage\views\bf5fea658ec009e8403be937a5d22ef8:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
