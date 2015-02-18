@@ -30,14 +30,16 @@
     @endif
 
     <div class="clear"></div>
-    <h2>{{$i->titulo}}</h2>
+    @if(!is_null($i->titulo) && ($i->titulo != ""))
+        <h2>{{$i->titulo}}</h2>
+    @endif
     @if(is_null($i->texto()) && (is_null($i->html())))
         <p>{{$i->descripcion}}</p>
     @else
         @if(!is_null($i->texto()))
             <p>{{$i->texto()->cuerpo}}</p>
         @else
-            <p>{{$i->html()->cuerpo}}</p>
+            {{$i->html()->cuerpo}}
         @endif
     @endif
 
