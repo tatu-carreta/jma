@@ -818,7 +818,6 @@ button.ui-button::-moz-focus-inner {
 .ui-tabs .ui-tabs-panel {
 	display: block;
 	border-width: 0;
-	padding: 1em 1.4em;
 	background: none;
 }
 .ui-tooltip {
@@ -851,10 +850,7 @@ body .ui-tooltip {
 	color: #222222;
 }
 .ui-widget-header {
-	border: 1px solid #aaaaaa;
-	background: #cccccc url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
 	color: #222222;
-	font-weight: bold;
 }
 .ui-widget-header a {
 	color: #222222;
