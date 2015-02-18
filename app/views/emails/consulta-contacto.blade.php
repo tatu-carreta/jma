@@ -18,8 +18,8 @@
                 @if(isset($data['telefono']))
                 <strong>Teléfono: </strong>{{ $data['telefono'] }}<BR>
                 @endif
-                @if(isset($data['mensaje']))
-                <strong>Consulta: </strong>{{ $data['mensaje'] }}
+                @if(isset($data['consulta']))
+                <strong>Consulta: </strong>{{ $data['consulta'] }}
                 @endif
             </p>
             <!-- datos empresa -->
