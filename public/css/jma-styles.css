@@ -1,6 +1,6 @@
 body {font-family: 'Roboto Condensed', sans-serif; margin: 0}
 ul, li {margin: 0; padding: 0; list-style: none}
-a {text-decoration: none}
+a {text-decoration: none; color: #000;}
 p {font-size: 1.125em}
 h2 {font-size: 1.125em; text-transform: uppercase;}
 h2 a{color: #000}
@@ -54,15 +54,18 @@ footer p {font-size: 1em}
 
 /* P E R F I L E S,  D R Y W A L L,  S T E E L */
 .solapas {width: 40em; float: left; margin-right: 2em; box-sizing: border-box;}/* max-width: 40.500em; */
-.solapas li{background: transparent !important; border: none !important}
-.ui-tabs .ui-tabs-nav li:last-child{position: absolute; right: 0}
+.solapas li {background: transparent !important; border: none !important}
+.solapas li span {line-height: 2.2em;}
+.ui-tabs .ui-tabs-nav li:last-child {position: absolute; right: 0}
 
 .tablasPerfiles,  .tablasDrywall, .tablasSteel {padding-top: 2em; }
 .bandaGris {background: #BEC7B4; padding: 0.1em 1em; vertical-align: middle; position: relative; top:2px; z-index: 100 }
 	.bandaGris a span {display: none; }
-	.bandaGris > span {line-height: 38px; display: block; float: left;}
+	.bandaGris > span {line-height: 38px; display: block; float: left; }
+	.bandaGris li:first-child {margin-right: 2em !important}
 	.btnIcon {float: right;}
 	a.verGuia {background: url(../images/btnVer.png) no-repeat 0 6px; display: inline-block; width:90px; height: 38px; margin-right: 2em }
+	a.ocultarGuia {background: url(../images/btnOcultar.png) no-repeat 0 6px; display: inline-block; width:90px; height: 29px; margin-right: 2em; cursor:pointer !important; }
 	a.descargar {background: url(../images/btnDescargar.png) no-repeat; display: inline-block; width:171px; height: 38px; }
 
 .bandaNaranja {background: #F16322; color: #fff; padding: 0.5em 1em; text-align: center; font-size: 22px}
@@ -127,8 +130,10 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 
 .items {margin-left: -6px; font-size: 1.125em; background: none !important}
 .items li {list-style-image: url(../images/item.png) !important; padding-left: 8px}
-#items {margin-left: -6px; font-size: 1.125em; background: none !important}
-#items li {list-style-image: url(../images/item.png) !important; padding-left: 8px}
+.pItem {margin-left: -21px; margin-bottom: 0.5em; background: url(../images/item.png) no-repeat 0 8px; padding-left: 20px}
+
+.ampliar {transition: 1.5s ease;-moz-transition: 1.5s ease;-webkit-transition: 1.5s ease;-o-transition: 1.5s ease; }
+.ampliar:hover {transform: scale(1.4);-moz-transform: scale(1.4); -webkit-transform: scale(1.4); -o-transform: scale(1.4); -ms-transform: scale(1.4);}
 
 
 /* M E D I A  Q U E R I E S */

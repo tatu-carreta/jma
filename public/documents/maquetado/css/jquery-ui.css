@@ -786,7 +786,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-nav {
 	margin: 0;
-	padding: .2em .2em 0;
+	padding: 0.2em 0.4em;
 }
 .ui-tabs .ui-tabs-nav li {
 	list-style: none;
@@ -800,7 +800,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	float: left;
-	padding: .5em 1em;
+	padding: 0 .3em;
 	text-decoration: none;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
