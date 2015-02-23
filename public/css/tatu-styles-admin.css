@@ -1,3 +1,8 @@
+/*
+verde boton:#93AF52 ;
+verde boton:hover: #BBD531;
+ */
+
 /* -------- A D M I N ----------*/
 
 .divAlerta{position: fixed; bottom: 0; right: 0; width: 260px; padding: 1em 1em 1em 3.2em;; z-index: 1000; color: white; font-size: 1.1em; background-size: 90%}
@@ -9,6 +14,8 @@
 /* P R O D U C T O S */
 
 .divLogin{margin: 100px auto 250px auto; width: 300px;  }
+.divLogin .loginMarca {text-align: center; padding-bottom: 1em; margin-bottom: 1.5em}
+.divLogin .registrarse { padding: 0.5em}
 .divLogin input[type="text"], .divLogin input[type="password"] {width: 100%; margin-bottom: 20px}
 .divLogin input[type="submit"]{float:right;}
 
@@ -89,27 +96,26 @@ margin: 0;padding:0;left:0;top: 0;width: 130px;}
 .col60 {width: 43.750em}
 .col40 {width: 28.750em}
 
-.menu {text-align: center; padding: 30px} /* revisar los estilos de este menu, NO ME GUSTAN*/
-.menu li {display: inline-block; margin: 5px}
+.menuPagEst {text-align: center; padding: 30px} /* revisar los estilos de este menu, NO ME GUSTAN*/
+.menuPagEst li {display: inline-block; margin: 5px}
 
 .bgGris {background: #eee; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 1.250em;margin-bottom: 5em }
 
 .btn, .btnGris, .btnCalado, .btnSec{cursor:pointer; display: inline-block;}
 .btn i, .btnGris i, .btnCalado i, .btnSec i{margin-right: 0.313em}
 
-.btn {background:#3074B1; color:#fff; font-size: 16px; border: 1px solid #255A8B; padding: 0.625em 0.938em; border-radius: 0.250em; -webkit-border-radius: 0.250em;-moz-border-radius: 0.250em;-o-border-radius: 0.250em; }
-.btn:hover {background: #4593D6; border:1px solid #3488D5;}
+.btn {background:#93AF52; color:#fff; font-size: 16px; border: 1px solid #879E49; padding: 0.625em 0.938em; border-radius: 0.250em; -webkit-border-radius: 0.250em;-moz-border-radius: 0.250em;-o-border-radius: 0.250em; }
+.btn:hover {background: #BBD531; border:1px solid #B2C620;}
 
 .btnGris {background:#EFEFEF; color:#0E4B70; border: 1px solid #D1D2D3; padding: 0.625em 0.938em; border-radius: 0.250em; -webkit-border-radius: 0.250em;-moz-border-radius: 0.250em;-o-border-radius: 0.250em;}
 .btnGris:hover {background: #CCCCCC; border:1px solid #999999;}
 
-.btnSec {color:#3074B1; padding: 0.625em 0.938em;}
-.btnSec:hover, .btnSec:hover i:before{color: #53AEFD ;}
+.btnSec {color:#93AF52; padding: 0.625em 0.938em;}
+.btnSec:hover, .btnSec:hover i:before{color: #BBD531;}
 
 .btnCalado {display:inline-block; color:#fff; padding: 0.625em 0.938em;}
-.btnCalado i:before {color:#3074B1;}
-.btnCalado:hover i:before {color: #53AEFD;}
-
+.btnCalado i:before {color:#93AF52;}
+.btnCalado:hover i:before {color: #BBD531;}
 
 
 .alertError {}

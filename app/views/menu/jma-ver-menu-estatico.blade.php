@@ -9,30 +9,32 @@
 
         @if(Auth::check())
             @if(Auth::user()->can("ver_menu_estatico_admin"))
-                <div class="bgGris">
-                    <ul class="menu">
-                        @if(Auth::user()->can("agregar_slide"))
-                            <li><a href="{{URL::to('admin/slide/agregar/'.$menu->id.'/E')}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar slide</a></li>
+                @if(Auth::user()->can("ordenar_seccion_estatica"))
+                            @if(count($menu->secciones) >= 2)
+                                <a href="{{URL::to('admin/seccion/ordenar-por-menu/'.$menu->id)}}" class="btnSec nuevaSeccion"><i class="fa fa-exchange fa-lg"></i>Ordenar secciones</a>
+                            @endif
                         @endif
-                        @if(Auth::user()->can("agregar_slide"))
-                            <li><a href="{{URL::to('admin/slide/agregar/'.$menu->id.'/I')}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar slide en Index</a></li>
-                        @endif
-                        @if(Auth::user()->can("agregar_galeria"))
-                            <li><a href="{{URL::to('admin/galeria/agregar/'.$menu->id)}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar galería</a></li>
-                        @endif
-                        @if(Auth::user()->can("agregar_texto"))
-                            <li><a href="{{URL::to('admin/texto/agregar/'.$menu->id)}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar texto</a></li>
-                        @endif
-                        @if(Auth::user()->can("agregar_html"))
-                            <li><a href="{{URL::to('admin/html/agregar/'.$menu->id)}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar HTML</a></li>
-                        @endif
-                    </ul>
-                    @if(Auth::user()->can("ordenar_seccion_estatica"))
-                        @if(count($menu->secciones) >= 2)
-                            <a href="{{URL::to('admin/seccion/ordenar-por-menu/'.$menu->id)}}" class="btnSec nuevaSeccion"><i class="fa fa-exchange fa-lg"></i>Ordenar secciones</a>
-                        @endif
-                    @endif
-                </div>
+                    <div class="bgGris">
+
+                        <ul class="menuPagEst">
+                            @if(Auth::user()->can("agregar_slide"))
+                                <li><a href="{{URL::to('admin/slide/agregar/'.$menu->id.'/E')}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar slide</a></li>
+                            @endif
+                            @if(Auth::user()->can("agregar_slide"))
+                                <li><a href="{{URL::to('admin/slide/agregar/'.$menu->id.'/I')}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar slide en Index</a></li>
+                            @endif
+                            @if(Auth::user()->can("agregar_galeria"))
+                                <li><a href="{{URL::to('admin/galeria/agregar/'.$menu->id)}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar galería</a></li>
+                            @endif
+                            @if(Auth::user()->can("agregar_texto"))
+                                <li><a href="{{URL::to('admin/texto/agregar/'.$menu->id)}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar texto</a></li>
+                            @endif
+                            @if(Auth::user()->can("agregar_html"))
+                                <li><a href="{{URL::to('admin/html/agregar/'.$menu->id)}}" class="btn nuevaSeccion"><i class="fa fa-plus fa-lg"></i>Agregar HTML</a></li>
+                            @endif
+                        </ul>
+                        
+                    </div>
             @endif
         @endif
 

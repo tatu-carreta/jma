@@ -221,7 +221,7 @@ class Seccion extends Eloquent {
     }
 
     public function items_noticias() {
-        $noticias = Noticia::orderBy('fecha', 'DESC')->simplePaginate(10);
+        $noticias = Noticia::orderBy('fecha', 'DESC')->simplePaginate(2);
         
         $items = array();
 

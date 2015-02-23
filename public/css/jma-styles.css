@@ -37,9 +37,9 @@ footer p {font-size: 1em}
 
 
 /* H O M E */
-.colTextoHome {float: left; width:14.500em; padding-right: 1em }
+.colTextoHome {float: left; max-width:14.500em; padding-right: 1em }
 .colTextoHome h1 {font-size: 1.125em; font-weight: 400; margin-top: 3em;}
-.colFotosHome {float: left; width:15.750em; margin-right:2.375em  }
+.colFotosHome {float: left; max-width:15.750em; margin-right:2.375em  }
 	.colFotosHome p {padding-left: 1em}
 
 /* Q U I E N E S  S O M O S */
@@ -90,6 +90,13 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.divNoticia .imgCpoNoticia img {width: 100%; height: auto}
 .epigrafe {font-size: 1em}
 
+.pagination {float: right;}
+.pagination li {display: inline-block; padding: 0 0.3em;}
+.pagination li a, .pagination li.active span, .pagination li.disabled span {display: block; width:1.5em; height: 1.5em; line-height: 1.5em; text-align: center; color: #fff; }
+.pagination li a {background: #93AF52;}
+.pagination li.active span {background: #BBD531;}
+.pagination li.disabled span {background: #E8EFD8;}
+
 /* C O N T A C T O */
 .colForm {width: 28%; float: left; margin-right: 2% }
 .colContentMapas {width: 69%; float: right;}
@@ -137,6 +144,8 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 
 
 /* M E D I A  Q U E R I E S */
+
 @media screen and (max-width: 1160px) {
-	
+	.colTextoHome {width:21%; padding-right: 1% }
+	.colFotosHome {width:24%; margin-right:2%  }
 }
