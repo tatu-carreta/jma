@@ -1,8 +1,8 @@
 <ul>
 @foreach($menus as $m)
     @if(count($m->children) > 0)
-    <li>
-    <a href="#" class='has-sub btn0' data-id="{{$m->id}}" data-nivel="1">{{$m->nombre}}</a>
+    <li class='has-sub btn0'>
+    <a href=""  data-id="{{$m->id}}" data-nivel="1">{{$m->nombre}}</a>
         <ul>
             <?php $i = 1; ?>
             @foreach($m->children as $c)

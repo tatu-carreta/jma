@@ -29,9 +29,10 @@
         
         <!-- abre SCRIPT -->
         <script src="{{URL::to('js/jquery-1.11.0.min.js')}}"></script>
+         <script src="{{URL::to('js/'.$project_name.'-menu-dropdown.js')}}"></script>
         <script src="{{URL::to('js/jquery-ui.min.js')}}"></script>
         <script src="{{URL::to('js/funcs.js')}}"></script>
-        <script src="{{URL::to('js/'.$project_name.'-menu-dropdown.js')}}"></script>
+       
         <script src="{{URL::to('js/jquery.cross-slide.min.js')}}"></script>
         <script>
             $(function() {
