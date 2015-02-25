@@ -11,9 +11,12 @@ header {height: 6em; padding-top: 1.250em; position: relative;}
 .marca {position: absolute; top: 1em; z-index: 100}
 .suscribirse {float: right; width: 12em; margin-top: 1.250em}
 
-/* slide */
+/* slide 
 .slide {min-height: 256px; border-bottom: 5px solid #BEC7B4 }
-.slide img {width: 100% !important; height: auto !important; left: 0 !important;}
+.slide img {width: 100% !important; height: auto !important; left: 0 !important;}*/
+.flexslider {border-bottom: 5px solid #BEC7B4; margin: 0; padding: 0; }
+.flexslider img {width: 100% !important; height: auto !important; margin: 0}
+.flex-control-nav, .flex-direction-nav {display: none}
 
 
 /* N A V */

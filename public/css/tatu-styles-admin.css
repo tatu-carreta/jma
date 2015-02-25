@@ -50,7 +50,7 @@ section.admin h2, section.admin h3 {display: inline-block; padding-right: 0.625e
 .divCargaImgProducto i.fa-times{position: absolute; top: 0.5em; right: 0.5em}
 
 .divCargaImg{height: 19.375em; width: 19.375em; border: 1px solid #ccc; position: relative; box-sizing: border-box;}
-.divCargaImg img{border:0; height: 19.375em; width: 19.375em; display: block}
+.divCargaImg img{border:0; width: 19.375em; display: block}
 
 .divEditorTxt{margin-bottom: 20px;}
 a.btnDestacar{font-size: 1.5em; font-weight: 300; cursor: pointer}

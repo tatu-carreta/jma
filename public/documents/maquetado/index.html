@@ -18,6 +18,20 @@
 <script src="js/jquery-1.11.0.min.js"></script> 
 <script src="js/script.js"></script>
 
+<script src="js/jquery.flexslider.js"></script>
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+    	animation: "slide",
+    	direction: "vertical",
+    	easing: "swing",
+    	animationSpeed: 1500,
+    	slideshowSpeed: 4000
+    });
+  });
+</script>
+
 <!-- Plugin Slide 
 <script src="js/jquery.cross-slide.min.js"></script>
 <script>
@@ -51,8 +65,24 @@
 		<div class="clear"></div>
 	</header>
 
-	<!-- S L I D E -->
-	<div class="slide"></div>
+	<!-- S L I D E 
+	<div class="slide"></div>-->
+	<div class="flexslider">
+		<ul class="slides">
+		    <li>
+		    	<img src="images/slide1.jpg" />
+		    </li>
+		    <li>
+		    	<img src="images/slide2.jpg" />
+		    </li>
+		    <li>
+		    	<img src="images/slide3.jpg" />
+		    </li>
+		    <li>
+		    	<img src="images/slide4.jpg" />
+		    </li>
+		</ul>
+	</div>
 
 	<!-- N A V -->
 	<nav>
