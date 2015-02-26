@@ -35,9 +35,9 @@ section.admin h2, section.admin h3 {display: inline-block; padding-right: 0.625e
 /* estilos  M O D A L */
 .modal{width: 54.4em; padding: 3.2em; border-radius: 1em; -webkit-border-radius: 1em; -moz-border-radius: 1em; -o-border-radius: 1em;-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.9); -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.9); box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.9); margin-top: 8.5em; margin-left: -30.4em; position: absolute; z-index: 999; left:50% }
 
-.divNuevaSeccion{padding-bottom: 1.5em; border-bottom: 1px dashed #C6C6C6; margin-bottom: 2em;}
-.datosProducto label{margin-right: 1em}
-.datosProducto select{font-size: 1em; color:#B2B2B2; margin-right: 0.5em; width: }
+.divNuevaSeccion {padding-bottom: 1.5em; margin-bottom: 2em;}
+.datosProducto label {margin-right: 1em}
+.datosProducto select {font-size: 1em; color:#B2B2B2; margin-right: 0.5em; width: }
 
 .divVerMarcaPrincipal p{margin-top: 0.5em; }
 .marca_imagen_preview{width: 44px; height: 44px; display: inline-block;vertical-align: middle; padding-bottom: 3px}

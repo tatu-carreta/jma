@@ -37,7 +37,7 @@
 
             <!-- Abre columna de imágenes -->
             <div class="col30Admin fondoDestacado padding1 cargaImg">
-                <h3>Imagen principal</h3>
+                <h3>Imagen de la noticia</h3>
                 @include('imagen.modulo-imagen-noticia-maxi')
             </div>
 

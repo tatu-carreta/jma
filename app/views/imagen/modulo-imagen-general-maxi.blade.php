@@ -25,7 +25,7 @@
         </span>
         </label>
         <input type="text" class="url-archivo1 campoNomArchivo">
-        <p>La imagen debe medir mínimo 300 x 300px.</p>
+        <p>La imagen debe medir mínimo 500px de ancho.</p>
 <!-- fin -->
 
         <div class="divCargaImg marginBottom1">
