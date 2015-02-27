@@ -16,7 +16,7 @@ class Item extends Eloquent {
 
         //Se definen las reglas con las que se van a validar los datos..
         $reglas = array(
-            'titulo' => array('max:50', 'unique:item'),
+            'titulo' => array('max:100', 'unique:item'),
             'seccion_id' => array('integer'),
         );
 

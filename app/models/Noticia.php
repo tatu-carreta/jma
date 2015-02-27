@@ -39,7 +39,7 @@ class Noticia extends Texto {
             $respuesta['mensaje'] = "Noticia creada.";
         } else {
             $respuesta['error'] = true;
-            $respuesta['mensaje'] = "La noticia no pudo ser creado. Compruebe los campos.";
+            $respuesta['mensaje'] = $texto['mensaje'];
         }
 
 
