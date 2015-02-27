@@ -226,7 +226,7 @@ class Seccion extends Eloquent {
         $items = array();
 
         foreach ($noticias as $noticia) {
-            array_push($items, Item::find($noticia->texto()->item()->id));
+            array_push($items, Item::where('estado', 'A')->find($noticia->texto()->item()->id));
         }
 
         $result = array(

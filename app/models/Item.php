@@ -380,7 +380,7 @@ class Item extends Eloquent {
 
             $item->save();
 
-            $respuesta['mensaje'] = 'Producto eliminado';
+            $respuesta['mensaje'] = 'Eliminado';
             $respuesta['error'] = false;
             $respuesta['data'] = $item;
         }
@@ -406,7 +406,7 @@ class Item extends Eloquent {
             $baja_item_seccion = DB::table('item_seccion')->where($input)->update(array(
                 'estado' => 'B'));
 
-            $respuesta['mensaje'] = 'Producto eliminado.';
+            $respuesta['mensaje'] = 'Eliminado.';
             $respuesta['error'] = false;
             $respuesta['data'] = $baja_item_seccion;
         }
