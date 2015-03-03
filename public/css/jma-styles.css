@@ -22,7 +22,7 @@ header {height: 5em; padding-top: 1.250em; position: relative;}
 /* slide */
 .slide {min-height: 256px; border-bottom: 5px solid #BEC7B4 }
 .slide img {width: 100% !important; height: auto !important; left: 0 !important;}
-
+.imgSlide {display: none; border-bottom: 5px solid #BEC7B4; max-height: 256px; overflow: hidden; font-size: 0}
 
 /* N A V */
 nav {position: relative; z-index: 10;}
@@ -53,7 +53,7 @@ footer p {font-size: 1em}
 	.galeriaPlanta img:hover {transform: scale(1.7);-moz-transform: scale(1.7); -webkit-transform: scale(1.7); -o-transform: scale(1.7); -ms-transform: scale(1.7);}
 
 /* P E R F I L E S,  D R Y W A L L,  S T E E L */
-.solapas {width: 40em; float: left; margin-right: 2em; box-sizing: border-box;}/* max-width: 40.500em; */
+.solapas {width: 55%; float: left; margin-right: 1.5%; box-sizing: border-box;}/* max-width: 40.500em; */
 .solapas li {background: transparent !important; border: none !important}
 .solapas li span {line-height: 2.2em;}
 .ui-tabs .ui-tabs-nav li:last-child {position: absolute; right: 0}
@@ -144,36 +144,78 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 
 
 /* M E D I A  Q U E R I E S */
-@media screen and (max-width: 1190px) {
-	.colFotos img {width: 100%; height: auto;}
+@media screen and (max-width: 1350px) {
+	.slide {display: none }
+	.imgSlide {display: block}
+	/*.imgSlide img {width: 100%; height: auto;}*/
 }
 
 @media screen and (max-width: 1190px) {
 	.colTextoHome {width:21%; padding-right: 2% }
-	.colFotosHome {width:23%; margin-right:2%  }
+	.colFotosHome {width:23%; margin-right:2% }
 		.colFotosHome img {width: 100%; height: auto;}
+	.colFotos img {width: 100%; height: auto;}
+	.suma {width: 134px !important; height: 134px !important}
+	.ui-tabs-panel img, .tablasPerfiles img, .col50 img {width: 100%; height: auto;}
+}
+@media screen and (max-width: 1110px) {
+	.ui-tabs .ui-tabs-nav li {float: none;}
+	.ui-tabs .ui-tabs-nav li:last-child {position: static;}
 }
 
 @media screen and (max-width: 1000px) {
 	header {height: auto; text-align: center}
 	.marca {position: static; margin-bottom: 0.5em;}
 	.suscribirse {float: none; margin: 0 auto;}
+	.galeriaPlanta img {width: 17.5%; margin: 1%;}
+	.galeriaPlanta img:nth-child(6), .galeriaPlanta img:nth-child(7) {display: none;}
+	.colMapa1, .colMapa2 {font-size: 1em}
+	
+}
+@media screen and (max-width: 940px) {
+	.data-fiscal {display: none;}
+	.colMapa1, .colMapa2 {font-size: 1.125em}
 }
 
 @media screen and (max-width: 910px) {
-		section {padding-top: 0}
-		.colTextoHome {width:100%; padding-right: 0; float: none }
-		.colFotosHome {width:30.3%; margin-right:3%  }
+	section {padding-top: 0}
+	.colTextoHome {width:100%; padding-right: 0; float: none }
+	.colFotosHome {width:30.3%; margin-right:3%  }
+
+	.colForm {width: 70%; margin: 2em auto 3em; float: none; }
+	.copy {display: none;}
+	.colContentMapas {width: 100%; float: none;}
+	.data-fiscal {display: block;}	
 }
+
+@media screen and (max-width: 800px) {
+	.listaNoticias .divImgNoticia {width: 130px;}
+	.listaNoticias .divInfoNoticia {float: none; margin-left: 150px;}
+}	
+
 @media screen and (max-width: 710px) {
-		.marca img {width: 100%; height: auto}
-		.colFotosHome h2 {height: 2.5em;}
-		.colTextos, .colFotos {width: 100%; float: none;}
+	.marca img {width: 100%; height: auto}
+	.colFotosHome h2 {height: 2.5em;}
+	.colTextos, .colFotos, .solapas, .col50 {width: 100%; float: none;}
+	.colMapa1, .colMapa2 {font-size: 1em}
+	.solapas {margin-bottom: 3em}
+	.suma {position: static; float: right; }
+	.items {padding-bottom: 1em}
+}
+@media screen and (max-width: 670px) {
+	.colFotosHome h2 {height: 2em; font-size: 1.1em}
+	.colFotosHome p {font-size: 1em}
+	.galeriaPlanta img {width: 22%; margin: 1%;}
+	.galeriaPlanta img:nth-child(5) {display: none;}
+	.colForm {width: 100%;}
+	.colMapa1, .colMapa2 {width: 100%; float: none; display: block}
+	.marcaContacto img {width: 100%; height: auto}
 }
 @media screen and (max-width: 500px) {
-		.colFotosHome h2 {height: 2em; font-size: 1.1em}
-		.colFotosHome p {font-size: 1em}
+	.colFotosHome h2 {height: 2em; font-size: 1.1em}
+	.colFotosHome p {font-size: 1em}
+	.galeriaPlanta img {width: 47%; margin: 1%;}
 }
 @media screen and (max-width: 400px) {
-		.colFotosHome {width:100%; margin-right:0; margin-bottom: 2em }
+	.colFotosHome {width:100%; margin-right:0; margin-bottom: 2em }
 }
