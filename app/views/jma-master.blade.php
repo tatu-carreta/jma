@@ -93,9 +93,9 @@
         
         <!-- S L I D E -->
         <div class="slide"></div>
-        <div class="imgSlide">
+        <!--<div class="imgSlide">
             <img src="{{URL::to('images/slide.jpg')}}" alt="JMA">
-        </div>
+        </div>-->
 	<!-- N A V -->
 	<nav>
 		<div id="cssmenu" class="menu">
