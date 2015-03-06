@@ -33,7 +33,7 @@
         <script src="{{URL::to('js/jquery-ui.min.js')}}"></script>
         <script src="{{URL::to('js/funcs.js')}}"></script>
        
-        <script src="{{URL::to('js/jquery.cross-slide.min.js')}}"></script>
+        <script src="{{URL::to('js/jquery.cross-slide.js')}}"></script>
         <script>
             $(function() {
                 $( "#tabs" ).tabs();
@@ -76,7 +76,7 @@
         @endif
         <!-- H E A D E R -->
 	<header class="container">
-            <a class="marca" href="{{URL::to('')}}"><img src="{{URL::to('images/jma.png')}}" alt="Marca JMA Perfiles de Acero Galvanizado"></a>
+            <a class="marca" href="{{URL::to('')}}"><span>JMA Perfiles de Acero Galvanizado</span></a><!-- <img src="{{URL::to('images/jma.png')}}" alt="Marca JMA Perfiles de Acero Galvanizado">-->
             @if(!Auth::check())
             <div class="suscribirse">
                 <label for="suscribir">Suscripción a Newsletter</label>
@@ -93,9 +93,9 @@
         
         <!-- S L I D E -->
         <div class="slide"></div>
-        <!--<div class="imgSlide">
+        <div class="imgSlide">
             <img src="{{URL::to('images/slide.jpg')}}" alt="JMA">
-        </div>-->
+        </div>
 	<!-- N A V -->
 	<nav>
 		<div id="cssmenu" class="menu">
@@ -132,7 +132,7 @@
         <script>
             $(function() {
                 $('.slide').crossSlide({
-                    speed: 60,
+                    speed: 80,
                     fade: 1
                   }, [
                         @if(!is_null($slide_index) && !is_null($slide_index->imagenes))
@@ -141,9 +141,9 @@
                             @endforeach
                         @else
                             { src: "{{URL::to('images/slide-1.jpg')}}", dir: 'up'   },
-                            { src: "{{URL::to('images/slide-2.jpg')}}",   dir: 'down' },
-                            { src: "{{URL::to('images/slide-3.jpg')}}",  dir: 'up'   },
-                            { src: "{{URL::to('images/slide-4.jpg')}}",  dir: 'down' }
+                            { src: "{{URL::to('images/slide-2.jpg')}}", dir: 'down' },
+                            { src: "{{URL::to('images/slide-3.jpg')}}", dir: 'up'   },
+                            { src: "{{URL::to('images/slide-4.jpg')}}", dir: 'down' }
                         @endif
                 ]);
             });
@@ -151,3 +151,4 @@
         @show
     </body>
 </html>
+

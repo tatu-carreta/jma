@@ -12,7 +12,9 @@ i{cursor:pointer;}
 
 /* H E A D E R */
 header {height: 5em; padding-top: 1.250em; position: relative;}
-.marca {position: absolute; top: 1em; z-index: 100; display: inline-block;}
+.marca {background: url(../images/jma.png) no-repeat; width: 640px; height: 95px; position: absolute; top: 1em; z-index: 100; display: inline-block;}
+.marca span {display: none}
+
 .suscribirse {float: right; width: 18em; margin-top: 0.5em; text-align: center}
 	.suscribirse form {position: relative;}
 	.suscribirse label {margin-bottom: 0.3em; display: block}
@@ -144,11 +146,6 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 
 
 /* M E D I A  Q U E R I E S */
-@media screen and (max-width: 1350px) {
-	.slide {display: none }
-	.imgSlide {display: block}
-	/*.imgSlide img {width: 100%; height: auto;}*/
-}
 
 @media screen and (max-width: 1190px) {
 	.colTextoHome {width:21%; padding-right: 2% }
@@ -187,11 +184,18 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.colContentMapas {width: 100%; float: none;}
 	.data-fiscal {display: block;}	
 }
+@media screen and (max-width: 850px) {
+	.slide {min-height: 200px;}
+}
 
 @media screen and (max-width: 800px) {
 	.listaNoticias .divImgNoticia {width: 130px;}
 	.listaNoticias .divInfoNoticia {float: none; margin-left: 150px;}
 }	
+
+@media screen and (max-width: 760px) {
+	.slide {min-height: 160px;}
+}
 
 @media screen and (max-width: 710px) {
 	.marca img {width: 100%; height: auto}
@@ -203,7 +207,9 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.items {padding-bottom: 1em}
 	.bordeLateral {border:none;}
 }
+
 @media screen and (max-width: 670px) {
+	.marca {background: url(../images/jma-admin.png) no-repeat center; width: 100%;}
 	.colFotosHome h2 {height: 2em; font-size: 1.1em}
 	.colFotosHome p {font-size: 1em}
 	.galeriaPlanta img {width: 22%; margin: 1%;}
@@ -212,11 +218,19 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.colMapa1, .colMapa2 {width: 100%; float: none; display: block}
 	.marcaContacto img {width: 100%; height: auto}
 }
+
+@media screen and (max-width: 650px) {
+	.slide {display: none }
+	.imgSlide {display: block}
+	.imgSlide img {width: 100%; height: auto;}
+}
+
 @media screen and (max-width: 500px) {
 	.colFotosHome h2 {height: 2em; font-size: 1.1em}
 	.colFotosHome p {font-size: 1em}
 	.galeriaPlanta img {width: 47%; margin: 1%;}
 }
+
 @media screen and (max-width: 400px) {
 	.colFotosHome {width:100%; margin-right:0; margin-bottom: 2em }
 }
