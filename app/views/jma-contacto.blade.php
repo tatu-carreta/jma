@@ -40,7 +40,12 @@
                 </div>
                 <div class="clear"></div>
                 <div class="marcaContacto">
-                    <img src="http://www.perfilesjma.com.ar/nuevo/public/images/jma-contacto.png" alt="JMA Compromiso de Solidez">
+                    <img class="logoContacto" src="http://www.perfilesjma.com.ar/nuevo/public/images/jma-contacto.png" alt="JMA Compromiso de Solidez">
+                    <ul class="redes">
+                        <li><a href="https://www.facebook.com/perfiles.jma" class="face" target="_blank"><span>Facebook</span></a></li>
+                        <li><a href="https://twitter.com/perfilesjma" class="twitter" target="_blank"><span>Twitter</span></a></li>
+                        <li><a href="https://ar.linkedin.com/pub/perfiles-jma/63/446/1b2" class="linkedin" target="_blank"><span>Linkedin</span></a></li>
+                    </ul>
                 </div>
 
             </div>
