@@ -1088,3 +1088,4 @@ Stack trace:
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
 #1 {main} [] []
+[2015-03-16 14:58:38] production.INFO: Pretending to mail message to: max.-ang@hotmail.com.ar [] []

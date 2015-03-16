@@ -50,7 +50,7 @@ class Cliente extends Eloquent {
             $cliente = static::create($datos);
 
             //Mensaje correspondiente a la agregacion exitosa
-            $respuesta['mensaje'] = 'Cliente creado.';
+            $respuesta['mensaje'] = 'Gracias por suscribirse.';
             $respuesta['error'] = false;
             $respuesta['data'] = $cliente;
         }
