@@ -21,7 +21,7 @@
                 <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" maxlength="100">
 
                 <h3>Fecha</h3>
-                <input class="block anchoTotal marginBottom" type="date" name="fecha" placeholder="Fecha" required="true" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="fecha" placeholder="dd/mm/yyyy" required="true" maxlength="50">
 
                 <h3>Fuente</h3>
                 <input class="block anchoTotal marginBottom" type="text" name="fuente" placeholder="Fuente" required="true" maxlength="50">

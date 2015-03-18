@@ -104,7 +104,7 @@ class NoticiaController extends BaseController {
          * 
          */
         if ($respuesta['error'] == true) {
-            return Redirect::to('admin/noticia/editar/' . Input::get('noticia_id'))->with('mensaje', $respuesta['mensaje']);
+            return Redirect::to('admin/noticia/editar/' . Input::get('noticia_id')."/".Input::get('continue'))->with('mensaje', $respuesta['mensaje']);
             //return Redirect::to('admin/producto')->withErrors($respuesta['mensaje'])->withInput();
         } else {
             if (Input::get('continue') == "home") {

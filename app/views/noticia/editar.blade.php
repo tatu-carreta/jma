@@ -26,7 +26,7 @@
                 <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" value="{{ $item->titulo }}" maxlength="100">
                 
                 <h3>Fecha</h3>
-                <input class="block anchoTotal marginBottom" type="date" name="fecha" placeholder="Fecha" required="true" value="{{ $noticia->fecha }}" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="fecha" placeholder="Fecha" required="true" value="{{ date('d/m/Y', strtotime($noticia->fecha)) }}" maxlength="50">
                 
                 <h3>Fuente</h3>
                 <input class="block anchoTotal marginBottom" type="text" name="fuente" placeholder="Fuente" required="true" value="{{ $noticia->fuente }}" maxlength="50">

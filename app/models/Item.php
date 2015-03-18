@@ -182,7 +182,7 @@ class Item extends Eloquent {
         $respuesta = array();
 
         $reglas = array(
-            'titulo' => array('max:50', 'unique:item,titulo,' . $input['id']),
+            'titulo' => array('max:100', 'unique:item,titulo,' . $input['id']),
         );
 
         if (isset($input['file']) && ($input['file'] != "") && (!is_array($input['file']))) {
