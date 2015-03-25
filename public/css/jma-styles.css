@@ -22,7 +22,7 @@ header {height: 5em; padding-top: 1.250em; position: relative;}
 	.suscribirse .flecha {cursor:pointer; position: absolute; background: url(../images/flecha.png) no-repeat; border:none; display: block; width: 45px; height: 58px; right: -12px; top: -14px;}
 
 /* slide */
-.slide {min-height: 256px; border-bottom: 5px solid #BEC7B4 }
+.slide {min-height: 380px; border-bottom: 5px solid #BEC7B4 }
 .slide img {width: 100% !important; height: auto !important; left: 0 !important;}
 .imgSlide {display: none; border-bottom: 5px solid #BEC7B4; max-height: 256px; overflow: hidden; font-size: 0}
 
@@ -172,6 +172,7 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 @media screen and (max-width: 1080px) {
 	.logoContacto {float: right;}
 	.redes {width: 300px; text-align: right;}
+	.slide {min-height: 350px;}
 }
 
 @media screen and (max-width: 1000px) {
@@ -181,11 +182,12 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.galeriaPlanta img {width: 17.5%; margin: 1%;}
 	.galeriaPlanta img:nth-child(6), .galeriaPlanta img:nth-child(7) {display: none;}
 	.colMapa1, .colMapa2 {font-size: 1em}
-	
+	.slide {min-height: 300px;}
 }
 @media screen and (max-width: 940px) {
 	.data-fiscal {display: none;}
 	.colMapa1, .colMapa2 {font-size: 1.125em}
+	.slide {min-height: 260px;}
 }
 
 @media screen and (max-width: 910px) {
