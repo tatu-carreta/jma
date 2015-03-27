@@ -118,16 +118,16 @@
 }
 
 /*BOTONES PRODUCTOS*/
-#cssmenu ul ul li a.btn1 {background: #C4DB50}
+#cssmenu ul ul li a.btn1 {background: #C4DB50; color: #85A640}
 #cssmenu ul ul li a.btn1:hover {background: #CEE16F}
 #cssmenu ul ul li.active a.btn1 {background: #CEE16F}
-#cssmenu ul ul li a.btn2 {background: #CEE16F}
+#cssmenu ul ul li a.btn2 {background: #CEE16F; color: #85A640}
 #cssmenu ul ul li a.btn2:hover {background: #D9E78E}
 #cssmenu ul ul li.active a.btn2 {background: #D9E78E}
-#cssmenu ul ul li a.btn3 {background: #D9E78E}
+#cssmenu ul ul li a.btn3 {background: #D9E78E; color: #85A640}
 #cssmenu ul ul li a.btn3:hover {background: #E3EEAC}
 #cssmenu ul ul li.active a.btn3 {background: #E3EEAC}
-#cssmenu ul ul li a.btn4 {background: #E3EEAC}
+#cssmenu ul ul li a.btn4 {background: #E3EEAC; color: #85A640}
 #cssmenu ul ul li a.btn4:hover {background: #F5F9D7}
 #cssmenu ul ul li.active a.btn4 {background: #F5F9D7}
 

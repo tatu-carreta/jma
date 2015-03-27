@@ -132,7 +132,7 @@
         <script>
             $(function() {
                 $('.slide').crossSlide({
-                    speed: 80,
+                    speed: 50,
                     fade: 1
                   }, [
                         @if(!is_null($slide_index) && !is_null($slide_index->imagenes))
