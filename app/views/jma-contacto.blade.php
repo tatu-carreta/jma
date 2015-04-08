@@ -13,6 +13,11 @@
                     <input name="telefono" type="text" required></label>
                 <label>E-mail<br>
                     <input name="email" type="email" required></label>
+               	<label>Localidad<br>
+                    <input name="localidad" type="text" required></label>
+                <label>Provincia<br>
+                    <input name="provincia" type="text" required></label>
+
                 <label>Consulta<br>
                     <textarea name="consulta" id="consulta"></textarea></label>
                 <input type="submit" value="consultar" class="enviar floatRight">
@@ -40,7 +45,7 @@
                 </div>
                 <div class="clear"></div>
                 <div class="marcaContacto">
-                    <img class="logoContacto" src="http://www.perfilesjma.com.ar/nuevo/public/images/jma-contacto.png" alt="JMA Compromiso de Solidez">
+                    <img class="logoContacto" src="http://www.perfilesjma.com.ar/images/jma-contacto.png" alt="JMA Compromiso de Solidez">
                     <ul class="redes">
                         <li><a href="https://www.facebook.com/perfiles.jma" class="face" target="_blank"><span>Facebook</span></a></li>
                         <li><a href="https://twitter.com/perfilesjma" class="twitter" target="_blank"><span>Twitter</span></a></li>
