@@ -13,10 +13,16 @@
                 <strong>Nombre y Apellido: </strong>{{ $data['nombre'] }}<BR>
                 <strong>Email: </strong>{{ $data['email'] }}<BR>
                 @if(isset($data['telefono']))
-                <strong>Teléfono: </strong>{{ $data['telefono'] }}<BR>
+                    <strong>Teléfono: </strong>{{ $data['telefono'] }}<BR>
+                @endif
+                @if(isset($data['localidad']))
+                    <strong>Localidad: </strong>{{ $data['localidad'] }}<BR>
+                @endif
+                @if(isset($data['provincia']))
+                    <strong>Provincia: </strong>{{ $data['provincia'] }}<BR>
                 @endif
                 @if(isset($data['consulta']))
-                <strong>Consulta: </strong>{{ $data['consulta'] }}
+                    <strong>Consulta: </strong>{{ $data['consulta'] }}
                 @endif
             </p>
         </div>

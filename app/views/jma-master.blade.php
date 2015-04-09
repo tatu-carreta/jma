@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/jma-styles.css')}}"> 
         
         -->
-        <link href="favicon.ico" rel="shortcut icon">
+        <link href="{{URL::to('favicon.ico')}}" rel="shortcut icon">
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
         <meta name="description" content="">
         <meta name="Keywords" content="">
