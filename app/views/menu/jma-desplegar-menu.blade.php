@@ -2,7 +2,7 @@
 @foreach($menus as $m)
     @if(count($m->children) > 0)
     <li class='has-sub btn0'>
-    <a href=""  data-id="{{$m->id}}" data-nivel="1">{{$m->nombre}}</a>
+    <a href="#"  data-id="{{$m->id}}" data-nivel="1">{{$m->nombre}}</a>
         <ul>
             <?php $i = 1; ?>
             @foreach($m->children as $c)
@@ -28,6 +28,7 @@
                                 @else
                                     <li>
                                         <a href="{{URL::to('menu/'.$c1->url)}}" class="btn1">{{$c1->nombre}}</a>
+                                        
                                 @endif
                             @endforeach
                         </ul>
