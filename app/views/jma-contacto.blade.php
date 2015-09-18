@@ -28,10 +28,10 @@
         </div>
             <div class="colContentMapas">
                 <div class="colMapa1">
-                    <p class="ind"><strong>Planta Productiva</strong><br>
+                    <p class="ind" style="margin-bottom:68px"><strong>Planta Productiva</strong><br>
                                                     Parque Industrial Plátanos  Av. Milazzo 3251 y 151
                                                     (CP 1885) Plátanos - Buenos Aires - Argentina </p>
-                    <p class="tel">(54 11) 4215-0856</p>
+                    
                     <iframe frameborder="0" scrolling="no" src="http://maps.google.com.ar/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Av.+Milazzo+3251+platanos&amp;aq=&amp;sll=-38.020548,-57.589079&amp;sspn=0.420306,0.617294&amp;ie=UTF8&amp;hq=&amp;hnear=Av+Int.+Nicol%C3%A1s+Milazzo+3251,+Ranelagh,+Buenos+Aires&amp;t=m&amp;ll=-34.787673,-58.187392&amp;spn=0.005252,0.012231&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
                 </div>
                 <div class="colMapa2">
