@@ -9,6 +9,7 @@
         <div class="divAlerta ok alert-success">{{ Session::get('mensaje') }}<i onclick="" class="cerrarDivAlerta fa fa-times fa-lg"></i></div>
     @endif
     <div class="colTextoHome">
+        <img class="certificaciones" src="{{URL::to('images/certificaciones.png')}}" alt="Certificación IRAM e IQNET">
         <h1>Somos la Empresa Argentina Líder en fabricación y comercialización de Perfiles de Acero Galvanizado, desarrollando todas las variantes que demandan el mercado interno y externo:</h1>
     </div>
     <div class="colFotosHome">
