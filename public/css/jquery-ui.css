@@ -786,7 +786,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-nav {
 	margin: 0;
-	padding: .2em .2em 0;
+	padding: 0.2em 0.4em;
 }
 .ui-tabs .ui-tabs-nav li {
 	list-style: none;
@@ -800,6 +800,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	float: left;
+	padding: 0 .3em;
 	text-decoration: none;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
@@ -848,11 +849,8 @@ body .ui-tooltip {
 .ui-widget-content a {
 	color: #222222;
 }
-/*.ui-widget-header {
-	border: 1px solid #aaaaaa;
-	background: #cccccc url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+.ui-widget-header {
 	color: #222222;
-	font-weight: bold;
 }
 .ui-widget-header a {
 	color: #222222;

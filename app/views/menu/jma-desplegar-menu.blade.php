@@ -28,7 +28,6 @@
                                 @else
                                     <li>
                                         <a href="{{URL::to('menu/'.$c1->url)}}" class="btn1">{{$c1->nombre}}</a>
-                                        
                                 @endif
                             @endforeach
                         </ul>

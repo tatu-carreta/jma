@@ -43,7 +43,7 @@ class Imagen extends Eloquent {
             $extension = $file->getClientOriginalExtension(); //if you need extension of the file
             //$extension = File::extension($file['name']);
 
-            $carpeta = '/uploads/';
+            $carpeta = 'uploads/';
             $directory = public_path() . $carpeta;
             //$filename = sha1(time() . Hash::make($filename) . time()) . ".{$extension}";
             //Pregunto para que no se repita el nombre de la imagen
@@ -76,7 +76,7 @@ class Imagen extends Eloquent {
                 $temporary = Image::make($file)->resize(490, null, function ($constraint) {
                             $constraint->aspectRatio();
                             $constraint->upsize();
-                        })->save(public_path() . "/temporary/" . $filename);
+                        })->save(public_path() . "temporary/" . $filename);
 
                 $imagen_chica = Imagen::agregarImagenChica($filename, $epigrafe, $imagen->id, $coordenadas);
 
@@ -120,7 +120,7 @@ class Imagen extends Eloquent {
             //$extension = $file->getClientOriginalExtension(); //if you need extension of the file
             //$extension = File::extension($file['name']);
 
-            $carpeta = '/uploads/';
+            $carpeta = 'uploads/';
             $directory = public_path() . $carpeta;
             $filename = "small_" . $imagen; //sha1(time() . Hash::make($filename) . time()) . "_small" . ".{$extension}";
             /*
@@ -137,14 +137,14 @@ class Imagen extends Eloquent {
                 $x = round($coordenadas['x']);
                 $y = round($coordenadas['y']);
 
-                $upload = Image::make(public_path() . "/temporary/" . $file)->crop($w, $h, $x, $y)->resize(220, 220)->save($directory . $filename);
+                $upload = Image::make(public_path() . "temporary/" . $file)->crop($w, $h, $x, $y)->resize(220, 220)->save($directory . $filename);
             } else {
                 //para relacion height auto
-                $upload = Image::make(public_path() . "/temporary/" . $file)->resize(230, null, function ($constraint) {
+                $upload = Image::make(public_path() . "temporary/" . $file)->resize(230, null, function ($constraint) {
                     $constraint->aspectRatio();
                 })->save($directory . $filename);
                 //para cuadrado
-                //$upload = Image::make(public_path() . "/temporary/" . $file)->resize(340, 340)->save($directory . $filename);
+                //$upload = Image::make(public_path() . "temporary/" . $file)->resize(340, 340)->save($directory . $filename);
             }
 
             if ($upload) {

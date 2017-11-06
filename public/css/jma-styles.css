@@ -40,11 +40,9 @@ footer p {font-size: 1em}
 
 /* H O M E */
 .colTextoHome {float: left; width:14.500em; padding-right: 1em }
-.colTextoHome h1 {font-size: 1.125em; font-weight: 400; margin-top: 1.5em;}
+.colTextoHome h1 {font-size: 1.125em; font-weight: 400; margin-top: 3em;}
 .colFotosHome {float: left; width:15.750em; margin-right:2.375em  }
 	.colFotosHome p {padding-left: 1em}
-
-.certificaciones {margin-top: 1em;}
 
 /* Q U I E N E S  S O M O S */
 .colTextos {width: 55%; float: left; margin-right: 1.5%; box-sizing: border-box;}/*40.500em*/
@@ -169,7 +167,6 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 @media screen and (max-width: 1110px) {
 	.ui-tabs .ui-tabs-nav li {float: none;}
 	.ui-tabs .ui-tabs-nav li:last-child {position: static;}
-	.colTextoHome h1 {font-size: 1.1em; font-weight: 400; margin-top: 1.5em;}
 }
 
 @media screen and (max-width: 1080px) {
@@ -180,16 +177,12 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 
 @media screen and (max-width: 1000px) {
 	header {height: auto; text-align: center}
-	.colTextoHome h1 {font-size: 1.05em; margin-top: 2.1em;}
 	.marca {position: static; margin-bottom: 0.5em;}
 	.suscribirse {float: none; margin: 0 auto;}
 	.galeriaPlanta img {width: 17.5%; margin: 1%;}
 	.galeriaPlanta img:nth-child(6), .galeriaPlanta img:nth-child(7) {display: none;}
 	.colMapa1, .colMapa2 {font-size: 1em}
 	.slide {min-height: 300px;}
-}
-@media screen and (max-width: 970px) {
-	.colTextoHome h1 {font-size: 1.01em; margin-top: 1em;}
 }
 @media screen and (max-width: 940px) {
 	.data-fiscal {display: none;}
