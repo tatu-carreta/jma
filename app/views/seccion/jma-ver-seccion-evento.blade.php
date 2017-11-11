@@ -18,6 +18,7 @@
     @if(Auth::check())
     {{ Form::open(array('url' => 'admin/item/ordenar-por-seccion')) }}
     @endif
+    @if(Auth::check())
     <ul class="listaNoticias @if(Auth::check()) sortable @endif">
             @foreach($seccion -> items as $i)
             <li>
@@ -53,21 +54,75 @@
                 <div class="divInfoNoticia">
                         <p class="fecha">{{$i->texto()->evento()->fecha_desde}} al {{$i->texto()->evento()->fecha_hasta}}</p>
                         <h3>{{$i->titulo}}</h3>
-                        <p class="bajada">{{$i->descripcion}}</p>	
+                        <p class="bajada">{{$i->descripcion}}</p>
                 </div>
                 <div class="clear"></div>
                 @if(!Auth::check())
                     </a>
                 @endif
-                
+
                 @if(Auth::check())
                 <input type="hidden" name="orden[]" value="{{$i->id}}">
-                @endif            		
+                @endif
             </li>
             @endforeach
-        
+
     </ul>
-    
+    @else
+      @section('head')
+        @parent
+
+        <link rel='stylesheet' href="{{URL::to('css/fullcalendar.min.css')}}" />
+      @stop
+      @section('footer')
+        @parent
+
+        <script src="{{URL::to('js/moment.min.js')}}"></script>
+        <script src="{{URL::to('js/es.js')}}"></script>
+        <script src="{{URL::to('js/fullcalendar.min.js')}}"></script>
+      @stop
+
+      <?php
+        foreach ($seccion->items as $key => $value) {
+          $seccion->items[$key]['fecha_desde'] = $value->texto()->evento()->fecha_desde;
+          $seccion->items[$key]['fecha_hasta'] = $value->texto()->evento()->fecha_hasta;
+        }
+      ?>
+
+      <div id="calendar"></div>
+      <script>
+      $(document).ready(function() {
+        var today = new Date();
+        var items = <?php echo $seccion->items ?>;
+        var events = [];
+
+        $.each(items, function(key, element) {
+
+          var data = {
+            title: element.titulo,
+            start: element.fecha_desde,
+            end: element.fecha_hasta,
+            url: "{{URL::to('evento/"+ element.url +"')}}"
+          };
+          events.push(data);
+
+        });
+
+          $('#calendar').fullCalendar({
+            locale: 'es',
+            defaultDate: today,
+            buttonText: {
+              today: 'Hoy'
+            },
+            // editable: true,
+            // eventLimit: true, // allow "more" link when too many events
+            events: events
+          });
+      });
+
+      </script>
+    @endif
+
     </div>
 
 

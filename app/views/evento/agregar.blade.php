@@ -5,7 +5,7 @@
     <script src="{{URL::to('js/divAlertaFuncs.js')}}"></script>
     @endif
     <script src="{{URL::to('js/ckeditorLimitado.js')}}"></script>
-    
+
     <section class="container">
         @if (Session::has('mensaje'))
             <div class="divAlerta error alert-success">{{ Session::get('mensaje') }}<i onclick="" class="cerrarDivAlerta fa fa-times fa-lg"></i></div>
@@ -18,16 +18,16 @@
             <!-- Abre columna de descripción -->
             <div class="col70Admin datosProducto">
                 <h3>Título del evento</h3>
-                <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" maxlength="100">
 
                 <h3>Fecha Desde</h3>
-                <input class="block anchoTotal marginBottom" type="date" name="fecha_desde" placeholder="Fecha" required="true" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="date" name="fecha_desde" placeholder="dd/mm/yyyy" required="true" maxlength="50">
 
                 <h3>Fecha Hasta</h3>
-                <input class="block anchoTotal marginBottom" type="date" name="fecha_hasta" placeholder="Fuente" required="true" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="date" name="fecha_hasta" placeholder="dd/mm/yyyy" maxlength="50">
 
                 <h3>Descripción</h3>
-                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" maxlength="200">
 
                 <h3>Cuerpo</h3>
                 <div class="divEditorTxt marginBottom2">
@@ -36,15 +36,15 @@
             </div>
 
             <!-- Abre columna de imágenes -->
-            <div class="col30 fondoDestacado padding1 cargaImg">
+            <!-- <div class="col30Admin fondoDestacado padding1 cargaImg">
                 <h3>Imagen principal</h3>
-                @include('imagen.modulo-imagen-evento-maxi')
-            </div>
+                {{-- @include('imagen.modulo-imagen-evento-maxi') --}}
+            </div> -->
 
             <div class="clear"></div>
             <!-- cierran columnas -->
-            
-            
+
+
 
             <div class="punteado">
                 <input type="submit" value="Publicar" class="btn marginRight5">
