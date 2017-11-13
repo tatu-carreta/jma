@@ -15,10 +15,24 @@ header {height: 5em; padding-top: 1.250em; position: relative;}
 .marca {background: url(../images/jma.png) no-repeat; width: 640px; height: 95px; position: absolute; top: 1em; z-index: 100; display: inline-block;}
 .marca span {display: none}
 
-.suscribirse {float: right; width: 18em; margin-top: 0.5em; text-align: center}
+.redesH {float: right; margin: 2em 0.5em 0 0;}
+.redesH li {display: inline-block;}
+.redesH a {display: block; width: 30px; height: 30px; margin-right: 5px; background-image: url(../images/redes.png);}
+.redesH span {display: none;}
+.redesH .facebook {background-position: 0 0}
+.redesH .twitter {background-position: 90px 0}
+.redesH .linkedin {background-position: 60px 0}
+.redesH .youtube {background-position: 30px 0}
+.redesH .facebook:hover {background-position: 0 30px}
+.redesH .twitter:hover {background-position: 90px 30px}
+.redesH .linkedin:hover {background-position: 60px 30px}
+.redesH .youtube:hover {background-position: 30px 30px}
+
+
+.suscribirse {float: right; width: 16em; margin-top: 0.5em; text-align: center}
 	.suscribirse form {position: relative;}
 	.suscribirse label {margin-bottom: 0.3em; display: block}
-	.suscribirse input[type="email"]{border: 1px solid #93AF52; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; font-size: 1.1em; padding: 0.3em 0.7em; text-align: center; width: 100%}
+	.suscribirse input[type="email"]{border: 1px solid #93AF52; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; font-size: 0.9em; padding: 0.3em 0.7em; text-align: center; width: 100%}
 	.suscribirse .flecha {cursor:pointer; position: absolute; background: url(../images/flecha.png) no-repeat; border:none; display: block; width: 45px; height: 58px; right: -12px; top: -14px;}
 
 /* slide */
@@ -115,14 +129,14 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 .tel {background-image: url(../images/ico-tel.png); line-height: 29px;}
 .mail {background-image: url(../images/ico-mail.png); line-height: 29px;}
 .marcaContacto {margin-top: 1.1em;}
-	.logoContacto {float: left}
-	.redes {float: right; width: 130px; margin-top: 0.5em;}
+	.logoContacto {}/*float: left*/
+	/*.redes {float: right; width: 130px; margin-top: 0.5em;}
 	.redes span {display: none;}
 	.redes li {display: inline-block;}
 	.redes a {display: block; width: 37px; height: 37px; }
 	.redes .face {background: url(../images/face.png) no-repeat; margin-right: 0.3em}
 	.redes .twitter {background: url(../images/twitter.png) no-repeat; margin-right: 0.3em}
-	.redes .linkedin {background: url(../images/linkedin.png) no-repeat;}
+	.redes .linkedin {background: url(../images/linkedin.png) no-repeat;}*/
 
 .colForm input[type="text"], .colForm input[type="email"] {background: #fff; border: 1px solid #BAD532;  padding: 5px 12px; font-family: 'Lato', sans-serif; font-size: 16px; margin-bottom: 8px; width: 100%;  box-sizing:border-box;}
 .colForm textarea{border: 1px solid #BAD532; font-family: 'Lato', sans-serif; font-size: 16px; height: 200px; width: 100%; margin-bottom: 1em; box-sizing:border-box;  }
@@ -167,18 +181,19 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 @media screen and (max-width: 1110px) {
 	.ui-tabs .ui-tabs-nav li {float: none;}
 	.ui-tabs .ui-tabs-nav li:last-child {position: static;}
+	header {height: auto; text-align: center}
+	.marca {position: static; margin-bottom: 0.5em;}
+	.suscribirse {float: none; margin: 0 auto;}
+	.redesH {float: none; margin: 0.5em 0 ;}
 }
 
 @media screen and (max-width: 1080px) {
 	.logoContacto {float: right;}
-	.redes {width: 300px; text-align: right;}
+	/*.redes {width: 300px; text-align: right;}*/
 	.slide {min-height: 350px;}
 }
 
 @media screen and (max-width: 1000px) {
-	header {height: auto; text-align: center}
-	.marca {position: static; margin-bottom: 0.5em;}
-	.suscribirse {float: none; margin: 0 auto;}
 	.galeriaPlanta img {width: 17.5%; margin: 1%;}
 	.galeriaPlanta img:nth-child(6), .galeriaPlanta img:nth-child(7) {display: none;}
 	.colMapa1, .colMapa2 {font-size: 1em}

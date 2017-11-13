@@ -77,6 +77,7 @@
         <!-- H E A D E R -->
 	<header class="container">
             <a class="marca" href="{{URL::to('')}}"><span>JMA Perfiles de Acero Galvanizado</span></a><!-- <img src="{{URL::to('images/jma.png')}}" alt="Marca JMA Perfiles de Acero Galvanizado">-->
+            
             @if(!Auth::check())
             <div class="suscribirse">
                 <label for="suscribir">Suscripción a Newsletter</label>
@@ -86,6 +87,12 @@
                 {{ Form::close() }}
             </div>
             @endif
+            <ul class="redesH">
+                <li><a href="https://www.facebook.com/perfilesjmasa/" target="_blank" class="face"><span>Facebook</span></a></li>
+                <li><a href="https://twitter.com/perfilesjma" target="_blank" class="twitter"><span>Twitter</span></a></li>
+                <li><a href="https://ar.linkedin.com/in/perfiles-jma-1b244663" target="_blank" class="linkedin"><span>Linkedin</span></a></li>
+                <li><a href="" target="_blank" class="youtube"><span>YouTube</span></a></li>
+            </ul>
             <div class="clear"></div>
 	</header>
         
