@@ -9,7 +9,7 @@
             <a onclick="borrarData('../admin/seccion/borrar', '{{$seccion->id}}');" class="btnSec"><i class="fa fa-times fa-lg"></i>Eliminar sección</a>
         @endif
         @if(Auth::user()->can("agregar_item"))
-            <a href="{{URL::to('admin/evento/agregar/'.$seccion->id)}}" data='{{ $seccion->id }}' class="btn floatRight"><i class="fa fa-plus fa-lg"></i>Nueva Evento</a>
+            <a href="{{URL::to('admin/capacitacion/agregar/'.$seccion->id)}}" data='{{ $seccion->id }}' class="btn floatRight"><i class="fa fa-plus fa-lg"></i>Nuevo Evento</a>
         @endif
     @endif
     <div class="clear"></div>
@@ -36,7 +36,7 @@
 
                     <span class="floatRight">
                         @if(Auth::user()->can("editar_item"))
-                        <a href="{{URL::to('admin/evento/editar/'.$i->texto()->evento()->id.'/seccion')}}" data='{{$seccion->id}}'><i class="fa fa-pencil fa-lg"></i></a>
+                        <a href="{{URL::to('admin/capacitacion/editar/'.$i->texto()->evento()->id.'/seccion')}}" data='{{$seccion->id}}'><i class="fa fa-pencil fa-lg"></i></a>
                         @endif
                         @if(Auth::user()->can("borrar_item"))
                             <i onclick="borrarData('../admin/item/borrar', '{{$i->id}}');" class="fa fa-times fa-lg"></i>
@@ -46,13 +46,15 @@
                 @endif
 
                 @if(!Auth::check())
-                    <a href="{{URL::to('evento/'.$i->url)}}">
+                    <a href="{{URL::to('capacitacion/'.$i->url)}}">
                 @endif
-                <div class="divImgNoticia">
+                {{--
+                <!-- <div class="divImgNoticia">
                     <img class="lazy" data-original="@if(!is_null($i->imagen_destacada())){{ URL::to($i->imagen_destacada()->carpeta.$i->imagen_destacada()->nombre) }}@else{{URL::to('images/sinImg.gif')}}@endif" alt="{{$i->titulo}}">
-                </div>
+                </div> -->
+                --}}
                 <div class="divInfoNoticia">
-                        <p class="fecha">{{$i->texto()->evento()->fecha_desde}} al {{$i->texto()->evento()->fecha_hasta}}</p>
+                        <p class="fecha">{{$i->texto()->evento()->fecha_desde}} @if(isset($i->texto()->evento()->fecha_hasta) && $i->texto()->evento()->fecha_hasta != '0000-00-00') al {{$i->texto()->evento()->fecha_hasta}} @endif</p>
                         <h3>{{$i->titulo}}</h3>
                         <p class="bajada">{{$i->descripcion}}</p>
                 </div>
@@ -102,7 +104,7 @@
             title: element.titulo,
             start: element.fecha_desde,
             end: element.fecha_hasta,
-            url: "{{URL::to('evento/"+ element.url +"')}}"
+            url: "{{URL::to('capacitacion/"+ element.url +"')}}"
           };
           events.push(data);
 

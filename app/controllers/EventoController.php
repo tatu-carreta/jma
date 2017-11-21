@@ -53,7 +53,7 @@ class EventoController extends BaseController {
           } else {
           return Redirect::to('admin/producto')->with('mensaje', $respuesta['mensaje']);
           }
-         * 
+         *
          */
         if ($respuesta['error'] == true) {
             $seccion = Seccion::find(Input::get('seccion_id'));
@@ -61,7 +61,7 @@ class EventoController extends BaseController {
             $menu = $seccion->menuSeccion()->url;
             $ancla = '#' . $seccion->estado . $seccion->id;
 
-            return Redirect::to('admin/evento/agregar/' . $seccion->id)->with('mensaje', $respuesta['mensaje']); //->with('ancla', $ancla);
+            return Redirect::to('admin/capacitacion/agregar/' . $seccion->id)->with('mensaje', $respuesta['mensaje']); //->with('ancla', $ancla);
             //return Redirect::to('admin/producto')->withErrors($respuesta['mensaje'])->withInput();
         } else {
             $menu = $respuesta['data']->texto()->item()->seccionItem()->menuSeccion()->url;
@@ -101,10 +101,10 @@ class EventoController extends BaseController {
           } else {
           return Redirect::to('admin/producto')->with('mensaje', $respuesta['mensaje']);
           }
-         * 
+         *
          */
         if ($respuesta['error'] == true) {
-            return Redirect::to('admin/evento/editar/' . Input::get('evento_id'))->with('mensaje', $respuesta['mensaje']);
+            return Redirect::to('admin/capacitacion/editar/' . Input::get('evento_id'))->with('mensaje', $respuesta['mensaje']);
             //return Redirect::to('admin/producto')->withErrors($respuesta['mensaje'])->withInput();
         } else {
             if (Input::get('continue') == "home") {
@@ -158,7 +158,7 @@ class EventoController extends BaseController {
       return View::make($this->project_name . '-error', $this->array_view);
       }
       }
-     * 
+     *
      */
 
     public function destacar() {
@@ -173,10 +173,10 @@ class EventoController extends BaseController {
           } else {
           return Redirect::to('admin/producto')->with('mensaje', $respuesta['mensaje']);
           }
-         * 
+         *
          */
         if ($respuesta['error'] == true) {
-            return Redirect::to('admin/evento')->withErrors($respuesta['mensaje'])->withInput();
+            return Redirect::to('admin/capacitacion')->withErrors($respuesta['mensaje'])->withInput();
         } else {
             if (Input::get('continue') == "home") {
                 return Redirect::to('/')->with('mensaje', $respuesta['mensaje']);
@@ -271,6 +271,6 @@ class EventoController extends BaseController {
       return Redirect::to("/")->with('mensaje', $mensaje);
       //return View::make('producto.editar', $this->array_view);
       }
-     * 
+     *
      */
 }

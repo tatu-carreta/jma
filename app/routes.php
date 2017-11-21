@@ -50,7 +50,7 @@ Route::get('producto/{url}', 'ProductoController@mostrarInfoProducto');
 Route::get('noticia/{url}', 'NoticiaController@mostrarInfo');
 
 //Ruteo de Evento
-Route::get('evento/{url}', 'EventoController@mostrarInfo');
+Route::get('capacitacion/{url}', 'EventoController@mostrarInfo');
 
 //Ruteo de Portfolio
 Route::get('portfolio/{url}', 'PortfolioController@mostrarInfo');
@@ -65,7 +65,7 @@ Route::post('consulta', 'ClienteController@consultaContacto');
 
 Route::post('registrar-newsletter', 'ClienteController@registrar');
 
-// Para todas estas rutas el usuario debe haber iniciado sesión. 
+// Para todas estas rutas el usuario debe haber iniciado sesión.
 Route::group(array('before' => 'auth'), function() {
 
     Route::get('admin/exportar-clientes', 'ClienteController@exportarEmail');
@@ -237,24 +237,24 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('admin/noticia/editar/{id}/{next}', 'NoticiaController@vistaEditar');
 
     Route::post('admin/noticia/editar', 'NoticiaController@editar');
-//            
+//
 //            Route::get('admin/producto/destacar/{id}/{next}', 'ProductoController@vistaDestacar');
-//            
+//
 //            Route::post('admin/producto/destacar', 'ProductoController@destacar');
 
 
     /*
      * Ruteo de Evento
      */
-    Route::get('admin/evento', 'EventoController@vistaListado');
+    Route::get('admin/capacitacion', 'EventoController@vistaListado');
 
-    Route::get('admin/evento/agregar/{seccion_id}', 'EventoController@vistaAgregar');
+    Route::get('admin/capacitacion/agregar/{seccion_id}', 'EventoController@vistaAgregar');
 
-    Route::post('admin/evento/agregar', 'EventoController@agregar');
+    Route::post('admin/capacitacion/agregar', 'EventoController@agregar');
 
-    Route::get('admin/evento/editar/{id}/{next}', 'EventoController@vistaEditar');
+    Route::get('admin/capacitacion/editar/{id}/{next}', 'EventoController@vistaEditar');
 
-    Route::post('admin/evento/editar', 'EventoController@editar');
+    Route::post('admin/capacitacion/editar', 'EventoController@editar');
 
     /*
      * Ruteo de Portfolio

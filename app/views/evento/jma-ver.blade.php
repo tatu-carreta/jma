@@ -13,7 +13,7 @@
 
         @if(Auth::check())
             @if(Auth::user()->can("editar_item"))
-            <a href="{{URL::to('admin/evento/editar/'.$item->texto()->evento()->id)}}" data='{{$item -> seccionItem() -> id}}' style="display:none">Editar<i class="fa fa-pencil fa-lg"></i></a>
+            <a href="{{URL::to('admin/capacitacion/editar/'.$item->texto()->evento()->id)}}" data='{{$item -> seccionItem() -> id}}' style="display:none">Editar<i class="fa fa-pencil fa-lg"></i></a>
             @endif
         @endif
 
@@ -34,10 +34,12 @@
                     <h4>Fecha Desde</h4>
                     {{ date('d/m/Y', strtotime($item->texto()->evento()->fecha_desde)) }}
                 </div>
+                @if(isset($item->texto()->evento()->fecha_hasta))
                 <div class="editor">
                     <h4>Fecha Hasta</h4>
                     {{ date('d/m/Y', strtotime($item->texto()->evento()->fecha_hasta)) }}
                 </div>
+                @endif
                 <div class="editor">
                     <h4>Descripcion</h4>
                     {{ $item->descripcion }}

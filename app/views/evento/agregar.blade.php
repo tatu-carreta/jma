@@ -10,7 +10,7 @@
         @if (Session::has('mensaje'))
             <div class="divAlerta error alert-success">{{ Session::get('mensaje') }}<i onclick="" class="cerrarDivAlerta fa fa-times fa-lg"></i></div>
         @endif
-        {{ Form::open(array('url' => 'admin/evento/agregar', 'files' => true)) }}
+        {{ Form::open(array('url' => 'admin/capacitacion/agregar', 'files' => true)) }}
             <h2 class="marginBottom2"><span>Carga y modificación de eventos</span></h2>
             <div id="error" class="error" style="display:none"><span></span></div>
             <div id="correcto" class="correcto ok" style="display:none"><span></span></div>

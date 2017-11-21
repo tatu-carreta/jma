@@ -7,9 +7,9 @@
         <a id="ancla" href="{{ $ancla }}" style="display: none;">Ancla</a>
     @endif
 @endif
-    
+
     @if(Auth::check())
-        
+
         <script src="{{URL::to('js/popupFuncs.js')}}"></script>
         @if(Auth::user()->can("ordenar_item"))
         <script>
@@ -50,7 +50,7 @@
                     <div class="clear"></div>
                 </div>
             @endif
-            
+
             <div class="contenedorSecciones">
             @foreach($menu -> secciones as $seccion)
                 @if((count($seccion->items) > 0) || Auth::check())
@@ -68,7 +68,7 @@
                     @else
                         @include('seccion.'.$project_name.'-ver-seccion')
                     @endif
-                    
+
                 @endif
             @endforeach
             </div>
