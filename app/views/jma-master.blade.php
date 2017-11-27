@@ -22,6 +22,7 @@
         
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles-admin.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/jquery-ui.css')}}"> 
+        <link rel="stylesheet" type="text/css" href="{{URL::to('css/jquery.fancybox.min.css')}}">
         <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles.css')}}"> -->
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-styles.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-stylesmenu.css')}}">
@@ -99,7 +100,21 @@
         <!-- abre nuevo slide -->
         
         <!-- S L I D E -->
-        <div class="slide"></div>
+        <div class="contentSlide">
+            <a data-fancybox data-src="#video" href="javascript:;" class="btnVideo">
+                <img src="images/ver-video.png" alt="Ver video">
+            </a>
+            <div style="display: none;" id="video">
+                <video controls="" loop="1" style="width: 100%; height: auto">
+                    <source src="images/jma-v720p.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+            <div class="slide">
+                
+            </div>
+        </div>
         <div class="imgSlide">
             <img src="{{URL::to('images/slide.jpg')}}" alt="JMA">
         </div>
@@ -128,6 +143,12 @@
         <script src="{{URL::to('js/jquery.previewInputFileImage.js')}}"></script>
         <script src="{{URL::to('js/jquery.lazyload.js')}}"></script>
         <script src="{{URL::to('js/jquery-ui.min.js')}}"></script>
+        <script src="{{URL::to('js/jquery.fancybox.min.js')}}"></script>
+        <script type="text/javascript">
+            $("[data-fancybox]").fancybox({
+                // Options will go here
+            });
+        </script>
 
         <script>
             $(function () {
@@ -156,6 +177,8 @@
                 ]);
             });
         </script>
+                
+
         @show
     </body>
 </html>

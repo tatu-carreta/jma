@@ -127,6 +127,7 @@
 #cssmenu ul ul li a.btn3:hover {background: #D2E5C3}
 #cssmenu ul ul li.active a.btn3 {background: #649A3F}
 
+#cssmenu ul li:nth-child(3) a {background: #BBD531 !important}
 
 /*#cssmenu ul ul li:hover > a {
   background: #649A3F!important;

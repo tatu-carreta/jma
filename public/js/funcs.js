@@ -169,3 +169,8 @@ function validar(elem) {
  return false;
  }
  */
+
+$(document).ready(function(){
+   $("#cssmenu ul li:nth-child(3) a").addClass("parpadeo");
+   });
+}

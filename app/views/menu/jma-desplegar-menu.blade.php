@@ -1,4 +1,4 @@
-<ul>
+<ul class="menuPrinc">
 @foreach($menus as $m)
     @if(count($m->children) > 0)
     <li class='has-sub btn0'>

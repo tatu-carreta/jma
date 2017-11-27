@@ -8,9 +8,9 @@
     @if (Session::has('mensaje'))
         <div class="divAlerta ok alert-success">{{ Session::get('mensaje') }}<i onclick="" class="cerrarDivAlerta fa fa-times fa-lg"></i></div>
     @endif
+    <h1>Somos la Empresa Argentina Líder en fabricación y comercialización de Perfiles de Acero Galvanizado, desarrollando todas las variantes que demandan el mercado interno y externo:</h1>
     <div class="colTextoHome">
-        <img class="certificaciones" src="{{URL::to('images/certificaciones.png')}}" alt="Certificación IRAM e IQNET">
-        <h1>Somos la Empresa Argentina Líder en fabricación y comercialización de Perfiles de Acero Galvanizado, desarrollando todas las variantes que demandan el mercado interno y externo:</h1>
+        <img class="certificaciones" src="{{URL::to('images/certificaciones2.png')}}" alt="Certificación IRAM e IQNET">
     </div>
     <div class="colFotosHome">
         <a href="{{URL::to('menu/perfiles-desmontables')}}">
@@ -36,6 +36,14 @@
             <div class="bordeVerdeLateral">
                 <img class="ampliar" src="{{URL::to('images/steel-framing.jpg')}}" alt="Perfiles Desmontables">
                 <p>Perfiles <br>estructurales</p>
+            </div>
+        </a>
+    </div>
+    <div class="colCertain">
+        <a href="{{URL::to('')}}">
+            <h2>EXCLUSIVO EN JMA</h2>
+            <div class="bordeCeleste">
+                <img class="ampliar" src="{{URL::to('images/certain-home.jpg')}}" alt="CertainTeed">
             </div>
         </a>
     </div>

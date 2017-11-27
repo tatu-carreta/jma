@@ -131,6 +131,45 @@
 #cssmenu ul ul li a.btn4:hover {background: #F5F9D7}
 #cssmenu ul ul li.active a.btn4 {background: #F5F9D7}
 
+ul.menuPrinc>li:nth-child(3) a {background: #BBD531;
+animation: parpadeo 0.6s;
+-webkit-animation: parpadeo 0.6s;
+-moz-animation: parpadeo 0.6s;
+animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite;
+-moz-animation-iteration-count:infinite;}
+
+.parpadeo {
+  
+  animation-name: parpadeo;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { background: #BBD531 }
+  50% { background: #93AF52}
+  100% { background: #BBD531 }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { background: #BBD531 }
+  50% { background: #93AF52}
+  100% { background: #BBD531 }
+}
+
+@keyframes parpadeo {  
+  0% { background: #BBD531 }
+  50% { background: #93AF52}
+  100% { background: #BBD531 }
+}
+
 
 /*#cssmenu ul ul li:hover > a {
   background: #649A3F!important;
