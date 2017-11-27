@@ -1,4 +1,4 @@
-/* 
+/*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -149,7 +149,7 @@ function validar(elem) {
  var form = $("#" + form_name);
  var post_url = form.attr("action");
  var post_data = form.serialize();
- 
+
  console.log($.ajax({
  type: 'POST',
  url: post_url,
@@ -173,4 +173,3 @@ function validar(elem) {
 $(document).ready(function(){
    $("#cssmenu ul li:nth-child(3) a").addClass("parpadeo");
    });
-}
