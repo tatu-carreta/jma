@@ -40,7 +40,7 @@
         </a>
     </div>
     <div class="colCertain">
-        <a href="{{URL::to('')}}">
+        <a href="{{URL::to('menu/certainteed')}}">
             <h2>EXCLUSIVO EN JMA</h2>
             <div class="bordeCeleste">
                 <img class="ampliar" src="{{URL::to('images/certain-home.jpg')}}" alt="CertainTeed">

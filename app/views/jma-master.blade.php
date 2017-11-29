@@ -102,11 +102,11 @@
         <!-- S L I D E -->
         <div class="contentSlide">
             <a data-fancybox data-src="#video" href="javascript:;" class="btnVideo">
-                <img src="images/ver-video.png" alt="Ver video">
+                <img src="{{URL::to('images/ver-video.png')}}" alt="Ver video">
             </a>
             <div style="display: none;" id="video">
                 <video controls="" loop="1" style="width: 100%; height: auto">
-                    <source src="images/jma-v720p.mp4" type="video/mp4">
+                    <source src="{{URL::to('images/jma-v720p.mp4')}}" type="video/mp4">
                 </video>
             </div>
 

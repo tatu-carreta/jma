@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>JMA - Perfiles de Acero Galvanizado</title>
+<link href="favicon.ico" rel="shortcut icon">
+<link href="../../css/jma-styles.css" rel="stylesheet">
+<link href="../../css/jma-stylesmenu.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<meta property="og:image" content="" />
+<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
+
+<!-- J Q U E R Y -->
+<script src="http://localhost/jma/public/js/modernizr.custom.98616.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/jquery-ui.min.js"></script> 
+		<script>
+			$(function() {
+				$( "#tabs" ).tabs();
+			});
+		</script>
+<!-- Plugin Slide -->
+<script src="js/jquery.cross-slide.min.js"></script>
+<script>
+    $(function() {
+    	$('.slide').crossSlide({
+    	speed: 60,
+    	fade: 1
+            }, [
+              { src: 'images/slide-1.jpg', dir: 'up'   },
+              { src: 'images/slide-2.jpg', dir: 'down' },
+              { src: 'images/slide-3.jpg', dir: 'up'   },
+              { src: 'images/slide-4.jpg', dir: 'down' },
+              { src: 'images/slide-5.jpg', dir: 'down' }
+            ]);
+        });
+</script>
+	
+</head>
+
+<body>
+	<!-- H E A D E R -->
+	<header class="container">
+		<a href="index.html"><img class="marca" src="images/jma.png" alt="Marca JMA Perfiles de Acero Galvanizado"></a>
+		<div class="suscribirse">
+            <label for="suscribir">Suscripción a Newsletter</label>
+            <form>
+                <input type="email" name="" id="suscribir" placeholder="Ingrese su mail">
+                <input class="flecha" type="submit" value="">
+            </form>
+        </div>
+		<div class="clear"></div>
+	</header>
+
+	<!-- S L I D E -->
+	<div class="slide"></div>
+
+	<!-- N A V -->
+	<nav>
+		<div id="cssmenu" class="menu">
+			<ul>
+				<li><a class='has-sub btn0' href="empresa.html">La Empresa</a>
+					<ul>
+						<li><a href="quienes-somos.html" class="btn1">Quienes Somos</a></li>
+						<li><a href="objetivos.html" class="btn2">Objetivos</a></li>
+						<li><a href="mercados.html" class="btn3">Mercados</a></li>
+						<li><a href="planta-productiva.html" class="btn4">Planta Productiva</a></li>
+					</ul>
+				</li>
+				<li class='has-sub btn0'><a href="">Productos</a>
+					<ul>
+						<li><a href="perfiles-desmontables.html" class="btn1">Perfiles Desmontables</a></li>
+						<li><a href="drywall.html" class="btn2">Drywall</a></li>
+						<li><a href="steel-framing.html" class="btn3">Steel Framing</a></li>
+					</ul>
+				</li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="contacto.html" class="ultimo">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</nav>
+
+	<section class="container">
+		<h3>Sistema de suspensión para cielorrasos desmontables</h3>
+		<!-- abre TABS -->
+			<div id="tabs" class="solapas">
+				<div id="tabs-1">
+					<div class="bordeVerdeLateral paddingTextos">
+						<h3 class="txtVerde">Creando entornos de bienestar</h3>
+						<p>Placa de yeso desmontable con la cara a la vista revestida con vinilo blanco, La parte superior
+						con foil back de aluminio y revestido en sus bordes con una cinta para que no desprenda yeso.</p>
+
+						<p class="pItem">Ofrece fuerza y durabilidad superior, a diferencia de otros cielorrasos comunes de yeso,
+						los cuales no incluyen recubrimiento en la cara posterior.</p>
+
+						<p class="pItem">Es el cielorraso ideal para ser instalado en cocinas, áreas de procesamiento de alimentos,
+						servicio de comidas y hospitales.</p>
+						<p class="pItem">Es el producto apropiado para uso en cielorrasos que requieren de una limpieza frecuente.</p>
+						<p class="pItem">Es fabricado acorde a los estándares sanitarios de USDA/FSIS.</p>
+					</div>
+					
+					<div class="">
+						<img src="../../images/gypc-tabla.jpg" alt="GpyC">
+					</div>
+
+					<div style="padding-left: 20px">
+						<h4>LA INSTALACIÓN DE <img src="../../images/logo-gypc-ch.png"><br>
+						SE REALIZA CON <span class="txtVerde">PERFILES DESMONTABLES JMA<span></h4>
+					</div>
+
+				</div>
+
+				<div id="tabs-2">
+						<div class="bordeVerdeLateral">
+							<div class="paddingTextos">
+								<img src="http://localhost/jma/public/images/guia-instalacion-drywall.png" alt="JMA">
+							</div>
+						</div>
+				</div>
+
+				<ul class="bandaGris">
+					<li><span>GUÍA DE INSTALACIÓN</span></li>
+					<li><a href="#tabs-1" class="ocultarGuia"><span>Ocultar Guía</span></a></li>
+				    <li><a href="#tabs-2" class="verGuia"><span>Ver Guía</span></a></li>
+					<li><a href="" class="descargar"><span>Descargar</span></a></li>
+				</ul>
+			</div>
+		<!-- cierra TABS -->
+
+
+		<div class="colFotos">
+			<img class="bordeVerde marginBottom1" src="../../images/certain-1.jpg" alt="JMA">
+			<a href=""><img class="marginBottom1" src="../../images/certain-a.jpg" alt="JMA"></a>
+			<a href=""><img class="marginBottom1" src="../../images/certain-b.jpg" alt="JMA"></a>
+			<a href=""><img class="marginBottom1" src="../../images/certain-c.jpg" alt="JMA"></a>
+			<a href=""><img class="marginBottom1" src="../../images/certain-d.jpg" alt="JMA"></a>
+			<a href=""><img class="marginBottom1" src="../../images/certain-e.jpg" alt="JMA"></a>
+		</div>
+		<div class="clear"></div>
+	</section>
+	<!-- F O O T E R -->
+	<footer>
+		<img class="hoja" src="images/hoja.png">
+		<p>En <strong>JMA</strong> cuidamos cada uno de los procesos de manera responsable, minimizando el impacto ambiental. Sabemos que colaborando en el cuidado del medio ambiente beneficiamos no sólo a nuestras familias y a la sociedad actual, sino también a las generaciones por venir. El medio ambiente, una prioridad para nosotros.</p>
+	</footer>
+</body>
+</html>
