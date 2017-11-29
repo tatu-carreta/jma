@@ -131,8 +131,8 @@
 #cssmenu ul ul li a.btn4:hover {background: #F5F9D7}
 #cssmenu ul ul li.active a.btn4 {background: #F5F9D7}
 
-ul.menuPrinc>li:nth-child(2) ul li:nth-child(4) a {background: #107ABF !important; color:#fff !important;}
-ul.menuPrinc>li:nth-child(2) ul li:nth-child(5) a {background: #A7A9AC !important}
+ul.menuPrinc>li:nth-child(2) ul li:nth-child(4) a {background: #107ABF url(../images/btn-certain.png) no-repeat center !important; text-indent: -9999px;}
+ul.menuPrinc>li:nth-child(2) ul li:nth-child(5) a {background: #A7A9AC url(../images/btn-gpyc.png) no-repeat center !important; text-indent: -9999px;}
 
 ul.menuPrinc>li:nth-child(3)>a {background: orange;
 animation: parpadear 0.6s;
