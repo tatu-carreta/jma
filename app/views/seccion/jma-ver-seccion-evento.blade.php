@@ -71,11 +71,6 @@
 
     </ul>
     @else
-      @section('head')
-        @parent
-
-        <link rel='stylesheet' href="{{URL::to('css/fullcalendar.min.css')}}" />
-      @stop
       @section('footer')
         @parent
 
