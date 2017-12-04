@@ -12,7 +12,7 @@ i{cursor:pointer;}
 
 /* H E A D E R */
 header {height: 5em; padding-top: 1.250em; position: relative;}
-.marca {background: url(../images/jma.png) no-repeat; width: 640px; height: 95px; position: absolute; top: 1em; z-index: 100; display: inline-block;}
+.marca {background: url(../images/jma.png) no-repeat; background-size: 100% auto; width: 640px; height: 95px; position: absolute; top: 1em; z-index: 100; display: inline-block;}
 .marca span {display: none}
 
 .redesH {float: right; margin: 2em 0.5em 0 0;}
@@ -212,21 +212,25 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 /* M E D I A  Q U E R I E S */
 
 @media screen and (max-width: 1190px) {
-	.colTextoHome {width:21%; padding-right: 2% }
-	.colFotosHome {width:23%; margin-right:2% }
+	.colFotosHome {width:20.5%; margin-right:2% }
+	.colCertain {width:20.5%;}
 		.colFotosHome img {width: 100%; height: auto;}
+	}
 	.colFotos img {width: 100%; height: auto;}
 	.suma {width: 134px !important; height: 134px !important;   margin: 0 auto;}
 	.ui-tabs-panel img, .tablasPerfiles img, .col50 img {width: 100%; height: auto;}
 }
 
-@media screen and (max-width: 1110px) {
-	.ui-tabs .ui-tabs-nav li {float: none;}
-	.ui-tabs .ui-tabs-nav li:last-child {position: static;}
+@media screen and (max-width: 1120px) {
 	header {height: auto; text-align: center}
 	.marca {position: static; margin-bottom: 0.5em;}
 	.suscribirse {float: none; margin: 0 auto;}
 	.redesH {float: none; margin: 0.5em 0 ;}
+}
+
+@media screen and (max-width: 1110px) {
+	.ui-tabs .ui-tabs-nav li {float: none;}
+	.ui-tabs .ui-tabs-nav li:last-child {position: static;}
 }
 
 @media screen and (max-width: 1080px) {
