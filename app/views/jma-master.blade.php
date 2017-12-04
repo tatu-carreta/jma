@@ -23,6 +23,7 @@
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles-admin.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/jquery-ui.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/jquery.fancybox.min.css')}}">
+        <link rel='stylesheet' href="{{URL::to('css/fullcalendar.min.css')}}">
         <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/tatu-styles.css')}}"> -->
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-styles.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/'.$project_name.'-stylesmenu.css')}}">
