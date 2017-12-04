@@ -18,7 +18,7 @@
         @endif
 
         <!--columna producto y descripcion -->
-        <div class="col70">
+        <div class="contenedorSecciones">
             <!-- <div class="imgProd">
                         {{-- @if(count($item->imagen_destacada()) > 0)
                                 <img src="{{ URL::to($item->imagen_destacada()->carpeta.$item->imagen_destacada()->nombre) }}" alt="{{$item->titulo}}">
@@ -27,27 +27,29 @@
                             <li><img src="{{ URL::to('images/sinImg.gif') }}" alt="{{$item->titulo}}"></li>
                         @endif --}}
             </div> -->
+            <div class="bordeVerdeLateral paddingTextos">
+                <div class="detalleProd">
+                    <h2>{{ $item -> titulo }}</h2>
+                    <div class="editor">
+                        <h4 style="display: inline-block; margin: 0 0 10px">Desde: </h4>
+                        {{ date('d/m/Y', strtotime($item->texto()->evento()->fecha_desde)) }}
+                    </div>
+                    @if(isset($item->texto()->evento()->fecha_hasta))
+                    <div class="editor">
+                        <h4 style="display: inline-block; margin: 0">Hasta: </h4>
+                        {{ date('d/m/Y', strtotime($item->texto()->evento()->fecha_hasta)) }}
+                    </div>
+                    @endif
+                    <div class="editor">
+                        <h4>Descripción:</h4>
+                        <p class="bajada">{{ $item->descripcion }}</p>
+                    </div>
+                    <div class="editor">
+                        <h4>Más información:</h4>
+                        {{ $item->texto()->cuerpo }}
+                    </div>
+                </div>
 
-            <div class="detalleProd">
-                <h2>{{ $item -> titulo }}</h2>
-                <div class="editor">
-                    <h4>Fecha Desde</h4>
-                    {{ date('d/m/Y', strtotime($item->texto()->evento()->fecha_desde)) }}
-                </div>
-                @if(isset($item->texto()->evento()->fecha_hasta))
-                <div class="editor">
-                    <h4>Fecha Hasta</h4>
-                    {{ date('d/m/Y', strtotime($item->texto()->evento()->fecha_hasta)) }}
-                </div>
-                @endif
-                <div class="editor">
-                    <h4>Descripcion</h4>
-                    {{ $item->descripcion }}
-                </div>
-                <div class="editor">
-                    <h4>Cuerpo</h4>
-                    {{ $item->texto()->cuerpo }}
-                </div>
             </div>
             <div class="clear"></div>
         </div>
