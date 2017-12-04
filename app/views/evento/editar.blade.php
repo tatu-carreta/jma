@@ -26,10 +26,10 @@
                 <input class="block anchoTotal marginBottom" type="text" name="titulo" placeholder="Título" required="true" value="{{ $item->titulo }}" maxlength="100">
 
                 <h3>Fecha Desde</h3>
-                <input class="block anchoTotal marginBottom" type="date" name="fecha_desde" placeholder="dd/mm/yyyy" required="true" value="{{ $evento->fecha_desde }}" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="date" name="fecha_desde" placeholder="dd/mm/yyyy" required="true" value="{{ $evento->fecha_desde }}" maxlength="8">
 
                 <h3>Fecha Hasta</h3>
-                <input class="block anchoTotal marginBottom" type="date" name="fecha_hasta" placeholder="dd/mm/yyyy" value="{{ $evento->fecha_hasta }}" maxlength="50">
+                <input class="block anchoTotal marginBottom" type="date" name="fecha_hasta" placeholder="dd/mm/yyyy" value="{{ $evento->fecha_hasta }}" maxlength="8">
 
                 <h3>Descripción</h3>
                 <input class="block anchoTotal marginBottom" type="text" name="descripcion" placeholder="Descripción" required="true" value="{{ $item->descripcion }}" maxlength="50">

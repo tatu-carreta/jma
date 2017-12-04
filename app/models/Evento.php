@@ -12,23 +12,37 @@ class Evento extends Texto {
     //Función de Agregación de Item
     public static function agregar($input) {
 
+      $reglas = array();
 
+      if (isset($input['fecha_desde'])) {
+
+          $fecha_desde = $input['fecha_desde'];
+          $reglas['fecha_desde'] = array('date:aaaa-mm-dd');
+      } else {
+          $fecha_desde = NULL;
+      }
+
+      if (isset($input['fecha_hasta'])) {
+
+          $fecha_hasta = $input['fecha_hasta'];
+
+          $reglas['fecha_hasta'] = array('date:aaaa-mm-dd');
+
+      } else {
+          $fecha_hasta = NULL;
+      }
+
+      $validator = Validator::make($input, $reglas);
+
+      if ($validator->fails()) {
+          // $respuesta['mensaje'] = "No se pudo realizar la carga del producto. Compruebe los campos.";
+          $respuesta['mensaje'] = 'Compruebe el valor de las fechas.';
+          //Si está todo mal, carga lo que corresponde en el mensaje.
+
+          $respuesta['error'] = true;
+      } else {
         //Lo crea definitivamente
         $texto = Texto::agregar($input);
-
-        if (isset($input['fecha_desde'])) {
-
-            $fecha_desde = $input['fecha_desde'];
-        } else {
-            $fecha_desde = NULL;
-        }
-
-        if (isset($input['fecha_hasta'])) {
-
-            $fecha_hasta = $input['fecha_hasta'];
-        } else {
-            $fecha_hasta = NULL;
-        }
 
         if (!$texto['error']) {
 
@@ -41,7 +55,7 @@ class Evento extends Texto {
             $respuesta['error'] = true;
             $respuesta['mensaje'] = "El evento no pudo ser creado. Compruebe los campos.";
         }
-
+      }
 
         return $respuesta;
     }
