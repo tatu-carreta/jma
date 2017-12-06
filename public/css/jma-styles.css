@@ -63,6 +63,9 @@ footer p {font-size: 1em}
 
 /* H O M E */
 .colTextoHome {float: left; width:5em; padding-right: 1em }
+.colTextoHome .certificaciones{}
+.colTextoHome .certificacionesA{display: none;}
+
 h1 {font-size: 1.125em; font-weight: 400; margin-top: 3em; margin-left: 5.2em;}
 .colFotosHome {float: left; width:14.5em; margin-right:2.375em  }
 	.colFotosHome p {padding-left: 1em}
@@ -231,6 +234,7 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 @media screen and (max-width: 1110px) {
 	.ui-tabs .ui-tabs-nav li {float: none;}
 	.ui-tabs .ui-tabs-nav li:last-child {position: static;}
+	.marca {width:460px; height: 80px; top: 30px;}
 }
 
 @media screen and (max-width: 1080px) {
@@ -239,23 +243,34 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.slide {min-height: 350px;}
 }
 
+@media screen and (max-width: 1010px) {
+
+.colTextoHome .certificaciones{display: none;}
+.colTextoHome .certificacionesA{display: inline-block;}
+.colTextoHome {width: 100%; text-align: center; float: none;}
+.colFotosHome {width:22%; margin-right:2% }
+.colCertain {width:22%;}
+h1 {margin:1.5em 0; }
+h2 {font-size: 1em}
+}
+
 @media screen and (max-width: 1000px) {
 	.galeriaPlanta img {width: 17.5%; margin: 1%;}
 	.galeriaPlanta img:nth-child(6), .galeriaPlanta img:nth-child(7) {display: none;}
 	.colMapa1, .colMapa2 {font-size: 1em}
 	.slide {min-height: 300px;}
 }
+
+
 @media screen and (max-width: 940px) {
 	.data-fiscal {display: none;}
 	.colMapa1, .colMapa2 {font-size: 1.125em}
 	.slide {min-height: 260px;}
+	.marca {background: url(../images/jma-admin.png) no-repeat center; width: 280px; height: 90px; top: 10px;}
 }
 
 @media screen and (max-width: 910px) {
 	section {padding-top: 0}
-	.colTextoHome {width:100%; padding-right: 0; float: none }
-	.colFotosHome {width:30.3%; margin-right:3%  }
-
 	.colForm {width: 70%; margin: 2em auto 3em; float: none; }
 	.copy {display: none;}
 	.colContentMapas {width: 100%; float: none;}
@@ -270,12 +285,18 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.listaNoticias .divInfoNoticia {float: none; margin-left: 150px;}
 }	
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
+	header {height: auto}
 	.slide {min-height: 160px;}
+	.marca {background: url(../images/jma-admin.png) no-repeat center; width: 100%; position: static;}
+	.marca img {width: 100%; height: auto}
+	.redesH {float: none; margin: 0 auto 0.5em; width: 200px; text-align: center;}
+	.suscribirse {float: none; margin: 0.5em auto}
+	.btnVideo {position: static; display: block; margin: 0 auto 0.5em}
 }
 
 @media screen and (max-width: 710px) {
-	.marca img {width: 100%; height: auto}
+	
 	.colFotosHome h2 {height: 2.5em;}
 	.colTextos, .colFotos, .solapas, .col50 {width: 100%; float: none;}
 	.colMapa1, .colMapa2 {font-size: 1em}
@@ -285,7 +306,6 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 }
 
 @media screen and (max-width: 670px) {
-	.marca {background: url(../images/jma-admin.png) no-repeat center; width: 100%;}
 	.colFotosHome h2 {height: 2em; font-size: 1.1em}
 	.colFotosHome p {font-size: 1em}
 	.galeriaPlanta img {width: 22%; margin: 1%;}
@@ -305,8 +325,5 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.colFotosHome h2 {height: 2em; font-size: 1.1em}
 	.colFotosHome p {font-size: 1em}
 	.galeriaPlanta img {width: 47%; margin: 1%;}
-}
-
-@media screen and (max-width: 400px) {
-	.colFotosHome {width:100%; margin-right:0; margin-bottom: 2em }
+	.colFotosHome, .colCertain {width:100%; margin-right:0; margin-bottom: 2em }
 }
