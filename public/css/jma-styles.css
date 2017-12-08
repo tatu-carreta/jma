@@ -83,6 +83,8 @@ h1 {font-size: 1.125em; font-weight: 400; margin-top: 3em; margin-left: 5.2em;}
 	.galeriaPlanta img:hover {transform: scale(1.7);-moz-transform: scale(1.7); -webkit-transform: scale(1.7); -o-transform: scale(1.7); -ms-transform: scale(1.7);}
 
 /* P E R F I L E S,  D R Y W A L L,  S T E E L */
+.modContenidoPagEst h3 {font-family: 'Roboto Condensed', sans-serif; }
+
 .solapas {width: 55%; float: left; margin-right: 1.5%; box-sizing: border-box;}/* max-width: 40.500em; */
 .solapas li {background: transparent !important; border: none !important}
 .solapas li span {line-height: 2.2em;}
@@ -190,13 +192,13 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 
 .pIconos {margin: 1em 0 3em; position: relative; left: -30px}
 .pIconos p{margin:0; line-height: 25px}
-.pIconos img {position: relative; display: inline-block; margin-right: 10px}
+.pIconos img {position: relative; display: inline-block; margin-right: 10px; width: 23px !important; height: 23px !important;}
 
 #certCertain .pItem {margin-top: 0; margin-bottom: 0.3em}
 #certCertain .col1 {float: left; width: 75%}
 #certCertain .col2 {float: right; width: 25%; text-align: right;}
-#certCertain .certifico1 {}
-#certCertain .certifico2 {display: none;}
+#certCertain .certifico1 {width: 97px !important;}
+#certCertain .certifico2 {display: none; width: 300px !important;}
 
 .logo-gypc-ch {position: relative; top:10px;}
 
@@ -221,7 +223,7 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	}
 	.colFotos img {width: 100%; height: auto;}
 	.suma {width: 134px !important; height: 134px !important;   margin: 0 auto;}
-	.ui-tabs-panel img, .tablasPerfiles img, .col50 img {width: 100%; height: auto;}
+	
 }
 
 @media screen and (max-width: 1120px) {
@@ -241,6 +243,7 @@ h4.subtitulos {color: #BAD532; text-align: center;font-size: 20px }
 	.logoContacto {float: right;}
 	/*.redes {width: 300px; text-align: right;}*/
 	.slide {min-height: 350px;}
+	.ui-tabs-panel img, .tablasPerfiles img, .col50 img {width: 100%; height: auto;}
 }
 
 @media screen and (max-width: 1010px) {
