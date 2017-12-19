@@ -69,6 +69,8 @@
                         @include('seccion.'.$project_name.'-ver-seccion')
                     @endif
 
+                @elseif((count($seccion->items) == 0) && !Auth::check() && $menu->modulo()->nombre == 'evento')
+                  <span class="txtCalendario">No hay cursos o capacitaciones cargados en este momento.</span>
                 @endif
             @endforeach
             </div>
