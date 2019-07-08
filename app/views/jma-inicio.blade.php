@@ -10,8 +10,10 @@
     @endif
     <h1>Somos la Empresa Argentina Líder en fabricación y comercialización de Perfiles de Acero Galvanizado, desarrollando todas las variantes que demandan el mercado interno y externo:</h1>
     <div class="colTextoHome">
-        <img class="certificaciones" src="{{URL::to('images/certificaciones2.png')}}" alt="Certificación IRAM e IQNET">
-        <img class="certificacionesA" src="{{URL::to('images/certificaciones.png')}}" alt="Certificación IRAM e IQNET">
+        <img class="certificaciones" src="{{URL::to('images/spacer2.png')}}" alt="">
+        <img class="certificacionesA" src="{{URL::to('images/spacer.png')}}" alt="">
+        <!-- <img class="certificaciones" src="{{URL::to('images/certificaciones2.png')}}" alt="Certificación IRAM e IQNET">
+        <img class="certificacionesA" src="{{URL::to('images/certificaciones.png')}}" alt="Certificación IRAM e IQNET"> -->
     </div>
     <div class="colFotosHome">
         <a href="{{URL::to('menu/perfiles-desmontables')}}">
